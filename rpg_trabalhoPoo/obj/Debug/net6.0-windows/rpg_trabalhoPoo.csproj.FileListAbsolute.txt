@@ -1,0 +1,5 @@
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho_Poo\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg_trabalhoPoo\obj\Debug\net6.0-windows\rpg_trabalhoPoo.csproj.AssemblyReference.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho_Poo\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg_trabalhoPoo\obj\Debug\net6.0-windows\rpg_trabalhoPoo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho_Poo\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg_trabalhoPoo\obj\Debug\net6.0-windows\rpg_trabalhoPoo.AssemblyInfoInputs.cache
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho_Poo\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg_trabalhoPoo\obj\Debug\net6.0-windows\rpg_trabalhoPoo.AssemblyInfo.cs
+C:\Users\pedro\OneDrive\Área de Trabalho\Trabalho_Poo\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg_trabalhoPoo\obj\Debug\net6.0-windows\rpg_trabalhoPoo.csproj.CoreCompileInputs.cache
