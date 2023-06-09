@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg_trabalhoPoo\\rpg_trabalhoPoo.csproj": {}
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\rpg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg_trabalhoPoo\\rpg_trabalhoPoo.csproj": {
+    "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\rpg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg_trabalhoPoo\\rpg_trabalhoPoo.csproj",
-        "projectName": "rpg_trabalhoPoo",
-        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg_trabalhoPoo\\rpg_trabalhoPoo.csproj",
+        "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\rpg.csproj",
+        "projectName": "rpg",
+        "projectPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\rpg.csproj",
         "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg_trabalhoPoo\\obj\\",
+        "outputPath": "C:\\Users\\pedro\\OneDrive\\Área de Trabalho\\Trabalho_Poo\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

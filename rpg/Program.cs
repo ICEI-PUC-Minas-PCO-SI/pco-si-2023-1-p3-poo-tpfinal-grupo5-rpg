@@ -1,4 +1,4 @@
-namespace rpg_trabalhoPoo
+namespace rpg
 {
     internal static class Program
     {

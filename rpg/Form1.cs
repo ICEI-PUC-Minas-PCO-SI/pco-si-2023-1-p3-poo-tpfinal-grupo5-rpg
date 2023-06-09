@@ -1,4 +1,4 @@
-namespace rpg_trabalhoPoo
+namespace rpg
 {
     public partial class Form1 : Form
     {
