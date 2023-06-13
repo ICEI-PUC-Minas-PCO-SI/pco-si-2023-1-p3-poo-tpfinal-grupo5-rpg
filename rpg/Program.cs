@@ -1,9 +1,13 @@
 ﻿//Exemplo de criação de uma pessoa, um monstro e um animal:
-Pessoa p = new Pessoa();
+Pessoa[] p = new Pessoa[5];
 Monstro m = new Monstro();
 Animal a = new Animal();
 
-Console.WriteLine($"Nome da pessoa: {p.getNome()}\nRaça: {p.getRaca().getNome()}\nClasse: {p.getClasse().getNome()}\nAtaque: {p.getAtaque()}\nDefesa: {p.getDefesa()}\nSorte: {p.getSorte()}\nNível: {p.getNivel()}\nVida: {p.getVida()}\nMana: {p.getMana()}\nDinheiro: {p.getDinheiro()}\nItem ativo: {p.getItemAtivo()}\nAtaques: {p.getAtaques()}\nItens: {p.getItens()}");
+for(int i = 0; i<5; i++){
+    p[i] = new Pessoa();
+    Console.WriteLine($"Nome da pessoa: {p[i].getNome()}\nRaça: {p[i].getRaca().getNome()}\nClasse: {p[i].getClasse().getNome()}\nAtaque: {p[i].getAtaque()}\nDefesa: {p[i].getDefesa()}\nSorte: {p[i].getSorte()}\nNível: {p[i].getNivel()}\nVida: {p[i].getVida()}\nMana: {p[i].getMana()}\nDinheiro: {p[i].getDinheiro()}\nItem ativo: {p[i].getItemAtivo()}\nAtaques: {p[i].getAtaques()}\nItens: {p[i].getItens()}\n---------------------------\n");
+}
+
 Console.WriteLine($"\n----------------------------\nMonstro: {m.getNome()}\nAtaque: {m.getAtaque()}\nDefesa: {m.getDefesa()}\nSorte: {m.getSorte()}\nNível: {m.getNivel()}\nVida: {m.getVida()}\nMana: {m.getMana()}\nDinheiro: {m.getDinheiro()}");
 Console.WriteLine($"\n---------------------------\nAnimal: {a.getNome()}\nAtaque: {m.getAtaque()}\nDefesa: {m.getDefesa()}\nSorte: {m.getSorte()}\nNível: {m.getNivel()}\nVida: {m.getVida()}\nMana: {m.getMana()}\nDinheiro: {m.getDinheiro()}");
 
