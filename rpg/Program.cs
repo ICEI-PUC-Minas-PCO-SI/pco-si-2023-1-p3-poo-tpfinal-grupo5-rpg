@@ -5,7 +5,7 @@ Animal a = new Animal();
 
 for(int i = 0; i<5; i++){
     p[i] = new Pessoa();
-    Console.WriteLine($"Nome da pessoa: {p[i].getNome()}\nRaça: {p[i].getRaca().getNome()}\nClasse: {p[i].getClasse().getNome()}\nAtaque: {p[i].getAtaque()}\nDefesa: {p[i].getDefesa()}\nSorte: {p[i].getSorte()}\nNível: {p[i].getNivel()}\nVida: {p[i].getVida()}\nMana: {p[i].getMana()}\nDinheiro: {p[i].getDinheiro()}\nItem ativo: {p[i].getItemAtivo()}");
+    Console.WriteLine($"Nome da pessoa: {p[i].getNome()}\nRaça: {p[i].getRaca().getNome()}\nClasse: {p[i].getClasse().getNome()}\nAtaque: {p[i].getAtaque()}\nDefesa: {p[i].getDefesa()}\nSorte: {p[i].getSorte()}\nNível: {p[i].getNivel()}\nVida: {p[i].getVida()}\nMana: {p[i].getMana()}\nDinheiro: {p[i].getDinheiro()}\nItem ativo: {p[i].getItemAtivo().getNome()}");
     for(int j = 0; j < p[i].getAtaques().Count; j++){
         Console.WriteLine($"Ataque {j+1}: {p[i].getAtaques()[j].getNome()}");
     }
