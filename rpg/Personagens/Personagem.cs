@@ -7,8 +7,9 @@ public class Personagem{
     protected int defesa;
     protected int sorte;
     protected int nivel;
-    protected List<Ataque> ataques;
-    protected List<Item> itens;
+    protected int xp;
+    protected List<Ataque> ataques = new List<Ataque>();
+    protected List<Item> itens = new List<Item>();
     protected Item itemAtivo;
     protected Classe classe;
     protected Raca raca;
@@ -24,14 +25,15 @@ public class Personagem{
         this.defesa = 0 + this.raca.getModdefesa() + this.classe.getModdefesa();
         this.sorte = 0 + this.raca.getModsorte() + this.classe.getModsorte();
         this.nivel = 1;
-        /*this.ataques[0] = AtaquesProntos.Basico();
-        this.ataques[1] = this.raca.getAtaque();
-        this.itens[0] = this.classe.getItem();*
-        this.itemAtivo = this.itens[0];*/
+        this.xp = 0;
+        this.ataques.Add(AtaquesProntos.Basico());
+        this.ataques.Add(this.raca.getAtaque());
+        this.itens.Add(this.classe.getItem());
+        this.itemAtivo = this.itens[0];
         this.dinheiro = 0 + this.raca.getModdinheiro() + this.classe.getModdinheiro();
     }
 
-    public Personagem(string nome, int vida, int mana, int ataque, int defesa, int sorte, int nivel, List<Ataque> ataques, List<Item> itens, int dinheiro, Classe classe, Raca raca, Item itemAtivo){
+    public Personagem(string nome, int vida, int mana, int ataque, int defesa, int sorte, int nivel, List<Ataque> ataques, List<Item> itens, int dinheiro, Classe classe, Raca raca, Item itemAtivo, int xp){
         this.nome = nome;
         this.vida = vida;
         this.mana = mana;
@@ -39,6 +41,7 @@ public class Personagem{
         this.defesa = defesa;
         this.sorte = sorte;
         this.nivel = nivel;
+        this.xp = xp;
         this.ataques = ataques;
         this.itens = itens;
         this.itemAtivo = itemAtivo;
@@ -86,6 +89,9 @@ public class Personagem{
     public Raca getRaca(){
         return this.raca;
     }
+    public int getXp(){
+        return this.xp;
+    }
     public void setNome(string nome){
         this.nome = nome;
     }
@@ -124,6 +130,9 @@ public class Personagem{
     }
     public void setRaca(Raca raca){
         this.raca = raca;
+    }
+    public void setXp(int xp){
+        this.xp = xp;
     }
 
     public virtual int atacar(Ataque ataque){
