@@ -5,6 +5,7 @@ public class Item{
     private int nivel;
 
     private bool consumivel;
+    private string tipo;
 
     private String modificador;
     private int valorModificador;
@@ -15,15 +16,17 @@ public class Item{
         this.quantidade = 0;
         this.nivel = 0;
         this.consumivel = false;
+        this.tipo = null;
         this.modificador = "";
         this.valorModificador = 0;
     }
-    public Item(string nome, int preco, int quantidade, int nivel, bool consumivel, string modificador, int valorModificador){
+    public Item(string nome, int preco, int quantidade, int nivel, bool consumivel, string modificador, int valorModificador, string tipo){
         this.nome = nome;
         this.preco = preco;
         this.quantidade = quantidade;
         this.nivel = nivel;
         this.consumivel = consumivel;
+        this.tipo = tipo;
         this.modificador = modificador;
         this.valorModificador = valorModificador;
     }
@@ -48,6 +51,9 @@ public class Item{
     public int getValorModificador(){
         return this.valorModificador;
     }
+    public string getTipo(){
+        return this.tipo;
+    }
 
     public void setNome(string nome){
         this.nome = nome;
@@ -69,6 +75,9 @@ public class Item{
     }
     public void setValorModificador(int valorModificador){
         this.valorModificador = valorModificador;
+    }
+    public void setTipo(string tipo){
+        this.tipo = tipo;
     }
 
 }

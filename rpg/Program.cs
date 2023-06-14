@@ -5,12 +5,21 @@ Animal a = new Animal();
 
 for(int i = 0; i<5; i++){
     p[i] = new Pessoa();
-    Console.WriteLine($"Nome da pessoa: {p[i].getNome()}\nRaça: {p[i].getRaca().getNome()}\nClasse: {p[i].getClasse().getNome()}\nAtaque: {p[i].getAtaque()}\nDefesa: {p[i].getDefesa()}\nSorte: {p[i].getSorte()}\nNível: {p[i].getNivel()}\nVida: {p[i].getVida()}\nMana: {p[i].getMana()}\nDinheiro: {p[i].getDinheiro()}\nItem ativo: {p[i].getItemAtivo().getNome()}");
+    Console.WriteLine($"Nome da pessoa: {p[i].getNome()}\nRaça: {p[i].getRaca().getNome()}\nClasse: {p[i].getClasse().getNome()}\nAtaque: {p[i].getAtaque()}\nDefesa: {p[i].getDefesa()}\nSorte: {p[i].getSorte()}\nNível: {p[i].getNivel()}\nVida: {p[i].getVida()}\nMana: {p[i].getMana()}\nDinheiro: {p[i].getDinheiro()}");
+    if(p[i].getArma() != null){
+        Console.WriteLine($"Arma: {p[i].getArma().getNome()}");
+    }
+    if(p[i].getArmadura() != null){
+        Console.WriteLine($"Armadura: {p[i].getArmadura().getNome()}");
+    }
     for(int j = 0; j < p[i].getAtaques().Count; j++){
         Console.WriteLine($"Ataque {j+1}: {p[i].getAtaques()[j].getNome()}");
     }
+    Console.Write($"Inventário: ");
     for(int k = 0; k < p[i].getItens().Count; k++){
-        Console.WriteLine($"Item {k+1}: {p[i].getItens()[k].getNome()}");
+        Console.Write($"{p[i].getItens()[k].getNome()}");
+        if(k != p[i].getItens().Count-1)
+            Console.Write(", ");
     }
     Console.WriteLine("\n---------------------------\n");
 }

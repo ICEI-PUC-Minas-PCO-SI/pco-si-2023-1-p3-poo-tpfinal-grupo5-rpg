@@ -10,7 +10,8 @@ public class Personagem{
     protected int xp;
     protected List<Ataque> ataques = new List<Ataque>();
     protected List<Item> itens = new List<Item>();
-    protected Item itemAtivo;
+    protected Item Arma;
+    protected Item Armadura;
     protected Classe classe;
     protected Raca raca;
     protected int dinheiro;
@@ -29,11 +30,14 @@ public class Personagem{
         this.ataques.Add(AtaquesProntos.Basico());
         this.ataques.Add(this.raca.getAtaque());
         this.itens.Add(this.classe.getItem());
-        this.itemAtivo = this.itens[0];
         this.dinheiro = 0 + this.raca.getModdinheiro() + this.classe.getModdinheiro();
+        this.Arma = null;
+        this.Armadura = null;
+        Item item = this.classe.getItem();
+        usarItem(item);
     }
 
-    public Personagem(string nome, int vida, int mana, int ataque, int defesa, int sorte, int nivel, List<Ataque> ataques, List<Item> itens, int dinheiro, Classe classe, Raca raca, Item itemAtivo, int xp){
+    public Personagem(string nome, int vida, int mana, int ataque, int defesa, int sorte, int nivel, List<Ataque> ataques, List<Item> itens, int dinheiro, Classe classe, Raca raca, Item Arma, int xp){
         this.nome = nome;
         this.vida = vida;
         this.mana = mana;
@@ -44,7 +48,7 @@ public class Personagem{
         this.xp = xp;
         this.ataques = ataques;
         this.itens = itens;
-        this.itemAtivo = itemAtivo;
+        this.Arma = Arma;
         this.dinheiro = dinheiro;
         this.classe = classe;
         this.raca = raca;
@@ -77,8 +81,11 @@ public class Personagem{
     public List<Item> getItens(){
         return this.itens;
     }
-    public Item getItemAtivo(){
-        return this.itemAtivo;
+    public Item getArma(){
+        return this.Arma;
+    }
+    public Item getArmadura(){
+        return this.Armadura;
     }
     public int getDinheiro(){
         return this.dinheiro;
@@ -119,47 +126,11 @@ public class Personagem{
     public void setItens(List<Item> itens){
         this.itens = itens;
     }
-    public void setItemAtivo(Item itemAtivo){
-        string modificador;
-        if(!this.itemAtivo.getConsumivel()){
-            modificador = this.itemAtivo.getModificador();
-            switch (modificador){
-                case "vida":
-                    this.vida -= this.itemAtivo.getValorModificador();
-                    break;
-                case "mana":
-                    this.mana -= this.itemAtivo.getValorModificador();
-                    break;
-                case "ataque":
-                    this.ataque -= this.itemAtivo.getValorModificador();
-                    break;
-                case "defesa":
-                    this.defesa -= this.itemAtivo.getValorModificador();
-                    break;
-                case "sorte":
-                    this.sorte -= this.itemAtivo.getValorModificador();
-                    break;
-            }
-        }
-        this.itemAtivo = itemAtivo;
-        modificador = itemAtivo.getModificador();
-        switch (modificador){
-            case "vida":
-                this.vida += itemAtivo.getValorModificador();
-                break;
-            case "mana":
-                this.mana += itemAtivo.getValorModificador();
-                break;
-            case "ataque":
-                this.ataque += itemAtivo.getValorModificador();
-                break;
-            case "defesa":
-                this.defesa += itemAtivo.getValorModificador();
-                break;
-            case "sorte":
-                this.sorte += itemAtivo.getValorModificador();
-                break;
-        }
+    public void setArma(Item Arma){
+        this.Arma = Arma;
+    }
+    public void setArmadura(Item Armadura){
+        this.Armadura = Armadura;
     }
     public void setDinheiro(int dinheiro){
         this.dinheiro = dinheiro;
@@ -190,7 +161,73 @@ public class Personagem{
     }
 
     public virtual void usarItem(Item item){
-        this.itemAtivo = item;
+        if(item.getConsumivel()){
+            switch(item.getModificador()){
+                case "Vida":
+                    this.vida += item.getValorModificador();
+                    break;
+                case "Mana":
+                    this.mana += item.getValorModificador();
+                    break;
+                case "Ataque":
+                    this.ataque += item.getValorModificador();
+                    break;
+                case "Defesa":
+                    this.defesa += item.getValorModificador();
+                    break;
+                case "Sorte":
+                    this.sorte += item.getValorModificador();
+                    break;
+            }
+        }
+        if(item.getTipo() == "Arma"){
+            string modificador = "";
+            if(this.Arma != null){
+                modificador = this.Arma.getModificador();
+            }
+            
+            switch(modificador){
+                case "Vida":
+                    this.vida -= this.Arma.getValorModificador();
+                    break;
+                case "Mana":
+                    this.mana -= this.Arma.getValorModificador();
+                    break;
+                case "Ataque":
+                    this.ataque -= this.Arma.getValorModificador();
+                    break;
+                case "Defesa":
+                    this.defesa -= this.Arma.getValorModificador();
+                    break;
+                case "Sorte":
+                    this.sorte -= this.Arma.getValorModificador();
+                    break;
+            }
+            this.Arma = item;
+        }else{
+            string modificador = "";
+            if(this.Armadura != null){
+                modificador = this.Arma.getModificador();
+            }
+            switch(modificador){
+                case "Vida":
+                    this.vida -= this.Armadura.getValorModificador();
+                    break;
+                case "Mana":
+                    this.mana -= this.Armadura.getValorModificador();
+                    break;
+                case "Ataque":
+                    this.ataque -= this.Armadura.getValorModificador();
+                    break;
+                case "Defesa":
+                    this.defesa -= this.Armadura.getValorModificador();
+                    break;
+                case "Sorte":
+                    this.sorte -= this.Armadura.getValorModificador();
+                    break;
+            }
+            this.Armadura = item;
+        }
     }
 
     public virtual void falar(string fala){
