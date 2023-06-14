@@ -120,8 +120,9 @@ public class Personagem{
         this.itens = itens;
     }
     public void setItemAtivo(Item itemAtivo){
+        string modificador;
         if(!this.itemAtivo.getConsumivel()){
-            string modificador = this.itemAtivo.getModificador();
+            modificador = this.itemAtivo.getModificador();
             switch (modificador){
                 case "vida":
                     this.vida -= this.itemAtivo.getValorModificador();
@@ -141,7 +142,7 @@ public class Personagem{
             }
         }
         this.itemAtivo = itemAtivo;
-        string modificador = itemAtivo.getModificador();
+        modificador = itemAtivo.getModificador();
         switch (modificador){
             case "vida":
                 this.vida += itemAtivo.getValorModificador();
