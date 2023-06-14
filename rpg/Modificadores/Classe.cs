@@ -1,88 +1,44 @@
 public class Classe{
     private string nome;
     private string descricao;
-    private int Modvida;
-    private int Modmana;
-    private int Modataque;
-    private int Moddefesa;
-    private int Modsorte;
-    private int Moddinheiro;
+    private int modVida;
+    private int modMana;
+    private int modAtaque;
+    private int modDefesa;
+    private int modSorte;
+    private int modDinheiro;
     private Item item;
 
     public Classe(){
-        this.nome = "";
-        this.Modvida = 0;
-        this.Modmana = 0;
-        this.Modataque = 0;
-        this.Moddefesa = 0;
-        this.Modsorte = 0;
-        this.Moddinheiro = 0;
-        this.item = null;
-        this.descricao = "";
+        this.Nome = "";
+        this.ModVida = 0;
+        this.ModMana = 0;
+        this.ModAtaque = 0;
+        this.ModDefesa = 0;
+        this.ModSorte = 0;
+        this.ModDinheiro = 0;
+        this.Item = null;
+        this.Descricao = "";
     }
-    public Classe(string nome, int Modvida, int Modmana, int Modataque, int Moddefesa, int Modsorte, int Moddinheiro, Item item, string descricao){
+    public Classe(string nome, int modvida, int modmana, int modataque, int moddefesa, int modsorte, int moddinheiro, Item item, string descricao){
         this.nome = nome;
-        this.Modvida = Modvida;
-        this.Modmana = Modmana;
-        this.Modataque = Modataque;
-        this.Moddefesa = Moddefesa;
-        this.Modsorte = Modsorte;
-        this.Moddinheiro = Moddinheiro;
-        this.item = item;
+        this.modVida = modvida;
+        this.modMana = modmana;
+        this.modAtaque = modataque;
+        this.modDefesa = moddefesa;
+        this.modSorte = modsorte;
+        this.modDinheiro = moddinheiro;
+        this.Item = item;
         this.descricao = descricao;
     }
-    public string getNome(){
-        return this.nome;
-    }
-    public string getDescricao(){
-        return this.descricao;
-    }
-    public int getModvida(){
-        return this.Modvida;
-    }
-    public int getModmana(){
-        return this.Modmana;
-    }
-    public int getModataque(){
-        return this.Modataque;
-    }
-    public int getModdefesa(){
-        return this.Moddefesa;
-    }
-    public int getModsorte(){
-        return this.Modsorte;
-    }
-    public int getModdinheiro(){
-        return this.Moddinheiro;
-    }
-    public Item getItem(){
-        return this.item;
-    }
-    public void setNome(string nome){
-        this.nome = nome;
-    }
-    public void setDescricao(string descricao){
-        this.descricao = descricao;
-    }
-    public void setModvida(int Modvida){
-        this.Modvida = Modvida;
-    }
-    public void setModmana(int Modmana){
-        this.Modmana = Modmana;
-    }
-    public void setModataque(int Modataque){
-        this.Modataque = Modataque;
-    }
-    public void setModdefesa(int Moddefesa){
-        this.Moddefesa = Moddefesa;
-    }
-    public void setModsorte(int Modsorte){
-        this.Modsorte = Modsorte;
-    }
-    public void setModdinheiro(int Moddinheiro){
-        this.Moddinheiro = Moddinheiro;
-    }
-    public void setItem(Item item){
-        this.item = item;
-    }
+
+    public string Nome { get => nome; set => nome = value; }
+    public string Descricao { get => descricao; set => descricao = value; }
+    public int ModVida { get => modVida; set => modVida = value; }
+    public int ModMana { get => modMana; set => modMana = value; }
+    public int ModAtaque { get => modAtaque; set => modAtaque = value; }
+    public int ModDefesa { get => modDefesa; set => modDefesa = value; }
+    public int ModSorte { get => modSorte; set => modSorte = value; }
+    public int ModDinheiro { get => modDinheiro; set => modDinheiro = value; }
+    public Item Item { get => item; set => item = value; }
 }

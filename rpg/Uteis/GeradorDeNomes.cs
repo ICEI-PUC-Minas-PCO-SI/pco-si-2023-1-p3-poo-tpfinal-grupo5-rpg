@@ -1,6 +1,6 @@
 using System;
 
-public static class GeradorNomes
+public static class GeradorDeNomes
 {
     private static readonly Random random = new Random();
 

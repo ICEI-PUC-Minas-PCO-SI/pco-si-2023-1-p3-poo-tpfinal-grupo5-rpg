@@ -1,25 +1,34 @@
-public class Animal : Personagem{
+public class Animal : Personagem, IDroparDinheiro, IDefender{
+    private int vida;
+    private int defesa;
     public Animal(){
-        this.nome = GeradorNomes.GerarNomeAnimal();
-        this.vida += 10;
-        this.mana += 20;
-        this.ataque += 5;
-        this.defesa += 5;
-        this.sorte += 1;
-        this.dinheiro += 5;
+        this.Nome = GeradorDeNomes.GerarNomeAnimal();
+        this.Dinheiro += Dado.RandomNumber(1, 10);
+        this.vida = Dado.RandomNumber(1, 20);
+        this.defesa = Dado.RandomNumber(1, 10);
     }
-    public Animal(string nome, int vida, int mana, int ataque, int defesa, int sorte, int nivel, List<Ataque> ataques, List<Item> itens, int dinheiro, Classe classe, Raca raca){
-        this.nome = nome;
+    public Animal(int nivel){
+        this.Nome = GeradorDeNomes.GerarNomeAnimal();
+        this.Dinheiro += Dado.RandomNumber(1, 10) * (nivel / 2);
+        this.vida = Dado.RandomNumber(1, 20) * (nivel / 2);
+        this.defesa = Dado.RandomNumber(1, 10) * (nivel / 2);
+    }
+    public Animal(string nome, int vida, int defesa, int dinheiro){
+        this.Nome = nome;
         this.vida = vida;
-        this.mana = mana;
-        this.ataque = ataque;
         this.defesa = defesa;
-        this.sorte = sorte;
-        this.nivel = nivel;
-        this.ataques = ataques;
-        this.itens = itens;
-        this.dinheiro = dinheiro;
-        this.classe = classe;
-        this.raca = raca;
+        this.Dinheiro = dinheiro;
+    }
+
+    public int Defesa { get => defesa; set => defesa = value; }
+    protected int Vida { get => vida; set => vida = value; }
+
+    public int droparDinheiro(){
+        int dinheiro = this.Dinheiro;
+        this.Dinheiro = 0;
+        return dinheiro;
+    }
+    public void defender(int dano){
+        this.vida -= dano - this.defesa;
     }
 }

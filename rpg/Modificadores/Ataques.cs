@@ -5,41 +5,20 @@ public class Ataque{
     private int chanceDeAcerto;
 
     public Ataque(){
-        this.nome = "";
-        this.dano = 0;
-        this.gastoDemana = 0;
-        this.chanceDeAcerto = 0;
+        this.Nome = "";
+        this.Dano = 0;
+        this.GastoDemana = 0;
+        this.ChanceDeAcerto = 0;
     }
     public Ataque(string nome, int dano, int gastoDemana, int chanceDeAcerto){
-        this.nome = nome;
-        this.dano = dano;
-        this.gastoDemana = gastoDemana;
-        this.chanceDeAcerto = chanceDeAcerto;
+        this.Nome = nome;
+        this.Dano = dano;
+        this.GastoDemana = gastoDemana;
+        this.ChanceDeAcerto = chanceDeAcerto;
     }
 
-    public string getNome(){
-        return this.nome;
-    }
-    public int getDano(){
-        return this.dano;
-    }
-    public int getGastoDemana(){
-        return this.gastoDemana;
-    }
-    public int getChanceDeAcerto(){
-        return this.chanceDeAcerto;
-    }
-    public void setNome(string nome){
-        this.nome = nome;
-    }
-    public void setDano(int dano){
-        this.dano = dano;
-    }
-    public void setGastoDemana(int gastoDemana){
-        this.gastoDemana = gastoDemana;
-    }
-    public void setChanceDeAcerto(int chanceDeAcerto){
-        this.chanceDeAcerto = chanceDeAcerto;
-    }
-    
+    public string Nome { get => nome; set => nome = value; }
+    public int Dano { get => dano; set => dano = value; }
+    public int GastoDemana { get => gastoDemana; set => gastoDemana = value; }
+    public int ChanceDeAcerto { get => chanceDeAcerto; set => chanceDeAcerto = value; }
 }
