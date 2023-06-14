@@ -120,7 +120,45 @@ public class Personagem{
         this.itens = itens;
     }
     public void setItemAtivo(Item itemAtivo){
+        if(!this.itemAtivo.getConsumivel()){
+            string modificador = this.itemAtivo.getModificador();
+            switch (modificador){
+                case "vida":
+                    this.vida -= this.itemAtivo.getValorModificador();
+                    break;
+                case "mana":
+                    this.mana -= this.itemAtivo.getValorModificador();
+                    break;
+                case "ataque":
+                    this.ataque -= this.itemAtivo.getValorModificador();
+                    break;
+                case "defesa":
+                    this.defesa -= this.itemAtivo.getValorModificador();
+                    break;
+                case "sorte":
+                    this.sorte -= this.itemAtivo.getValorModificador();
+                    break;
+            }
+        }
         this.itemAtivo = itemAtivo;
+        string modificador = itemAtivo.getModificador();
+        switch (modificador){
+            case "vida":
+                this.vida += itemAtivo.getValorModificador();
+                break;
+            case "mana":
+                this.mana += itemAtivo.getValorModificador();
+                break;
+            case "ataque":
+                this.ataque += itemAtivo.getValorModificador();
+                break;
+            case "defesa":
+                this.defesa += itemAtivo.getValorModificador();
+                break;
+            case "sorte":
+                this.sorte += itemAtivo.getValorModificador();
+                break;
+        }
     }
     public void setDinheiro(int dinheiro){
         this.dinheiro = dinheiro;
