@@ -1,4 +1,4 @@
-namespace customerPersongem
+namespace tela_personagem
 {
     internal static class Program
     {
