@@ -61,7 +61,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAO4AAAE3CAYAAACtqH1xAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAA2xBJREFUeF7svQd0XOW1NnwDttW7RtN7LxpJo967rOLejQvGdDBgwDRjigEbTG/G
+        vwAADr8BOAVTJAAA2xBJREFUeF7svQd0XOW1NnwDttW7RtN7LxpJo967rOLejQvGdDBgwDRjigEbTG/G
         YAMGTK+h9xY6hCQkkEpCer253/ru/b/bEtj/fvbMGZ0ZHcmScQP0rvUsWTPj0cw57/Puvve/TK7JNbkm
         1+SaXJNrck2uyTW5JtfkmlyTa3JNrsk1uSbX5Jpck2tyTa7JNbkm1+SaXJNrck2uyTW5JtfkmlyTa3JN
         rsk1uSbX5Jpck2tyTa7JNbkm1+SaXJNrck2uyTW5JtfkmlyTa3IddKumMnpfXXXVQ/VVFY/VVJY/5/M4
@@ -1002,7 +1002,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAO4AAAE3CAYAAACtqH1xAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA2xBJREFUeF7svQd0XOW1NnwDttW7RtN7LxpJo967rOLejQvGdDBgwDRjigEbTG/G
+        vgAADr4B6kKxwAAA2xBJREFUeF7svQd0XOW1NnwDttW7RtN7LxpJo967rOLejQvGdDBgwDRjigEbTG/G
         YAMGTK+h9xY6hCQkkEpCer253/ru/b/bEtj/fvbMGZ0ZHcmScQP0rvUsWTPj0cw57/Puvve/TK7JNbkm
         1+SaXJNrck2uyTW5JtfkmlyTa3JNrsk1uSbX5Jpck2tyTa7JNbkm1+SaXJNrck2uyTW5JtfkmlyTa3JN
         rsk1uSbX5Jpck2tyTa7JNbkm1+SaXJNrck2uyTW5JtfkmlyTa3IddKumMnpfXXXVQ/VVFY/VVJY/5/M4
@@ -1940,4 +1940,22 @@
         Zi0AAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

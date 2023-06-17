@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\telas",
+    "\\telas\\imgs",
+    "\\telas\\tela-game"
   ],
-  "SelectedNode": "\\rpg",
+  "SelectedNode": "\\telas\\tela-game\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
