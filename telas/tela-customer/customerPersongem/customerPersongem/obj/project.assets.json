@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolas Ferreira\\Documents\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\telas\\tela-game\\tela-game.csproj",
-      "projectName": "tela-game",
-      "projectPath": "C:\\Users\\Nicolas Ferreira\\Documents\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\telas\\tela-game\\tela-game.csproj",
+      "projectUniqueName": "C:\\Users\\Nicolas Ferreira\\Documents\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\telas\\tela-customer\\customerPersongem\\customerPersongem\\customerPersongem.csproj",
+      "projectName": "customerPersongem",
+      "projectPath": "C:\\Users\\Nicolas Ferreira\\Documents\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\telas\\tela-customer\\customerPersongem\\customerPersongem\\customerPersongem.csproj",
       "packagesPath": "C:\\Users\\Nicolas Ferreira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicolas Ferreira\\Documents\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\telas\\tela-game\\obj\\",
+      "outputPath": "C:\\Users\\Nicolas Ferreira\\Documents\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\telas\\tela-customer\\customerPersongem\\customerPersongem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
