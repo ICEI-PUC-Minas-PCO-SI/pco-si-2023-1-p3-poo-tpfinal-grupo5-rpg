@@ -11,5 +11,81 @@ namespace tela_personagem
         {
 
         }
+
+        private void buttonGuerreiro_MouseEnter(object sender, EventArgs e)
+        {
+            try
+            {
+                picturePersonagem.Image = Image.FromFile(@"humanoGuerreiro.png");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void buttonGuerreiro_MouseLeave(object sender, EventArgs e)
+        {
+            try
+            {
+                picturePersonagem.Image = Image.FromFile(@"inicial.jpeg");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void buttonArqueiro_MouseEnter(object sender, EventArgs e)
+        {
+            try
+            {
+                picturePersonagem.Image = Image.FromFile(@"arqueiro.jpeg");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        private void buttonClerigo_MouseEnter(object sender, EventArgs e)
+        {
+            try
+            {
+                picturePersonagem.Image = Image.FromFile(@"clerigo.jpeg");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void buttonLadino_MouseEnter(object sender, EventArgs e)
+        {
+            try
+            {
+                picturePersonagem.Image = Image.FromFile(@"ladino.jpeg");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void buttonTanque_MouseEnter(object sender, EventArgs e)
+        {
+            try
+            {
+                picturePersonagem.Image = Image.FromFile(@"tanque.jpeg");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        private void buttonArqueiro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

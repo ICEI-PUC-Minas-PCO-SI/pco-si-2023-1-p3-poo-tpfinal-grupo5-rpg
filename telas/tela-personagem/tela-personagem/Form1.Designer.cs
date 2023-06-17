@@ -29,91 +29,45 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
+            iconButton1 = new FontAwesome.Sharp.IconButton();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            buttonTanque = new Button();
+            buttonClerigo = new Button();
+            buttonLadino = new Button();
+            buttonArqueiro = new Button();
+            buttonGuerreiro = new Button();
+            picturePersonagem = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picturePersonagem).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(64, 64, 64);
+            panel1.BackColor = Color.FromArgb(30, 30, 30);
+            panel1.Controls.Add(iconButton1);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button5);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(buttonTanque);
+            panel1.Controls.Add(buttonClerigo);
+            panel1.Controls.Add(buttonLadino);
+            panel1.Controls.Add(buttonArqueiro);
+            panel1.Controls.Add(buttonGuerreiro);
             panel1.Dock = DockStyle.Right;
             panel1.Location = new Point(449, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(475, 515);
             panel1.TabIndex = 0;
             // 
-            // button1
+            // iconButton1
             // 
-            button1.BackColor = Color.FromArgb(224, 22, 38);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(21, 216);
-            button1.Name = "button1";
-            button1.Size = new Size(120, 78);
-            button1.TabIndex = 0;
-            button1.Text = "Guerreiro";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(224, 22, 38);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(162, 216);
-            button2.Name = "button2";
-            button2.Size = new Size(120, 78);
-            button2.TabIndex = 1;
-            button2.Text = "Arqueiro";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(224, 22, 38);
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(301, 216);
-            button3.Name = "button3";
-            button3.Size = new Size(120, 78);
-            button3.TabIndex = 2;
-            button3.Text = "Ladino";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(224, 22, 38);
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(86, 310);
-            button4.Name = "button4";
-            button4.Size = new Size(120, 78);
-            button4.TabIndex = 3;
-            button4.Text = "Clerigo";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.FromArgb(224, 22, 38);
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(228, 310);
-            button5.Name = "button5";
-            button5.Size = new Size(120, 78);
-            button5.TabIndex = 4;
-            button5.Text = "Tanque";
-            button5.UseVisualStyleBackColor = false;
+            iconButton1.BackColor = Color.Transparent;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Zhihu;
+            iconButton1.IconColor = Color.Black;
+            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconButton1.Location = new Point(356, 443);
+            iconButton1.Name = "iconButton1";
+            iconButton1.Size = new Size(107, 60);
+            iconButton1.TabIndex = 6;
+            iconButton1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -128,14 +82,87 @@
             label1.Text = "Escolha sua classe:";
             label1.Click += label1_Click;
             // 
-            // pictureBox1
+            // buttonTanque
             // 
-            pictureBox1.Dock = DockStyle.Left;
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(443, 515);
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            buttonTanque.BackColor = Color.FromArgb(224, 22, 38);
+            buttonTanque.Cursor = Cursors.Hand;
+            buttonTanque.FlatStyle = FlatStyle.Flat;
+            buttonTanque.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonTanque.Location = new Point(228, 310);
+            buttonTanque.Name = "buttonTanque";
+            buttonTanque.Size = new Size(120, 78);
+            buttonTanque.TabIndex = 4;
+            buttonTanque.Text = "Tanque";
+            buttonTanque.UseVisualStyleBackColor = false;
+            buttonTanque.MouseEnter += buttonTanque_MouseEnter;
+            // 
+            // buttonClerigo
+            // 
+            buttonClerigo.BackColor = Color.FromArgb(224, 22, 38);
+            buttonClerigo.Cursor = Cursors.Hand;
+            buttonClerigo.FlatStyle = FlatStyle.Flat;
+            buttonClerigo.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonClerigo.Location = new Point(86, 310);
+            buttonClerigo.Name = "buttonClerigo";
+            buttonClerigo.Size = new Size(120, 78);
+            buttonClerigo.TabIndex = 3;
+            buttonClerigo.Text = "Clerigo";
+            buttonClerigo.UseVisualStyleBackColor = false;
+            buttonClerigo.MouseEnter += buttonClerigo_MouseEnter;
+            // 
+            // buttonLadino
+            // 
+            buttonLadino.BackColor = Color.FromArgb(224, 22, 38);
+            buttonLadino.Cursor = Cursors.Hand;
+            buttonLadino.FlatStyle = FlatStyle.Flat;
+            buttonLadino.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonLadino.Location = new Point(301, 216);
+            buttonLadino.Name = "buttonLadino";
+            buttonLadino.Size = new Size(120, 78);
+            buttonLadino.TabIndex = 2;
+            buttonLadino.Text = "Ladino";
+            buttonLadino.UseVisualStyleBackColor = false;
+            buttonLadino.MouseEnter += buttonLadino_MouseEnter;
+            // 
+            // buttonArqueiro
+            // 
+            buttonArqueiro.BackColor = Color.FromArgb(224, 22, 38);
+            buttonArqueiro.Cursor = Cursors.Hand;
+            buttonArqueiro.FlatStyle = FlatStyle.Flat;
+            buttonArqueiro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonArqueiro.Location = new Point(162, 216);
+            buttonArqueiro.Name = "buttonArqueiro";
+            buttonArqueiro.Size = new Size(120, 78);
+            buttonArqueiro.TabIndex = 1;
+            buttonArqueiro.Text = "Arqueiro";
+            buttonArqueiro.UseVisualStyleBackColor = false;
+            buttonArqueiro.Click += buttonArqueiro_Click;
+            buttonArqueiro.MouseEnter += buttonArqueiro_MouseEnter;
+            // 
+            // buttonGuerreiro
+            // 
+            buttonGuerreiro.BackColor = Color.FromArgb(224, 22, 38);
+            buttonGuerreiro.Cursor = Cursors.Hand;
+            buttonGuerreiro.FlatStyle = FlatStyle.Flat;
+            buttonGuerreiro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonGuerreiro.Location = new Point(21, 216);
+            buttonGuerreiro.Name = "buttonGuerreiro";
+            buttonGuerreiro.Size = new Size(120, 78);
+            buttonGuerreiro.TabIndex = 0;
+            buttonGuerreiro.Text = "Guerreiro";
+            buttonGuerreiro.UseVisualStyleBackColor = false;
+            buttonGuerreiro.MouseEnter += buttonGuerreiro_MouseEnter;
+            buttonGuerreiro.MouseLeave += buttonGuerreiro_MouseLeave;
+            // 
+            // picturePersonagem
+            // 
+            picturePersonagem.Dock = DockStyle.Left;
+            picturePersonagem.Image = Properties.Resources.WhatsApp_Image_2023_06_15_at_21_50_44;
+            picturePersonagem.Location = new Point(0, 0);
+            picturePersonagem.Name = "picturePersonagem";
+            picturePersonagem.Size = new Size(443, 515);
+            picturePersonagem.TabIndex = 1;
+            picturePersonagem.TabStop = false;
             // 
             // Form1
             // 
@@ -143,25 +170,26 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(924, 515);
-            Controls.Add(pictureBox1);
+            Controls.Add(picturePersonagem);
             Controls.Add(panel1);
             Name = "Form1";
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picturePersonagem).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
-        private Button button1;
+        private Button buttonGuerreiro;
         private Label label1;
-        private Button button5;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private PictureBox pictureBox1;
+        private Button buttonTanque;
+        private Button buttonClerigo;
+        private Button buttonLadino;
+        private Button buttonArqueiro;
+        private PictureBox picturePersonagem;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
