@@ -1,14 +1,14 @@
 ﻿namespace tela_personagem
 {
-    partial class Form1
+    partial class tela_raca
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,12 +23,12 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            picturePersonagem = new PictureBox();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             label1 = new Label();
             buttonTanque = new Button();
@@ -36,26 +36,20 @@
             buttonLadino = new Button();
             buttonArqueiro = new Button();
             buttonGuerreiro = new Button();
-            picturePersonagem = new PictureBox();
-            panel1.SuspendLayout();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)picturePersonagem).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // panel1
+            // picturePersonagem
             // 
-            panel1.BackColor = Color.FromArgb(30, 30, 30);
-            panel1.Controls.Add(iconButton1);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(buttonTanque);
-            panel1.Controls.Add(buttonClerigo);
-            panel1.Controls.Add(buttonLadino);
-            panel1.Controls.Add(buttonArqueiro);
-            panel1.Controls.Add(buttonGuerreiro);
-            panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(449, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(475, 515);
-            panel1.TabIndex = 0;
+            picturePersonagem.Dock = DockStyle.Left;
+            picturePersonagem.Image = Properties.Resources.WhatsApp_Image_2023_06_15_at_21_50_44;
+            picturePersonagem.Location = new Point(0, 0);
+            picturePersonagem.Name = "picturePersonagem";
+            picturePersonagem.Size = new Size(494, 515);
+            picturePersonagem.TabIndex = 3;
+            picturePersonagem.TabStop = false;
             // 
             // iconButton1
             // 
@@ -63,7 +57,7 @@
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.Zhihu;
             iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(356, 443);
+            iconButton1.Location = new Point(305, 393);
             iconButton1.Name = "iconButton1";
             iconButton1.Size = new Size(107, 60);
             iconButton1.TabIndex = 6;
@@ -77,10 +71,9 @@
             label1.ForeColor = Color.FromArgb(222, 22, 34);
             label1.Location = new Point(19, 95);
             label1.Name = "label1";
-            label1.Size = new Size(274, 41);
+            label1.Size = new Size(251, 41);
             label1.TabIndex = 5;
-            label1.Text = "Escolha sua classe:";
-            label1.Click += label1_Click;
+            label1.Text = "Escolha sua raça:";
             // 
             // buttonTanque
             // 
@@ -92,9 +85,8 @@
             buttonTanque.Name = "buttonTanque";
             buttonTanque.Size = new Size(120, 78);
             buttonTanque.TabIndex = 4;
-            buttonTanque.Text = "Tanque";
+            buttonTanque.Text = "Gnomo";
             buttonTanque.UseVisualStyleBackColor = false;
-            buttonTanque.MouseEnter += buttonTanque_MouseEnter;
             // 
             // buttonClerigo
             // 
@@ -106,9 +98,8 @@
             buttonClerigo.Name = "buttonClerigo";
             buttonClerigo.Size = new Size(120, 78);
             buttonClerigo.TabIndex = 3;
-            buttonClerigo.Text = "Clerigo";
+            buttonClerigo.Text = "Orc";
             buttonClerigo.UseVisualStyleBackColor = false;
-            buttonClerigo.MouseEnter += buttonClerigo_MouseEnter;
             // 
             // buttonLadino
             // 
@@ -120,9 +111,8 @@
             buttonLadino.Name = "buttonLadino";
             buttonLadino.Size = new Size(120, 78);
             buttonLadino.TabIndex = 2;
-            buttonLadino.Text = "Ladino";
+            buttonLadino.Text = "Anão";
             buttonLadino.UseVisualStyleBackColor = false;
-            buttonLadino.MouseEnter += buttonLadino_MouseEnter;
             // 
             // buttonArqueiro
             // 
@@ -134,10 +124,8 @@
             buttonArqueiro.Name = "buttonArqueiro";
             buttonArqueiro.Size = new Size(120, 78);
             buttonArqueiro.TabIndex = 1;
-            buttonArqueiro.Text = "Arqueiro";
+            buttonArqueiro.Text = "Elfo";
             buttonArqueiro.UseVisualStyleBackColor = false;
-            buttonArqueiro.Click += buttonArqueiro_Click;
-            buttonArqueiro.MouseEnter += buttonArqueiro_MouseEnter;
             // 
             // buttonGuerreiro
             // 
@@ -149,47 +137,51 @@
             buttonGuerreiro.Name = "buttonGuerreiro";
             buttonGuerreiro.Size = new Size(120, 78);
             buttonGuerreiro.TabIndex = 0;
-            buttonGuerreiro.Text = "Guerreiro";
+            buttonGuerreiro.Text = "Humano";
             buttonGuerreiro.UseVisualStyleBackColor = false;
-            buttonGuerreiro.MouseEnter += buttonGuerreiro_MouseEnter;
-            buttonGuerreiro.MouseLeave += buttonGuerreiro_MouseLeave;
             // 
-            // picturePersonagem
+            // panel1
             // 
-            picturePersonagem.Dock = DockStyle.Left;
-            picturePersonagem.Image = Properties.Resources.WhatsApp_Image_2023_06_15_at_21_50_44;
-            picturePersonagem.Location = new Point(0, 0);
-            picturePersonagem.Name = "picturePersonagem";
-            picturePersonagem.Size = new Size(443, 515);
-            picturePersonagem.TabIndex = 1;
-            picturePersonagem.TabStop = false;
+            panel1.BackColor = Color.FromArgb(30, 30, 30);
+            panel1.Controls.Add(iconButton1);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(buttonTanque);
+            panel1.Controls.Add(buttonClerigo);
+            panel1.Controls.Add(buttonLadino);
+            panel1.Controls.Add(buttonArqueiro);
+            panel1.Controls.Add(buttonGuerreiro);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(500, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(424, 515);
+            panel1.TabIndex = 2;
             // 
-            // Form1
+            // tela_raca
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(924, 515);
             Controls.Add(picturePersonagem);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "tela_raca";
+            Text = "tela_raca";
+            ((System.ComponentModel.ISupportInitialize)picturePersonagem).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picturePersonagem).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Panel panel1;
-        private Button buttonGuerreiro;
+        private PictureBox picturePersonagem;
+        private FontAwesome.Sharp.IconButton iconButton1;
         private Label label1;
         private Button buttonTanque;
         private Button buttonClerigo;
         private Button buttonLadino;
         private Button buttonArqueiro;
-        private PictureBox picturePersonagem;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private Button buttonGuerreiro;
+        private Panel panel1;
     }
 }
