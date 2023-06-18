@@ -5,7 +5,6 @@ namespace tela_game
         public Form1()
         {
             InitializeComponent();
-            dataGridView1.Height = 400;
         }
     }
 }
