@@ -6,7 +6,7 @@ public static class ArmasProntas{
 
         Arma adaga = new Arma("Adaga", 10, 1, 1, "ataque", 3);
 
-        Arma cajado = new Arma("Cajado", 10, 1, 1, "vida", 3);
+        Arma cajado = new Arma("Cajado", 10, 1, 1, "ataque", 3);
 
         return new Arma[]{espadaLonga, arcoCurto, adaga, cajado};
     }

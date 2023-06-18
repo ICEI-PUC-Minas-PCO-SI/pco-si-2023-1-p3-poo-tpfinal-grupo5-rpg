@@ -31,7 +31,7 @@ public class Combatente : Personagem, IAtacar, IDefender, IDroparDinheiro{
     public List<Ataque> Ataques { get => ataques; set => ataques = value; }
 
     public int atacar(Ataque ataque){
-        this.mana = this.mana - ataque.GastoDemana;
+        this.mana = this.mana - ataque.GastoDeMana;
         int Acerto = Dado.RandomNumber(this.sorte, 100);
         if(Acerto > (100 - ataque.ChanceDeAcerto)){
             int Critico = Dado.RandomNumber(this.sorte, 100);
