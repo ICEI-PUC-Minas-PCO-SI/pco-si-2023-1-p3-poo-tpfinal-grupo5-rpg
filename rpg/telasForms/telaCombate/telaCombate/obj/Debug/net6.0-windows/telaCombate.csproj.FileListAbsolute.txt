@@ -19,3 +19,5 @@ C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo
 C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaRaça.resources
 C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaClasse.resources
 C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaPerPronto.resources
+C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaJogo.resources
+C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaNPCs.resources

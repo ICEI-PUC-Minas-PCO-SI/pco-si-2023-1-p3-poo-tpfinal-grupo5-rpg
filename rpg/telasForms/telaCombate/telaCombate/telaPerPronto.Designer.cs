@@ -167,6 +167,7 @@
             this.btnJogar.TabIndex = 19;
             this.btnJogar.Text = "Jogar";
             this.btnJogar.UseVisualStyleBackColor = false;
+            this.btnJogar.Click += new System.EventHandler(this.btnJogar_Click);
             // 
             // telaPerPronto
             // 

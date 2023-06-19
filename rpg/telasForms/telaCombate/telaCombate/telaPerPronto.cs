@@ -56,5 +56,18 @@ namespace telaCombate
         {
             nome = nomePersonagem.Text;
         }
+
+        private void btnJogar_Click(object sender, EventArgs e)
+        {
+            telaJogo formJogo = new telaJogo(racaSelecionada, classeSelecionada);
+            formJogo.Show();
+            this.Hide();
+            imgPersonagem.Image = null;
+        }
+        private void telaPerPronto_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            imgPersonagem.Image = null;
+        }
+
     }
 }

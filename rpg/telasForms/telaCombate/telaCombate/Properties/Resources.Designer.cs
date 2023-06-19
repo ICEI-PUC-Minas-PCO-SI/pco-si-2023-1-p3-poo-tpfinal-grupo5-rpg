@@ -133,6 +133,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anciao {
+            get {
+                object obj = ResourceManager.GetObject("anciao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calabouco {
             get {
                 object obj = ResourceManager.GetObject("calabouco", resourceCulture);
@@ -426,6 +436,56 @@ namespace telaCombate.Properties {
         internal static System.Drawing.Bitmap moeda {
             get {
                 object obj = ResourceManager.GetObject("moeda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc01 {
+            get {
+                object obj = ResourceManager.GetObject("npc01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc02 {
+            get {
+                object obj = ResourceManager.GetObject("npc02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc03 {
+            get {
+                object obj = ResourceManager.GetObject("npc03", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc04 {
+            get {
+                object obj = ResourceManager.GetObject("npc04", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap npc05 {
+            get {
+                object obj = ResourceManager.GetObject("npc05", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
