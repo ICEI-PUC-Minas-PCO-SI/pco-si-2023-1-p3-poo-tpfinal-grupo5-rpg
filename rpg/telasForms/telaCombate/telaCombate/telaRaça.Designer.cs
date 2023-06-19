@@ -35,6 +35,7 @@
             this.btnGnomo = new System.Windows.Forms.Button();
             this.btnProsseguir = new System.Windows.Forms.Button();
             this.imgRacaPersonagem = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgRacaPersonagem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,12 +135,24 @@
             this.imgRacaPersonagem.TabIndex = 19;
             this.imgRacaPersonagem.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(459, 96);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(380, 43);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Selecione sua raça:";
+            // 
             // telaRaça
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.imgRacaPersonagem);
             this.Controls.Add(this.btnProsseguir);
             this.Controls.Add(this.btnGnomo);
@@ -147,10 +160,12 @@
             this.Controls.Add(this.btnAnao);
             this.Controls.Add(this.btnElfo);
             this.Controls.Add(this.btnHumano);
+            this.MaximizeBox = false;
             this.Name = "telaRaça";
             this.Text = "Seleção de Raça";
             ((System.ComponentModel.ISupportInitialize)(this.imgRacaPersonagem)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -163,5 +178,6 @@
         private Button btnGnomo;
         private Button btnProsseguir;
         private PictureBox imgRacaPersonagem;
+        private Label label1;
     }
 }

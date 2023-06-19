@@ -18,6 +18,7 @@ namespace telaCombate
         }
 
         private Raca racaSelecionada;
+       
 
         private void btnHumano_Click(object sender, EventArgs e)
         {
@@ -65,5 +66,7 @@ namespace telaCombate
             formsClasse.Show();
             this.Hide();
         }
+
+        
     }
 }

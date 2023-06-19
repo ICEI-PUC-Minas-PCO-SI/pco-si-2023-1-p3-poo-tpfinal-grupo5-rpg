@@ -43,7 +43,7 @@
             // 
             this.imgClassePersonagem.BackColor = System.Drawing.Color.Black;
             this.imgClassePersonagem.Image = global::telaCombate.Properties.Resources.O_Culto_do_abismo;
-            this.imgClassePersonagem.Location = new System.Drawing.Point(1, 0);
+            this.imgClassePersonagem.Location = new System.Drawing.Point(12, 0);
             this.imgClassePersonagem.Name = "imgClassePersonagem";
             this.imgClassePersonagem.Size = new System.Drawing.Size(362, 523);
             this.imgClassePersonagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -76,6 +76,7 @@
             this.btnArqueiro.TabIndex = 22;
             this.btnArqueiro.Text = "Arqueiro";
             this.btnArqueiro.UseVisualStyleBackColor = false;
+            this.btnArqueiro.Click += new System.EventHandler(this.btnArqueiro_Click);
             // 
             // btnLadino
             // 
@@ -89,6 +90,7 @@
             this.btnLadino.TabIndex = 23;
             this.btnLadino.Text = "Ladino";
             this.btnLadino.UseVisualStyleBackColor = false;
+            this.btnLadino.Click += new System.EventHandler(this.btnLadino_Click);
             // 
             // btnClerigo
             // 
@@ -102,6 +104,7 @@
             this.btnClerigo.TabIndex = 24;
             this.btnClerigo.Text = "Clerigo";
             this.btnClerigo.UseVisualStyleBackColor = false;
+            this.btnClerigo.Click += new System.EventHandler(this.btnClerigo_Click);
             // 
             // btnTanque
             // 
@@ -115,6 +118,7 @@
             this.btnTanque.TabIndex = 25;
             this.btnTanque.Text = "Tanque";
             this.btnTanque.UseVisualStyleBackColor = false;
+            this.btnTanque.Click += new System.EventHandler(this.btnTanque_Click);
             // 
             // btnProsseguir
             // 
@@ -129,6 +133,7 @@
             this.btnProsseguir.TabIndex = 26;
             this.btnProsseguir.Text = "Prosseguir";
             this.btnProsseguir.UseVisualStyleBackColor = false;
+            this.btnProsseguir.Click += new System.EventHandler(this.btnProsseguir_Click);
             // 
             // racaTexto
             // 
@@ -154,6 +159,7 @@
             this.Controls.Add(this.btnArqueiro);
             this.Controls.Add(this.btnGuerreiro);
             this.Controls.Add(this.imgClassePersonagem);
+            this.MaximizeBox = false;
             this.Name = "telaClasse";
             this.Text = "Seleção de Classe";
             this.Load += new System.EventHandler(this.telaClasse_Load);
