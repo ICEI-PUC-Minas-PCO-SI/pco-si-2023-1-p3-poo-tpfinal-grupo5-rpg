@@ -21,6 +21,7 @@ namespace telaCombate
         private List<string> historiaLucius;
         private int indiceAtual;
         protected string nome;
+        public Jogavel Personagem { get; set; }
         public telaNPCs(Raca racaSelecionada, Classe classeSelecionada, string nome)
         {
             InitializeComponent();
@@ -85,9 +86,16 @@ namespace telaCombate
             else
             {
                 btnProsseguir.Text = "Ir para a floresta";
+                Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+                Form1 formsBatalha = new Form1(racaSelecionada, classeSelecionada, nome);
+                formsBatalha.Personagem = personagem;
+                formsBatalha.Show();
+                this.Hide();
+                imgPersonagem.Image = null;
+
             }
 
-          
+
         }
     }
 }

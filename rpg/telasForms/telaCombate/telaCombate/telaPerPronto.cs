@@ -17,6 +17,7 @@ namespace telaCombate
         private Raca racaSelecionada;
         private Classe classeSelecionada;
         protected string nome;
+        public Jogavel Personagem { get; set; }
         public telaPerPronto(Raca racaSelecionada, Classe classeSelecionada)
         {
             InitializeComponent();
@@ -69,7 +70,9 @@ namespace telaCombate
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
             telaJogo formJogo = new telaJogo(racaSelecionada, classeSelecionada, nome);
+            formJogo.Personagem = personagem;
             formJogo.Show();
             this.Hide();
             imgPersonagem.Image = null;

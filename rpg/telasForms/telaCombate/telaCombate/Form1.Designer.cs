@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.imgCenario = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.vidaPersonagem = new System.Windows.Forms.ProgressBar();
             this.manaPersonagem = new System.Windows.Forms.ProgressBar();
             this.moedasPersonagem = new System.Windows.Forms.Label();
             this.playerImg = new System.Windows.Forms.PictureBox();
@@ -57,7 +55,8 @@
             this.Column8 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewImageColumn();
             this.lblInformacoes = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.imgCenario)).BeginInit();
+            this.testeLabel = new System.Windows.Forms.Label();
+            this.progressBarVida = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,17 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inventario)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgCenario
-            // 
-            this.imgCenario.Image = global::telaCombate.Properties.Resources.caverna;
-            this.imgCenario.Location = new System.Drawing.Point(-14, 0);
-            this.imgCenario.Name = "imgCenario";
-            this.imgCenario.Size = new System.Drawing.Size(928, 524);
-            this.imgCenario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgCenario.TabIndex = 0;
-            this.imgCenario.TabStop = false;
-            this.imgCenario.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox1
             // 
@@ -108,14 +96,6 @@
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
-            // vidaPersonagem
-            // 
-            this.vidaPersonagem.BackColor = System.Drawing.Color.Red;
-            this.vidaPersonagem.Location = new System.Drawing.Point(82, 34);
-            this.vidaPersonagem.Name = "vidaPersonagem";
-            this.vidaPersonagem.Size = new System.Drawing.Size(127, 23);
-            this.vidaPersonagem.TabIndex = 4;
-            // 
             // manaPersonagem
             // 
             this.manaPersonagem.BackColor = System.Drawing.Color.RoyalBlue;
@@ -138,7 +118,7 @@
             // 
             // playerImg
             // 
-            this.playerImg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.playerImg.BackColor = System.Drawing.Color.Transparent;
             this.playerImg.Image = global::telaCombate.Properties.Resources.ladino;
             this.playerImg.Location = new System.Drawing.Point(204, 188);
             this.playerImg.Name = "playerImg";
@@ -150,7 +130,7 @@
             // 
             // imgInimigo
             // 
-            this.imgInimigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.imgInimigo.BackColor = System.Drawing.Color.Transparent;
             this.imgInimigo.Image = global::telaCombate.Properties.Resources.cultistaHomem;
             this.imgInimigo.Location = new System.Drawing.Point(603, 188);
             this.imgInimigo.Name = "imgInimigo";
@@ -163,7 +143,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox4.Image = global::telaCombate.Properties.Resources.vida;
-            this.pictureBox4.Location = new System.Drawing.Point(569, 132);
+            this.pictureBox4.Location = new System.Drawing.Point(569, 102);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.TabIndex = 9;
@@ -172,7 +152,7 @@
             // vidaInimigo
             // 
             this.vidaInimigo.BackColor = System.Drawing.Color.Red;
-            this.vidaInimigo.Location = new System.Drawing.Point(625, 152);
+            this.vidaInimigo.Location = new System.Drawing.Point(625, 122);
             this.vidaInimigo.Name = "vidaInimigo";
             this.vidaInimigo.Size = new System.Drawing.Size(127, 23);
             this.vidaInimigo.TabIndex = 10;
@@ -180,14 +160,14 @@
             // nomeInimigo
             // 
             this.nomeInimigo.AutoSize = true;
-            this.nomeInimigo.BackColor = System.Drawing.Color.White;
+            this.nomeInimigo.BackColor = System.Drawing.Color.Transparent;
             this.nomeInimigo.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.nomeInimigo.ForeColor = System.Drawing.Color.Black;
-            this.nomeInimigo.Location = new System.Drawing.Point(650, 128);
+            this.nomeInimigo.Location = new System.Drawing.Point(633, 98);
             this.nomeInimigo.Name = "nomeInimigo";
-            this.nomeInimigo.Size = new System.Drawing.Size(72, 17);
+            this.nomeInimigo.Size = new System.Drawing.Size(96, 17);
             this.nomeInimigo.TabIndex = 11;
-            this.nomeInimigo.Text = "Cultista";
+            this.nomeInimigo.Text = "nomeInimigo";
             // 
             // btnAtaqBase
             // 
@@ -264,10 +244,10 @@
             this.Column7,
             this.Column8,
             this.Column9});
-            this.inventario.Location = new System.Drawing.Point(0, 438);
+            this.inventario.Location = new System.Drawing.Point(82, 438);
             this.inventario.Name = "inventario";
             this.inventario.RowTemplate.Height = 25;
-            this.inventario.Size = new System.Drawing.Size(928, 86);
+            this.inventario.Size = new System.Drawing.Size(740, 86);
             this.inventario.TabIndex = 17;
             // 
             // Column1
@@ -329,11 +309,33 @@
             this.lblInformacoes.Size = new System.Drawing.Size(0, 17);
             this.lblInformacoes.TabIndex = 18;
             // 
+            // testeLabel
+            // 
+            this.testeLabel.AutoSize = true;
+            this.testeLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.testeLabel.Location = new System.Drawing.Point(248, 154);
+            this.testeLabel.Name = "testeLabel";
+            this.testeLabel.Size = new System.Drawing.Size(68, 30);
+            this.testeLabel.TabIndex = 19;
+            this.testeLabel.Text = "label1";
+            // 
+            // progressBarVida
+            // 
+            this.progressBarVida.BackColor = System.Drawing.Color.RoyalBlue;
+            this.progressBarVida.Location = new System.Drawing.Point(82, 38);
+            this.progressBarVida.Name = "progressBarVida";
+            this.progressBarVida.Size = new System.Drawing.Size(127, 23);
+            this.progressBarVida.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::telaCombate.Properties.Resources.floresta;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.progressBarVida);
+            this.Controls.Add(this.testeLabel);
             this.Controls.Add(this.lblInformacoes);
             this.Controls.Add(this.inventario);
             this.Controls.Add(this.btnUsarItem);
@@ -348,15 +350,13 @@
             this.Controls.Add(this.playerImg);
             this.Controls.Add(this.moedasPersonagem);
             this.Controls.Add(this.manaPersonagem);
-            this.Controls.Add(this.vidaPersonagem);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.imgCenario);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Combate";
-            ((System.ComponentModel.ISupportInitialize)(this.imgCenario)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -370,12 +370,9 @@
         }
 
         #endregion
-
-        private PictureBox imgCenario;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private ProgressBar vidaPersonagem;
         private ProgressBar manaPersonagem;
         private Label moedasPersonagem;
         private PictureBox playerImg;
@@ -399,5 +396,7 @@
         private DataGridViewImageColumn Column8;
         private DataGridViewImageColumn Column9;
         private Label lblInformacoes;
+        private Label testeLabel;
+        private ProgressBar progressBarVida;
     }
 }

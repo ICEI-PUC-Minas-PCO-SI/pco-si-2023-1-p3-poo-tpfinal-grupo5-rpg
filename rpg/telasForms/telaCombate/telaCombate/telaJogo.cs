@@ -12,6 +12,7 @@ namespace telaCombate
 {
     public partial class telaJogo : Form
     {
+        public Jogavel Personagem { get; set; }
         private List<string> historia;
         private int indiceAtual;
         private Raca racaSelecionada;
@@ -54,8 +55,10 @@ namespace telaCombate
 
             if (indiceAtual >= historia.Count)
             {
+                Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
                 btnProsseguir.Text = "Procurar pistas";
                 telaNPCs formsNPCs = new telaNPCs(racaSelecionada, classeSelecionada, nome);
+                formsNPCs.Personagem = personagem;
                 formsNPCs.Show();
                 this.Hide();
 
