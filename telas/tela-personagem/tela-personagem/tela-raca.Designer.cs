@@ -37,19 +37,20 @@
             buttonArqueiro = new Button();
             buttonGuerreiro = new Button();
             panel1 = new Panel();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)picturePersonagem).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // picturePersonagem
             // 
-            picturePersonagem.Dock = DockStyle.Left;
             picturePersonagem.Image = Properties.Resources.WhatsApp_Image_2023_06_15_at_21_50_44;
             picturePersonagem.Location = new Point(0, 0);
             picturePersonagem.Name = "picturePersonagem";
-            picturePersonagem.Size = new Size(494, 515);
+            picturePersonagem.Size = new Size(494, 471);
             picturePersonagem.TabIndex = 3;
             picturePersonagem.TabStop = false;
+            picturePersonagem.Click += picturePersonagem_Click;
             // 
             // iconButton1
             // 
@@ -57,7 +58,7 @@
             iconButton1.IconChar = FontAwesome.Sharp.IconChar.Zhihu;
             iconButton1.IconColor = Color.Black;
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.Location = new Point(305, 393);
+            iconButton1.Location = new Point(305, 443);
             iconButton1.Name = "iconButton1";
             iconButton1.Size = new Size(107, 60);
             iconButton1.TabIndex = 6;
@@ -156,20 +157,38 @@
             panel1.Size = new Size(424, 515);
             panel1.TabIndex = 2;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Dock = DockStyle.Bottom;
+            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(224, 22, 34);
+            label2.Location = new Point(0, 474);
+            label2.Name = "label2";
+            label2.Padding = new Padding(120, 0, 0, 0);
+            label2.Size = new Size(403, 41);
+            label2.TabIndex = 4;
+            label2.Text = "Nome Personagem";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
+            label2.Click += label2_Click;
+            // 
             // tela_raca
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(924, 515);
-            Controls.Add(picturePersonagem);
+            Controls.Add(label2);
             Controls.Add(panel1);
+            Controls.Add(picturePersonagem);
             Name = "tela_raca";
-            Text = "tela_raca";
+            Text = "Raça do Personagem";
             ((System.ComponentModel.ISupportInitialize)picturePersonagem).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -183,5 +202,6 @@
         private Button buttonArqueiro;
         private Button buttonGuerreiro;
         private Panel panel1;
+        private Label label2;
     }
 }

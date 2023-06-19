@@ -18,3 +18,4 @@ C:\Users\Nicolas Ferreira\Documents\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\tela
 C:\Users\Nicolas Ferreira\Documents\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\telas\tela-personagem\tela-personagem\obj\Debug\net6.0-windows\ref\tela-personagem.dll
 C:\Users\Nicolas Ferreira\Documents\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\telas\tela-personagem\tela-personagem\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 C:\Users\Nicolas Ferreira\Documents\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\telas\tela-personagem\tela-personagem\obj\Debug\net6.0-windows\tela-personagem.csproj.CopyComplete
+C:\Users\Nicolas Ferreira\Documents\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\telas\tela-personagem\tela-personagem\obj\Debug\net6.0-windows\tela_personagem.tela_raca.resources

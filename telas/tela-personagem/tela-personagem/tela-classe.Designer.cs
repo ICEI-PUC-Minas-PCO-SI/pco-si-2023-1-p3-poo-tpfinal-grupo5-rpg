@@ -37,17 +37,19 @@
             label1 = new Label();
             iconButton1 = new FontAwesome.Sharp.IconButton();
             panel1 = new Panel();
+            labelClasse = new Label();
             ((System.ComponentModel.ISupportInitialize)picturePersonagem).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // picturePersonagem
             // 
-            picturePersonagem.Dock = DockStyle.Left;
+            picturePersonagem.BackColor = Color.Transparent;
+            picturePersonagem.Dock = DockStyle.Fill;
             picturePersonagem.Image = Properties.Resources.WhatsApp_Image_2023_06_15_at_21_50_44;
             picturePersonagem.Location = new Point(0, 0);
             picturePersonagem.Name = "picturePersonagem";
-            picturePersonagem.Size = new Size(443, 515);
+            picturePersonagem.Size = new Size(449, 515);
             picturePersonagem.TabIndex = 1;
             picturePersonagem.TabStop = false;
             // 
@@ -78,8 +80,8 @@
             buttonArqueiro.TabIndex = 1;
             buttonArqueiro.Text = "Arqueiro";
             buttonArqueiro.UseVisualStyleBackColor = false;
-            buttonArqueiro.Click += buttonArqueiro_Click;
             buttonArqueiro.MouseEnter += buttonArqueiro_MouseEnter;
+            buttonArqueiro.MouseLeave += buttonArqueiro_MouseLeave;
             // 
             // buttonLadino
             // 
@@ -138,9 +140,11 @@
             // 
             // iconButton1
             // 
-            iconButton1.BackColor = Color.Transparent;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Zhihu;
-            iconButton1.IconColor = Color.Black;
+            iconButton1.BackColor = Color.FromArgb(30, 30, 30);
+            iconButton1.FlatStyle = FlatStyle.Popup;
+            iconButton1.ForeColor = Color.Transparent;
+            iconButton1.IconChar = FontAwesome.Sharp.IconChar.AngleRight;
+            iconButton1.IconColor = Color.FromArgb(224, 22, 38);
             iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconButton1.Location = new Point(356, 443);
             iconButton1.Name = "iconButton1";
@@ -164,12 +168,28 @@
             panel1.Size = new Size(475, 515);
             panel1.TabIndex = 0;
             // 
+            // labelClasse
+            // 
+            labelClasse.AutoSize = true;
+            labelClasse.BackColor = Color.Transparent;
+            labelClasse.Dock = DockStyle.Bottom;
+            labelClasse.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            labelClasse.ForeColor = Color.FromArgb(224, 22, 34);
+            labelClasse.Location = new Point(0, 464);
+            labelClasse.Name = "labelClasse";
+            labelClasse.Padding = new Padding(80, 0, 80, 10);
+            labelClasse.Size = new Size(443, 51);
+            labelClasse.TabIndex = 5;
+            labelClasse.Text = "Nome Personagem";
+            labelClasse.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(924, 515);
+            Controls.Add(labelClasse);
             Controls.Add(picturePersonagem);
             Controls.Add(panel1);
             Name = "Form1";
@@ -178,6 +198,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -190,5 +211,6 @@
         private Label label1;
         private FontAwesome.Sharp.IconButton iconButton1;
         private Panel panel1;
+        private Label labelClasse;
     }
 }

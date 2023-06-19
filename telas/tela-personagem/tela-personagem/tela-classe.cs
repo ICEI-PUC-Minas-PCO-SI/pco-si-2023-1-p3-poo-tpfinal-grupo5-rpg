@@ -22,6 +22,8 @@ namespace tela_personagem
             {
                 Console.WriteLine(ex.Message);
             }
+
+            labelClasse.Text = "Guerreiro";
         }
 
         private void buttonGuerreiro_MouseLeave(object sender, EventArgs e)
@@ -34,6 +36,8 @@ namespace tela_personagem
             {
                 Console.WriteLine(ex.Message);
             }
+
+            labelClasse.Text = "";
         }
 
         private void buttonArqueiro_MouseEnter(object sender, EventArgs e)
@@ -46,6 +50,13 @@ namespace tela_personagem
             {
                 Console.WriteLine(ex.Message);
             }
+
+            labelClasse.Text = "Arqueiro";
+        }
+
+        private void buttonArqueiro_MouseLeave(object sender, EventArgs e)
+        {
+            labelClasse.Text = "";
         }
         private void buttonClerigo_MouseEnter(object sender, EventArgs e)
         {
@@ -57,6 +68,8 @@ namespace tela_personagem
             {
                 Console.WriteLine(ex.Message);
             }
+
+            labelClasse.Text = "Clerigo";
         }
 
         private void buttonLadino_MouseEnter(object sender, EventArgs e)
@@ -69,6 +82,8 @@ namespace tela_personagem
             {
                 Console.WriteLine(ex.Message);
             }
+
+            labelClasse.Text = "Ladino";
         }
 
         private void buttonTanque_MouseEnter(object sender, EventArgs e)
@@ -81,11 +96,8 @@ namespace tela_personagem
             {
                 Console.WriteLine(ex.Message);
             }
-        }
 
-        private void buttonArqueiro_Click(object sender, EventArgs e)
-        {
-
+            labelClasse.Text = "Tanque";
         }
     }
 }
