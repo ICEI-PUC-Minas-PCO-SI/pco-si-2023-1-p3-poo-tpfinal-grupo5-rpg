@@ -16,7 +16,7 @@ namespace telaCombate
     {
         private Raca racaSelecionada;
         private Classe classeSelecionada;
-        private string nome;
+        protected string nome;
         public telaPerPronto(Raca racaSelecionada, Classe classeSelecionada)
         {
             InitializeComponent();
@@ -54,12 +54,22 @@ namespace telaCombate
 
         private void nomePersonagem_TextChanged(object sender, EventArgs e)
         {
-            nome = nomePersonagem.Text;
+            string texto = nomePersonagem.Text;
+
+            if (!string.IsNullOrWhiteSpace(texto) && texto.All(char.IsLetter))
+            {
+                nome = texto;
+            }
+            else
+            {
+               MessageBox.Show("O campo 'Nome' deve ser preenchido apenas com letras.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
-            telaJogo formJogo = new telaJogo(racaSelecionada, classeSelecionada);
+            telaJogo formJogo = new telaJogo(racaSelecionada, classeSelecionada, nome);
             formJogo.Show();
             this.Hide();
             imgPersonagem.Image = null;

@@ -20,20 +20,21 @@ namespace telaCombate
         private List<string> historiaRagnar;
         private List<string> historiaLucius;
         private int indiceAtual;
-        public telaNPCs(Raca racaSelecionada, Classe classeSelecionada)
+        protected string nome;
+        public telaNPCs(Raca racaSelecionada, Classe classeSelecionada, string nome)
         {
             InitializeComponent();
             InitializeHistoria();
             this.racaSelecionada = racaSelecionada;
             this.classeSelecionada = classeSelecionada;
             indiceAtual = 0;
+            this.nome = nome;
         }
         private void InitializeHistoria()
         {
             historiaCeleste = new List<string>
             {
-                "CELESTE: Olá, $Nome! Eu estou apavorada! Primeiro foram os bichos daquele jeito estranho, agora tem moradores sumindo... Minha irmã Dulce foi buscar lenha hoje de manhã e não voltou mais. Estou ficando com medo do pior",
-                "Aqueles que costumavam ser dóceis, agora estavam atacando os moradores. Então Max começou a achar que havia algo de errado com aqueles acontecimentos, mas não deu muita atenção.",
+                $"CELESTE: Olá! Eu estou apavorada! Primeiro foram os bichos daquele jeito estranho, agora tem moradores sumindo... Minha irmã Dulce foi buscar lenha hoje de manhã e não voltou mais. Estou ficando com medo do pior",
                 "VOCÊ: Eu sinto muito, Celeste. Não se preocupe, vamos dar um jeito de encontra-lá. Vou conversar com mais algumas pessoas para colher informações. Obrigado"
             };
             historiaRagnar = new List<string>
