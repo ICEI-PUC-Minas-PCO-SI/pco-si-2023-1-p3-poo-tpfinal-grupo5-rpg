@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace telaCombate
 {
@@ -22,6 +24,13 @@ namespace telaCombate
             this.classeSelecionada = classeSelecionada;
             
         }
+        private string RemoverAcentos(string texto)
+        {
+            string textoNormalizado = texto.Normalize(NormalizationForm.FormD);
+            var regex = new Regex("\\p{IsCombiningDiacriticalMarks}+");
+            string textoSemAcentos = regex.Replace(textoNormalizado, string.Empty);
+            return textoSemAcentos;
+        }
 
         private void telaPerPronto_Load(object sender, EventArgs e)
         {
@@ -30,7 +39,7 @@ namespace telaCombate
             descricaoRaca.Text = racaSelecionada.Descricao;
             descricaoClasse.Text = classeSelecionada.Descricao;
 
-            string nomeImagem = $"{racaSelecionada.Nome.ToLower()}_{classeSelecionada.Nome.ToLower()}";
+            string nomeImagem = $"{RemoverAcentos(racaSelecionada.Nome.ToLower())}_{RemoverAcentos(classeSelecionada.Nome.ToLower())}";
 
             if (Properties.Resources.ResourceManager.GetObject(nomeImagem) is Image imagem)
             {

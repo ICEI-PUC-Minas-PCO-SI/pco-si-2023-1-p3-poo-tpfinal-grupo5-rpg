@@ -123,6 +123,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anão_tanque {
+            get {
+                object obj = ResourceManager.GetObject("anão_tanque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calabouco {
             get {
                 object obj = ResourceManager.GetObject("calabouco", resourceCulture);
@@ -216,6 +226,16 @@ namespace telaCombate.Properties {
         internal static System.Drawing.Bitmap elfo_tanque {
             get {
                 object obj = ResourceManager.GetObject("elfo_tanque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap elfo1 {
+            get {
+                object obj = ResourceManager.GetObject("elfo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

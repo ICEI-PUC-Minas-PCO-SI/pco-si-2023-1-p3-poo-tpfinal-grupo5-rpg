@@ -22,41 +22,26 @@ namespace telaCombate
 
         private void btnHumano_Click(object sender, EventArgs e)
         {
-            Image imagemHumano = Properties.Resources.humano;
-
-            imgRacaPersonagem.Image = imagemHumano;
             racaSelecionada = RacasProntas.Humano();
         }
 
         private void btnElfo_Click(object sender, EventArgs e)
         {
-            Image imagemElfo = Properties.Resources.elfo;
-
-            imgRacaPersonagem.Image = imagemElfo;
             racaSelecionada = RacasProntas.Elfo();
         }
 
         private void btnAnao_Click(object sender, EventArgs e)
         {
-            Image imagemAnao = Properties.Resources.anao;
-
-            imgRacaPersonagem.Image = imagemAnao;
             racaSelecionada = RacasProntas.Anao();
         }
 
         private void btnOrc_Click(object sender, EventArgs e)
         {
-            Image imagemOrc = Properties.Resources.orc;
-
-            imgRacaPersonagem.Image = imagemOrc;
             racaSelecionada = RacasProntas.Orc();
         }
 
         private void btnGnomo_Click(object sender, EventArgs e)
         {
-            Image imagemGnomo = Properties.Resources.gnomo;
-
-            imgRacaPersonagem.Image = imagemGnomo;
             racaSelecionada = RacasProntas.Gnomo();
         }
 
@@ -67,6 +52,9 @@ namespace telaCombate
             this.Hide();
         }
 
-        
+        private void telaRaça_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

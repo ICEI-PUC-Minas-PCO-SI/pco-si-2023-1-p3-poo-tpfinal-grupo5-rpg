@@ -163,6 +163,7 @@
             this.MaximizeBox = false;
             this.Name = "telaRaça";
             this.Text = "Seleção de Raça";
+            this.Load += new System.EventHandler(this.telaRaça_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imgRacaPersonagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

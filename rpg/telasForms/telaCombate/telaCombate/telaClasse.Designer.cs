@@ -139,11 +139,12 @@
             // 
             this.racaTexto.AutoSize = true;
             this.racaTexto.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.racaTexto.Location = new System.Drawing.Point(558, 88);
+            this.racaTexto.Location = new System.Drawing.Point(497, 141);
             this.racaTexto.Name = "racaTexto";
             this.racaTexto.Size = new System.Drawing.Size(38, 15);
             this.racaTexto.TabIndex = 27;
             this.racaTexto.Text = "label1";
+            this.racaTexto.Click += new System.EventHandler(this.racaTexto_Click);
             // 
             // telaClasse
             // 
