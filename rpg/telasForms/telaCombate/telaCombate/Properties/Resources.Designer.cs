@@ -63,6 +63,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anao {
+            get {
+                object obj = ResourceManager.GetObject("anao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calabouco {
             get {
                 object obj = ResourceManager.GetObject("calabouco", resourceCulture);
@@ -103,6 +113,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap elfo {
+            get {
+                object obj = ResourceManager.GetObject("elfo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap floresta {
             get {
                 object obj = ResourceManager.GetObject("floresta", resourceCulture);
@@ -126,6 +146,26 @@ namespace telaCombate.Properties {
         internal static System.Drawing.Bitmap florestaNoite {
             get {
                 object obj = ResourceManager.GetObject("florestaNoite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gnomo {
+            get {
+                object obj = ResourceManager.GetObject("gnomo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap humano {
+            get {
+                object obj = ResourceManager.GetObject("humano", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +206,26 @@ namespace telaCombate.Properties {
         internal static System.Drawing.Bitmap moeda {
             get {
                 object obj = ResourceManager.GetObject("moeda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap O_Culto_do_abismo {
+            get {
+                object obj = ResourceManager.GetObject("O Culto do abismo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap orc {
+            get {
+                object obj = ResourceManager.GetObject("orc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
