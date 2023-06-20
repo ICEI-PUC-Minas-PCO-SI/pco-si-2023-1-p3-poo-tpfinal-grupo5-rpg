@@ -1,4 +1,4 @@
-public class Animal : Comatente, IDroparDinheiro, IDefender, IAtacar{
+public class Animal : Combatente, IDroparDinheiro, IDefender, IAtacar{
     public int vida;
     private int defesa;
     public Animal(){

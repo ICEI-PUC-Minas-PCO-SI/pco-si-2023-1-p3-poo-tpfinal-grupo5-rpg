@@ -158,4 +158,17 @@ public class Pessoa : Combatente, IComercio, IDroparItem, IUsarItem{
                 break;
         }
     }
+
+    public override int atacar(Ataque ataque)
+    {
+        return base.atacar(ataque);
+    }
+    public override void defender(int dano)
+    {
+        base.defender(dano);
+    }
+    public override int droparDinheiro()
+    {
+        return base.droparDinheiro();
+    }
 }

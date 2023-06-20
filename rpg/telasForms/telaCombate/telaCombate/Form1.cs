@@ -118,14 +118,12 @@ namespace telaCombate
             while (Personagem.Vida > 0 && javali.vida > 0)
             {
                 Ataque ataquePersonagem = ataqueEscolhido;
-                int danoPersonagem = combate.Personagem.Atacar(ataquePersonagem);
-                Personagem.Defender(danoPersonagem);
+                int danoPersonagem = combate.Personagem.atacar(ataquePersonagem);
+                Personagem.defender(danoPersonagem);
 
                 if (combate.Inimigo.Vida <= 0)
                     break;
-
-                Ataque ataqueInimigo = javali.atacar();
-                int danoInimigo = combate.Inimigo.Atacar(ataqueInimigo);
+                int danoInimigo = javali.atacar();
                 Personagem.defender (danoInimigo);
 
                 lblInformacoes.Text = $"Voc� causou {danoPersonagem} de dano. O inimigo causou {danoInimigo} de dano.";

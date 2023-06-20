@@ -30,7 +30,7 @@ public class Combatente : Personagem, IAtacar, IDefender, IDroparDinheiro{
     public int Nivel { get => nivel; set => nivel = value; }
     public List<Ataque> Ataques { get => ataques; set => ataques = value; }
 
-    public int atacar(Ataque ataque){
+    public virtual int atacar(Ataque ataque){
         this.mana = this.mana - ataque.GastoDeMana;
         int Acerto = Dado.RandomNumber(this.sorte, 100);
         if(Acerto > (100 - ataque.ChanceDeAcerto)){
@@ -53,12 +53,12 @@ public class Combatente : Personagem, IAtacar, IDefender, IDroparDinheiro{
         }
     }
 
-    public void defender(int dano){
+    public virtual void defender(int dano){
         int Defesa = Dado.RandomNumber(this.sorte, 100);
         this.vida -= (dano - (dano * (Defesa / 100)));
     }
 
-    public int droparDinheiro(){
+    public virtual int droparDinheiro(){
         int dinheiro = this.Dinheiro;
         this.Dinheiro = 0;
         return dinheiro;
