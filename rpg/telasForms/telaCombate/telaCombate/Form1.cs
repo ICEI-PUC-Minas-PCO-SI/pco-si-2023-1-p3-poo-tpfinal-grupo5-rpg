@@ -56,23 +56,23 @@ namespace telaCombate
         {
             if (classeSelecionada.Nome == "Guerreiro")
             {
-                ataqueEscolhido = new Ataque("Corajoso", 10, 10, 80);
+                ataqueEscolhido = AtaquesProntos.Corajoso();
             }
             else if (classeSelecionada.Nome == "Clerigo")
             {
-                ataqueEscolhido = new Ataque("Chamado Divino", 10, 10, 80);
+                ataqueEscolhido = AtaquesProntos.ChamadoDivino();
             }
             else if (classeSelecionada.Nome == "Ladino")
             {
-                ataqueEscolhido = new Ataque("Dilacerar", 20, 10, 70);
+                ataqueEscolhido = AtaquesProntos.Dilacerar();
             }
             else if (classeSelecionada.Nome == "Tanque")
             {
-                ataqueEscolhido = new Ataque("Cabe�ada", 15, 10, 75);
+                ataqueEscolhido = AtaquesProntos.Cabecada();
             }
             else if (classeSelecionada.Nome == "Arqueiro")
             {
-                ataqueEscolhido = new Ataque("Engenhoso", 20, 20, 80);
+                ataqueEscolhido = AtaquesProntos.Engenhoso();
             }
             else
             {
