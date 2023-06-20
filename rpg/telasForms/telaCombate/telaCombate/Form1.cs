@@ -6,6 +6,7 @@ using System.Drawing;
 using System;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using System.Threading;
 
 namespace telaCombate
 {
@@ -54,7 +55,7 @@ namespace telaCombate
         private void btnAtaqBase_Click(object sender, EventArgs e)
         {
             ataqueEscolhido = new Ataque("B�sico", 5, 0, 90);
-            lblInformacoes.Text = $"Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, �ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
+            // lblInformacoes.Text = $"Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, �ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
 
         private void btnAtaqMedio_Click(object sender, EventArgs e)
@@ -84,7 +85,7 @@ namespace telaCombate
                 ataqueEscolhido = new Ataque("Ataque M�dio", 10, 10, 75);
             }
 
-            lblInformacoes.Text = $"Ataque: {ataqueEscolhido.Nome} Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, �ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
+            // lblInformacoes.Text = $"Ataque: {ataqueEscolhido.Nome} Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, �ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -118,6 +119,7 @@ namespace telaCombate
 
         private void btnBatalhar_Click(object sender, EventArgs e)
         {
+            lblInformacoes.Text = "";
             Combate combate = new Combate(Personagem, javali);
 
             btnBatalhar.Text = "Executar ação";
@@ -132,28 +134,36 @@ namespace telaCombate
                 MessageBox.Show("Mana insuficiente para usar esse ataque!");
                 return;
             }
-
-            lblInformacoes.Text = "";
-
-            while (Personagem.Vida > 0 && javali.vida > 0)
-            {
-                int danoPersonagem = combate.Personagem.atacar(ataqueEscolhido);
-                //Personagem.defender(danoPersonagem);
-                lblInformacoes.Text = $"Você causou {danoPersonagem} de dano.";
-
-                if (javali.vida <= 0)
-                    break;
-
-                System.Threading.Thread.Sleep(100);
-
-                int danoInimigo = javali.atacar();
-                int vidaAtual = (Personagem.Vida - danoInimigo); 
-                vidaPersonagem.Text = vidaAtual.ToString();
-                Personagem.defender(danoInimigo);
-                lblInformacoes.Text += $" O inimigo causou {danoInimigo} de dano.";
-
-                System.Threading.Thread.Sleep(100000);
+            else{
+                int dano = combate.Personagem.atacar(ataqueEscolhido);
+                combate.Inimigo.defender(dano);
+                int danoInimigo = combate.Inimigo.atacar();
+                combate.Personagem.defender(danoInimigo);
+                lblInformacoes.Text += $"Você causou {dano} de dano. O inimigo causou {danoInimigo} de dano.";
             }
+
+            // lblInformacoes.Text = "";
+
+            // while (Personagem.Vida > 0 && javali.vida > 0)
+            // {
+            //     int danoPersonagem = combate.Personagem.atacar(ataqueEscolhido);
+            //     //Personagem.defender(danoPersonagem);
+            //     lblInformacoes.Text = $"Você causou {danoPersonagem} de dano.";
+
+            //     if (javali.vida <= 0)
+            //         break;
+
+            //     System.Threading.Thread.Sleep(100);
+
+            //     int danoInimigo = javali.atacar();
+            //     int vidaAtual = (Personagem.Vida - danoInimigo); 
+            //     vidaPersonagem.Text = vidaAtual.ToString();
+            //     Personagem.defender(danoInimigo);
+            //     lblInformacoes.Text += $" O inimigo causou {danoInimigo} de dano.";
+
+            //     System.Threading.Thread.Sleep(100000);
+            // }
+            
 
             if (Personagem.Vida <= 0)
             {
@@ -168,6 +178,7 @@ namespace telaCombate
 
             vidaPersonagem.Text = Personagem.Vida.ToString();
             manaPersonagem.Text = Personagem.Mana.ToString();
+            vidaInimigo.Text = combate.Inimigo.vida.ToString();
         }
 
 
