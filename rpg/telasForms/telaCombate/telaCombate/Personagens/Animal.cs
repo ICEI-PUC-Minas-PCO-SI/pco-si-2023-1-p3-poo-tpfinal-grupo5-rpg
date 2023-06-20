@@ -1,4 +1,4 @@
-public class Animal : Personagem, IDroparDinheiro, IDefender, IAtacar{
+public class Animal : Comatente, IDroparDinheiro, IDefender, IAtacar{
     public int vida;
     private int defesa;
     public Animal(){
@@ -32,7 +32,7 @@ public class Animal : Personagem, IDroparDinheiro, IDefender, IAtacar{
         this.vida -= dano - this.defesa;
     }
 
-    public int atacar(Ataque ataque)
+    public int atacar()
     {
         return Dado.RandomNumber(1, 4);
     }

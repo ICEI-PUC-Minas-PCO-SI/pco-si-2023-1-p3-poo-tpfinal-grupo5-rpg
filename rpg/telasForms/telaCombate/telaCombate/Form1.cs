@@ -48,8 +48,8 @@ namespace telaCombate
 
         private void btnAtaqBase_Click(object sender, EventArgs e)
         {
-            ataqueEscolhido = new Ataque("Básico", 5, 0, 90);
-            lblInformacoes.Text = $"Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, Índice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
+            ataqueEscolhido = new Ataque("Bï¿½sico", 5, 0, 90);
+            lblInformacoes.Text = $"Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, ï¿½ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
 
         private void btnAtaqMedio_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace telaCombate
             }
             else if (classeSelecionada.Nome == "Tanque")
             {
-                ataqueEscolhido = new Ataque("Cabeçada", 15, 10, 75);
+                ataqueEscolhido = new Ataque("Cabeï¿½ada", 15, 10, 75);
             }
             else if (classeSelecionada.Nome == "Arqueiro")
             {
@@ -76,10 +76,10 @@ namespace telaCombate
             }
             else
             {
-                ataqueEscolhido = new Ataque("Ataque Médio", 10, 10, 75);
+                ataqueEscolhido = new Ataque("Ataque Mï¿½dio", 10, 10, 75);
             }
 
-            lblInformacoes.Text = $"Ataque: {ataqueEscolhido.Nome} Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, Índice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
+            lblInformacoes.Text = $"Ataque: {ataqueEscolhido.Nome} Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, ï¿½ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -128,18 +128,18 @@ namespace telaCombate
                 int danoInimigo = combate.Inimigo.Atacar(ataqueInimigo);
                 Personagem.defender (danoInimigo);
 
-                lblInformacoes.Text = $"Você causou {danoPersonagem} de dano. O inimigo causou {danoInimigo} de dano.";
+                lblInformacoes.Text = $"Vocï¿½ causou {danoPersonagem} de dano. O inimigo causou {danoInimigo} de dano.";
             }
 
             if (Personagem.Vida <= 0)
             {
-                MessageBox.Show("Você foi derrotado pelo inimigo!");
+                MessageBox.Show("Vocï¿½ foi derrotado pelo inimigo!");
             }
             else if (javali.vida <= 0)
             {
                 int dinheiroDropado = javali.droparDinheiro();
                 Personagem.ReceberDinheiro(dinheiroDropado);
-                MessageBox.Show($"Você venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
+                MessageBox.Show($"Vocï¿½ venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
             }
             else
             {
