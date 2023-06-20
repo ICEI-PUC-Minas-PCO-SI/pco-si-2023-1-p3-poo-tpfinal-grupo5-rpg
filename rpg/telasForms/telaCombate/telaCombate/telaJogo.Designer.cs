@@ -67,6 +67,7 @@
             this.ClientSize = new System.Drawing.Size(926, 523);
             this.Controls.Add(this.btnProsseguir);
             this.Controls.Add(this.textoIntro);
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(20, 20);
             this.Name = "telaJogo";
             this.Text = "O Culto do Abismo";

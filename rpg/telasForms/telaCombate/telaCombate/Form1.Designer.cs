@@ -32,38 +32,27 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.manaPersonagem = new System.Windows.Forms.ProgressBar();
             this.moedasPersonagem = new System.Windows.Forms.Label();
             this.playerImg = new System.Windows.Forms.PictureBox();
             this.imgInimigo = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.vidaInimigo = new System.Windows.Forms.ProgressBar();
             this.nomeInimigo = new System.Windows.Forms.Label();
             this.btnAtaqBase = new System.Windows.Forms.Button();
             this.btnAtaqMedio = new System.Windows.Forms.Button();
             this.btnAtqEsp = new System.Windows.Forms.Button();
             this.btnDefesa = new System.Windows.Forms.Button();
             this.btnUsarItem = new System.Windows.Forms.Button();
-            this.inventario = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewImageColumn();
             this.lblInformacoes = new System.Windows.Forms.Label();
-            this.testeLabel = new System.Windows.Forms.Label();
-            this.progressBarVida = new System.Windows.Forms.ProgressBar();
+            this.vidaPersonagem = new System.Windows.Forms.Label();
+            this.btnBatalhar = new System.Windows.Forms.Button();
+            this.manaPersonagem = new System.Windows.Forms.Label();
+            this.vidaInimigo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgInimigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inventario)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -96,14 +85,6 @@
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
             // 
-            // manaPersonagem
-            // 
-            this.manaPersonagem.BackColor = System.Drawing.Color.RoyalBlue;
-            this.manaPersonagem.Location = new System.Drawing.Point(82, 106);
-            this.manaPersonagem.Name = "manaPersonagem";
-            this.manaPersonagem.Size = new System.Drawing.Size(127, 23);
-            this.manaPersonagem.TabIndex = 5;
-            // 
             // moedasPersonagem
             // 
             this.moedasPersonagem.AutoSize = true;
@@ -119,7 +100,6 @@
             // playerImg
             // 
             this.playerImg.BackColor = System.Drawing.Color.Transparent;
-            this.playerImg.Image = global::telaCombate.Properties.Resources.ladino;
             this.playerImg.Location = new System.Drawing.Point(204, 188);
             this.playerImg.Name = "playerImg";
             this.playerImg.Size = new System.Drawing.Size(149, 244);
@@ -131,10 +111,10 @@
             // imgInimigo
             // 
             this.imgInimigo.BackColor = System.Drawing.Color.Transparent;
-            this.imgInimigo.Image = global::telaCombate.Properties.Resources.cultistaHomem;
-            this.imgInimigo.Location = new System.Drawing.Point(603, 188);
+            this.imgInimigo.Image = global::telaCombate.Properties.Resources.javali;
+            this.imgInimigo.Location = new System.Drawing.Point(583, 188);
             this.imgInimigo.Name = "imgInimigo";
-            this.imgInimigo.Size = new System.Drawing.Size(149, 244);
+            this.imgInimigo.Size = new System.Drawing.Size(169, 244);
             this.imgInimigo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgInimigo.TabIndex = 8;
             this.imgInimigo.TabStop = false;
@@ -148,14 +128,6 @@
             this.pictureBox4.Size = new System.Drawing.Size(50, 50);
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
-            // 
-            // vidaInimigo
-            // 
-            this.vidaInimigo.BackColor = System.Drawing.Color.Red;
-            this.vidaInimigo.Location = new System.Drawing.Point(625, 122);
-            this.vidaInimigo.Name = "vidaInimigo";
-            this.vidaInimigo.Size = new System.Drawing.Size(127, 23);
-            this.vidaInimigo.TabIndex = 10;
             // 
             // nomeInimigo
             // 
@@ -231,74 +203,6 @@
             this.btnUsarItem.Text = "Usar item";
             this.btnUsarItem.UseVisualStyleBackColor = false;
             // 
-            // inventario
-            // 
-            this.inventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.inventario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.inventario.Location = new System.Drawing.Point(82, 438);
-            this.inventario.Name = "inventario";
-            this.inventario.RowTemplate.Height = 25;
-            this.inventario.Size = new System.Drawing.Size(740, 86);
-            this.inventario.TabIndex = 17;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Image = global::telaCombate.Properties.Resources.vidaPocao;
-            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Image = global::telaCombate.Properties.Resources.manaPocao;
-            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Column8";
-            this.Column8.Name = "Column8";
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Column9";
-            this.Column9.Name = "Column9";
-            // 
             // lblInformacoes
             // 
             this.lblInformacoes.AutoSize = true;
@@ -309,23 +213,54 @@
             this.lblInformacoes.Size = new System.Drawing.Size(0, 17);
             this.lblInformacoes.TabIndex = 18;
             // 
-            // testeLabel
+            // vidaPersonagem
             // 
-            this.testeLabel.AutoSize = true;
-            this.testeLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.testeLabel.Location = new System.Drawing.Point(248, 154);
-            this.testeLabel.Name = "testeLabel";
-            this.testeLabel.Size = new System.Drawing.Size(68, 30);
-            this.testeLabel.TabIndex = 19;
-            this.testeLabel.Text = "label1";
+            this.vidaPersonagem.AutoSize = true;
+            this.vidaPersonagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.vidaPersonagem.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.vidaPersonagem.ForeColor = System.Drawing.Color.White;
+            this.vidaPersonagem.Location = new System.Drawing.Point(82, 35);
+            this.vidaPersonagem.Name = "vidaPersonagem";
+            this.vidaPersonagem.Size = new System.Drawing.Size(84, 28);
+            this.vidaPersonagem.TabIndex = 19;
+            this.vidaPersonagem.Text = "label1";
             // 
-            // progressBarVida
+            // btnBatalhar
             // 
-            this.progressBarVida.BackColor = System.Drawing.Color.RoyalBlue;
-            this.progressBarVida.Location = new System.Drawing.Point(82, 38);
-            this.progressBarVida.Name = "progressBarVida";
-            this.progressBarVida.Size = new System.Drawing.Size(127, 23);
-            this.progressBarVida.TabIndex = 20;
+            this.btnBatalhar.BackColor = System.Drawing.Color.Yellow;
+            this.btnBatalhar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBatalhar.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBatalhar.Location = new System.Drawing.Point(399, 282);
+            this.btnBatalhar.Name = "btnBatalhar";
+            this.btnBatalhar.Size = new System.Drawing.Size(161, 35);
+            this.btnBatalhar.TabIndex = 21;
+            this.btnBatalhar.Text = "Iniciar Combate";
+            this.btnBatalhar.UseVisualStyleBackColor = false;
+            this.btnBatalhar.Click += new System.EventHandler(this.btnBatalhar_Click);
+            // 
+            // manaPersonagem
+            // 
+            this.manaPersonagem.AutoSize = true;
+            this.manaPersonagem.BackColor = System.Drawing.Color.MidnightBlue;
+            this.manaPersonagem.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.manaPersonagem.ForeColor = System.Drawing.Color.White;
+            this.manaPersonagem.Location = new System.Drawing.Point(82, 104);
+            this.manaPersonagem.Name = "manaPersonagem";
+            this.manaPersonagem.Size = new System.Drawing.Size(84, 28);
+            this.manaPersonagem.TabIndex = 22;
+            this.manaPersonagem.Text = "label1";
+            // 
+            // vidaInimigo
+            // 
+            this.vidaInimigo.AutoSize = true;
+            this.vidaInimigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.vidaInimigo.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.vidaInimigo.ForeColor = System.Drawing.Color.White;
+            this.vidaInimigo.Location = new System.Drawing.Point(640, 119);
+            this.vidaInimigo.Name = "vidaInimigo";
+            this.vidaInimigo.Size = new System.Drawing.Size(84, 28);
+            this.vidaInimigo.TabIndex = 23;
+            this.vidaInimigo.Text = "label1";
             // 
             // Form1
             // 
@@ -334,22 +269,21 @@
             this.BackgroundImage = global::telaCombate.Properties.Resources.floresta;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 523);
-            this.Controls.Add(this.progressBarVida);
-            this.Controls.Add(this.testeLabel);
+            this.Controls.Add(this.vidaInimigo);
+            this.Controls.Add(this.manaPersonagem);
+            this.Controls.Add(this.btnBatalhar);
+            this.Controls.Add(this.vidaPersonagem);
             this.Controls.Add(this.lblInformacoes);
-            this.Controls.Add(this.inventario);
             this.Controls.Add(this.btnUsarItem);
             this.Controls.Add(this.btnDefesa);
             this.Controls.Add(this.btnAtqEsp);
             this.Controls.Add(this.btnAtaqMedio);
             this.Controls.Add(this.btnAtaqBase);
             this.Controls.Add(this.nomeInimigo);
-            this.Controls.Add(this.vidaInimigo);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.imgInimigo);
             this.Controls.Add(this.playerImg);
             this.Controls.Add(this.moedasPersonagem);
-            this.Controls.Add(this.manaPersonagem);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -363,7 +297,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.playerImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgInimigo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inventario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,30 +306,20 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private ProgressBar manaPersonagem;
         private Label moedasPersonagem;
         private PictureBox playerImg;
         private PictureBox imgInimigo;
         private PictureBox pictureBox4;
-        private ProgressBar vidaInimigo;
         private Label nomeInimigo;
         private Button btnAtaqBase;
         private Button btnAtaqMedio;
         private Button btnAtqEsp;
         private Button btnDefesa;
         private Button btnUsarItem;
-        private DataGridView inventario;
-        private DataGridViewImageColumn Column1;
-        private DataGridViewImageColumn Column2;
-        private DataGridViewImageColumn Column3;
-        private DataGridViewImageColumn Column4;
-        private DataGridViewImageColumn Column5;
-        private DataGridViewImageColumn Column6;
-        private DataGridViewImageColumn Column7;
-        private DataGridViewImageColumn Column8;
-        private DataGridViewImageColumn Column9;
         private Label lblInformacoes;
-        private Label testeLabel;
-        private ProgressBar progressBarVida;
+        private Label vidaPersonagem;
+        private Button btnBatalhar;
+        private Label manaPersonagem;
+        private Label vidaInimigo;
     }
 }

@@ -45,4 +45,20 @@ public class Jogavel : Pessoa{
         this.Defesa += 1;
         this.Sorte += 1;
     }
+    public void ReceberDinheiro(int quantidade)
+    {
+        this.Dinheiro += quantidade;
+    }
+    public override int atacar(Ataque ataque)
+    {
+        return base.atacar(ataque);
+    }
+    public override void defender(int dano)
+    {
+        base.defender(dano);
+    }
+    public override int droparDinheiro()
+    {
+        return base.droparDinheiro();
+    }
 }

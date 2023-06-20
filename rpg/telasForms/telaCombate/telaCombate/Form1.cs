@@ -11,33 +11,27 @@ namespace telaCombate
 {
     public partial class Form1 : Form
     {
+        private Animal javali;
+        private Animal lobo;
         public Jogavel Personagem { get; set; }
         private Raca racaSelecionada;
         private Classe classeSelecionada;
         protected string nome;
-        private int vidaAtual;
-        //private Combatente combatenteInimigo;
+
+        private Ataque ataqueEscolhido;
+
+        public int ManaAtual
+        {
+            get => Personagem.Mana;
+        }
+
         public Form1(Raca racaSelecionada, Classe classeSelecionada, string nome)
         {
             InitializeComponent();
             this.racaSelecionada = racaSelecionada;
             this.classeSelecionada = classeSelecionada;
             this.nome = nome;
-            //combatenteInimigo = CriarCombatenteInimigo();
         }
-        //private Combatente CriarCombatenteInimigo()
-        //{
-        //    Combatente inimigo = new Combatente();
-        //    inimigo.Vida = 100;
-        //    inimigo.Mana = 50;
-        //    inimigo.Ataque = 20;
-        //    inimigo.Defesa = 15;
-        //    inimigo.Sorte = 10;
-        //    inimigo.Nivel = 1;
-        //    inimigo.Ataques = new List<Ataque>();
-
-            
-        //}
 
         private string RemoverAcentos(string texto)
         {
@@ -49,7 +43,7 @@ namespace telaCombate
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -59,54 +53,55 @@ namespace telaCombate
 
         private void btnAtaqBase_Click(object sender, EventArgs e)
         {
-            Ataque basico = new Ataque("Básico", 5, 0, 90);
-            lblInformacoes.Text = $"Dano: {basico.Dano}, Gasto de Mana: {basico.GastoDeMana}, Índice de Acerto: {basico.ChanceDeAcerto}%";
+            ataqueEscolhido = new Ataque("Bï¿½sico", 5, 0, 90);
+            lblInformacoes.Text = $"Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, ï¿½ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
+
         private void btnAtaqMedio_Click(object sender, EventArgs e)
         {
-            Ataque ataqueMedio;
-
             if (classeSelecionada.Nome == "Guerreiro")
             {
-                ataqueMedio = new Ataque("Corajoso", 10, 10, 80);
+                ataqueEscolhido = AtaquesProntos.Corajoso();
             }
             else if (classeSelecionada.Nome == "Clerigo")
             {
-                ataqueMedio = new Ataque("Chamado Divino", 10, 10, 80);
+                ataqueEscolhido = AtaquesProntos.ChamadoDivino();
             }
-            else if (classeSelecionada.Nome  == "Ladino")
+            else if (classeSelecionada.Nome == "Ladino")
             {
-                ataqueMedio = new Ataque("Dilacerar", 20, 10, 70);
+                ataqueEscolhido = AtaquesProntos.Dilacerar();
             }
             else if (classeSelecionada.Nome == "Tanque")
             {
-                ataqueMedio = new Ataque("Cabeçada", 15, 10, 75);
+                ataqueEscolhido = AtaquesProntos.Cabecada();
             }
-            else if (classeSelecionada.Nome ==  "Arqueiro")
+            else if (classeSelecionada.Nome == "Arqueiro")
             {
-                ataqueMedio = new Ataque("Engenhoso", 20, 20, 80);
+                ataqueEscolhido = AtaquesProntos.Engenhoso();
             }
             else
             {
-                
-                ataqueMedio = new Ataque("Ataque Médio", 10, 10, 75);
+                ataqueEscolhido = new Ataque("Ataque Mï¿½dio", 10, 10, 75);
             }
 
-            lblInformacoes.Text = $"Ataque: {ataqueMedio.Nome} Dano: {ataqueMedio.Dano}, Gasto de Mana: {ataqueMedio.GastoDeMana}, Índice de Acerto: {ataqueMedio.ChanceDeAcerto}%";
+            lblInformacoes.Text = $"Ataque: {ataqueEscolhido.Nome} Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, ï¿½ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Animal[] animais = AnimaisProntos.geraAnimais();
+            javali = animais[0];
+            lobo = animais[1];
+
+            vidaInimigo.Text = javali.vida.ToString();
+
             moedasPersonagem.Text = Personagem.Dinheiro.ToString();
-            int vidaMaxima = Personagem.Vida;
-            vidaAtual = Personagem.Vida;
-            progressBarVida.Maximum = vidaMaxima;
-            progressBarVida.Value = vidaAtual;
+            
 
-
-            testeLabel.Text = "Vida: " + Personagem.Vida.ToString();
-
+            vidaPersonagem.Text = Personagem.Vida.ToString();
+            manaPersonagem.Text = Personagem.Mana.ToString();
+           
+            
 
             string nomeImagem = $"{RemoverAcentos(racaSelecionada.Nome.ToLower())}_{RemoverAcentos(classeSelecionada.Nome.ToLower())}";
 
@@ -114,30 +109,69 @@ namespace telaCombate
             {
                 playerImg.Image = imagem;
             }
-            //Personagem.VidaAtual = Personagem.Vida 
-            progressBarVida.Maximum = Personagem.Vida;
-            //vidaPersonagem.Value = Personagem.VidaAtual;
-            //ProgressBarRenderer.SetColor(vidaPersonagem, Color.Red);
         }
 
-        private void ReceberDano(int quantidadeDano)
-        {
-            vidaAtual -= quantidadeDano;
-
-            if (vidaAtual <= 0)
-            {
-                vidaAtual = 0; 
-
-                MessageBox.Show("Você foi derrotado!");
-            }
-
-            progressBarVida.Value = vidaAtual; 
-            testeLabel.Text = "Vida: " + vidaAtual.ToString(); 
-        }
         private void vidaPersonagem_Click(object sender, EventArgs e)
         {
-         
-            
+
         }
+
+        private void btnBatalhar_Click(object sender, EventArgs e)
+        {
+            Combate combate = new Combate(Personagem, javali);
+
+            btnBatalhar.Text = "Executar aÃ§Ã£o";
+            if (ataqueEscolhido == null)
+            {
+                MessageBox.Show("Vamos batalhar! Selecione um ataque.");
+                return;
+            }
+
+            if (Personagem.Mana < ataqueEscolhido.GastoDeMana)
+            {
+                MessageBox.Show("Mana insuficiente para usar esse ataque!");
+                return;
+            }
+
+            lblInformacoes.Text = "";
+
+            while (Personagem.Vida > 0 && javali.vida > 0)
+            {
+                int danoPersonagem = combate.Personagem.atacar(ataqueEscolhido);
+                //Personagem.defender(danoPersonagem);
+                lblInformacoes.Text = $"VocÃª causou {danoPersonagem} de dano.";
+
+                if (javali.vida <= 0)
+                    break;
+
+                System.Threading.Thread.Sleep(100);
+
+                int danoInimigo = javali.atacar();
+                int vidaAtual = (Personagem.Vida - danoInimigo); 
+                vidaPersonagem.Text = vidaAtual.ToString();
+                Personagem.defender(danoInimigo);
+                lblInformacoes.Text += $" O inimigo causou {danoInimigo} de dano.";
+
+                System.Threading.Thread.Sleep(100000);
+            }
+
+            if (Personagem.Vida <= 0)
+            {
+                MessageBox.Show("VocÃª foi derrotado pelo inimigo!");
+            }
+            else if (javali.vida <= 0)
+            {
+                int dinheiroDropado = javali.droparDinheiro();
+                Personagem.ReceberDinheiro(dinheiroDropado);
+                MessageBox.Show($"VocÃª venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
+            }
+
+            vidaPersonagem.Text = Personagem.Vida.ToString();
+            manaPersonagem.Text = Personagem.Mana.ToString();
+        }
+
+
+
+
     }
-    }
+}
