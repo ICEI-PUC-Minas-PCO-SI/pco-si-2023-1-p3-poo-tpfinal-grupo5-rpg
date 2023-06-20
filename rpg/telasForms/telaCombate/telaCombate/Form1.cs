@@ -18,7 +18,12 @@ namespace telaCombate
         private Classe classeSelecionada;
         protected string nome;
 
-        private Ataque ataqueEscolhido; 
+        private Ataque ataqueEscolhido;
+
+        public int ManaAtual
+        {
+            get => Personagem.Mana;
+        }
 
         public Form1(Raca racaSelecionada, Classe classeSelecionada, string nome)
         {
@@ -88,11 +93,15 @@ namespace telaCombate
             javali = animais[0];
             lobo = animais[1];
 
-            moedasPersonagem.Text = Personagem.Dinheiro.ToString();
-            int vidaMaxima = Personagem.Vida;
-            progressBarVida.Maximum = vidaMaxima;
+            vidaInimigo.Text = javali.vida.ToString();
 
-            testeLabel.Text = "Vida: " + Personagem.Vida.ToString();
+            moedasPersonagem.Text = Personagem.Dinheiro.ToString();
+            
+
+            vidaPersonagem.Text = Personagem.Vida.ToString();
+            manaPersonagem.Text = Personagem.Mana.ToString();
+           
+            
 
             string nomeImagem = $"{RemoverAcentos(racaSelecionada.Nome.ToLower())}_{RemoverAcentos(classeSelecionada.Nome.ToLower())}";
 
@@ -100,8 +109,6 @@ namespace telaCombate
             {
                 playerImg.Image = imagem;
             }
-
-            progressBarVida.Maximum = Personagem.Vida;
         }
 
         private void vidaPersonagem_Click(object sender, EventArgs e)
@@ -111,38 +118,60 @@ namespace telaCombate
 
         private void btnBatalhar_Click(object sender, EventArgs e)
         {
-            Combate combate = new Combate(Personagem, AnimaisProntos.Javali());
+            Combate combate = new Combate(Personagem, javali);
+
+            btnBatalhar.Text = "Executar ação";
+            if (ataqueEscolhido == null)
+            {
+                MessageBox.Show("Vamos batalhar! Selecione um ataque.");
+                return;
+            }
+
+            if (Personagem.Mana < ataqueEscolhido.GastoDeMana)
+            {
+                MessageBox.Show("Mana insuficiente para usar esse ataque!");
+                return;
+            }
 
             lblInformacoes.Text = "";
 
             while (Personagem.Vida > 0 && javali.vida > 0)
             {
-                Ataque ataquePersonagem = ataqueEscolhido;
-                int danoPersonagem = combate.Personagem.atacar(ataquePersonagem);
-                Personagem.defender(danoPersonagem);
+                int danoPersonagem = combate.Personagem.atacar(ataqueEscolhido);
+                //Personagem.defender(danoPersonagem);
+                lblInformacoes.Text = $"Você causou {danoPersonagem} de dano.";
 
-                if (combate.Inimigo.Vida <= 0)
+                if (javali.vida <= 0)
                     break;
-                int danoInimigo = javali.atacar();
-                Personagem.defender (danoInimigo);
 
-                lblInformacoes.Text = $"Voc� causou {danoPersonagem} de dano. O inimigo causou {danoInimigo} de dano.";
+                System.Threading.Thread.Sleep(100);
+
+                int danoInimigo = javali.atacar();
+                int vidaAtual = (Personagem.Vida - danoInimigo); 
+                vidaPersonagem.Text = vidaAtual.ToString();
+                Personagem.defender(danoInimigo);
+                lblInformacoes.Text += $" O inimigo causou {danoInimigo} de dano.";
+
+                System.Threading.Thread.Sleep(100000);
             }
 
             if (Personagem.Vida <= 0)
             {
-                MessageBox.Show("Voc� foi derrotado pelo inimigo!");
+                MessageBox.Show("Você foi derrotado pelo inimigo!");
             }
             else if (javali.vida <= 0)
             {
                 int dinheiroDropado = javali.droparDinheiro();
                 Personagem.ReceberDinheiro(dinheiroDropado);
-                MessageBox.Show($"Voc� venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
+                MessageBox.Show($"Você venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
             }
-            else
-            {
-                MessageBox.Show("A batalha terminou em empate!");
-            }
+
+            vidaPersonagem.Text = Personagem.Vida.ToString();
+            manaPersonagem.Text = Personagem.Mana.ToString();
         }
+
+
+
+
     }
 }
