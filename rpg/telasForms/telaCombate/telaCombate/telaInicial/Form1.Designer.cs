@@ -40,9 +40,9 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Black;
-            pictureBox1.Location = new Point(281, 296);
+            pictureBox1.Location = new Point(280, 293);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(305, 130);
+            pictureBox1.Size = new Size(305, 145);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -53,7 +53,7 @@
             btnIniciarJogo.FlatStyle = FlatStyle.Flat;
             btnIniciarJogo.Font = new Font("Trebuchet MS", 11F, FontStyle.Bold, GraphicsUnit.Point);
             btnIniciarJogo.ForeColor = Color.White;
-            btnIniciarJogo.Location = new Point(335, 291);
+            btnIniciarJogo.Location = new Point(334, 300);
             btnIniciarJogo.Name = "btnIniciarJogo";
             btnIniciarJogo.Size = new Size(198, 41);
             btnIniciarJogo.TabIndex = 3;
@@ -67,7 +67,7 @@
             btnJogo.FlatStyle = FlatStyle.Flat;
             btnJogo.Font = new Font("Trebuchet MS", 11F, FontStyle.Bold, GraphicsUnit.Point);
             btnJogo.ForeColor = Color.White;
-            btnJogo.Location = new Point(335, 348);
+            btnJogo.Location = new Point(334, 357);
             btnJogo.Name = "btnJogo";
             btnJogo.Size = new Size(198, 41);
             btnJogo.TabIndex = 4;
@@ -78,9 +78,9 @@
             // 
             pictureBox2.BackColor = Color.Black;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(281, 12);
+            pictureBox2.Location = new Point(280, 21);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(305, 284);
+            pictureBox2.Size = new Size(305, 273);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
