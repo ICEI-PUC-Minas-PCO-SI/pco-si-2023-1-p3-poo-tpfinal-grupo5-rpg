@@ -1,5 +1,5 @@
 public class Animal : Personagem, IDroparDinheiro, IDefender, IAtacar{
-    private int vida;
+    public int vida;
     private int defesa;
     public Animal(){
         this.Nome = GeradorDeNomes.GerarNomeAnimal();

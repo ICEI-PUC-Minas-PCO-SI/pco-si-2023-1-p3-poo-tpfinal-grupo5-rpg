@@ -45,4 +45,8 @@ public class Jogavel : Pessoa{
         this.Defesa += 1;
         this.Sorte += 1;
     }
+    public void ReceberDinheiro(int quantidade)
+    {
+        this.Dinheiro += quantidade;
+    }
 }
