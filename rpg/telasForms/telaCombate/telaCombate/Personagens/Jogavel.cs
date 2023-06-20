@@ -27,7 +27,7 @@ public class Jogavel : Pessoa{
         this.Vida += 100 + this.Classe.ModVida + this.Raca.ModVida;
         this.Mana += 30 + this.Classe.ModMana + this.Raca.ModMana;
         this.Ataque += 10 + this.Classe.ModAtaque + this.Raca.ModAtaque;
-        this.Defesa += 6 + this.Classe.ModDefesa + this.Raca.ModDefesa;
+        this.Defesa += 5 + this.Classe.ModDefesa + this.Raca.ModDefesa;
         this.Sorte += 0 + this.Classe.ModSorte + this.Raca.ModSorte;
         this.Nivel = 1;
     }

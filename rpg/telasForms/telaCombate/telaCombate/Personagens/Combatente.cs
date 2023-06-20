@@ -36,16 +36,16 @@ public class Combatente : Personagem, IAtacar, IDefender, IDroparDinheiro{
         if(Acerto > (100 - ataque.ChanceDeAcerto)){
             int Critico = Dado.RandomNumber(this.sorte, 100);
             if(Critico > 90){
-                return ataque.Dano * 2;
+                return (ataque.Dano + this.ataque) * 2;
             }
             else if(Critico > 50){
-                return ataque.Dano;
+                return (ataque.Dano + this.ataque);
             }
             else if(Critico < 0){
                 return 0;
             }
             else{
-                return ataque.Dano * (Critico / 100);
+                return (ataque.Dano + this.ataque) * (Critico / 100);
             }
         }
         else{

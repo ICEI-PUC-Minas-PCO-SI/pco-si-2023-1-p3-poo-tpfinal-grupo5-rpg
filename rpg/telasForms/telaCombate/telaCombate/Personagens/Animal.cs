@@ -4,7 +4,7 @@ public class Animal : Combatente, IDroparDinheiro, IDefender, IAtacar{
     private int dano;
     public Animal(){
         this.Nome = GeradorDeNomes.GerarNomeAnimal();
-        this.Dinheiro += Dado.RandomNumber(1, 10);
+        this.Dinheiro += Dado.RandomNumber(1, 3);
         this.vida = Dado.RandomNumber(1, 20);
         this.defesa = Dado.RandomNumber(1, 10);
         this.dano = Dado.RandomNumber(1, 20);

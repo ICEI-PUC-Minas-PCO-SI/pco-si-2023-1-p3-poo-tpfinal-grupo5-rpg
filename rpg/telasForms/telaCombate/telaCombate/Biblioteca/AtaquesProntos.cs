@@ -1,11 +1,11 @@
 public static class AtaquesProntos{
     public static Ataque[] geraAtaques(){
-        Ataque basico = new Ataque("Básico", 5, 0, 90);
-        Ataque corajoso = new Ataque("Corajoso", 10, 10, 80);
-        Ataque chamadoDivino = new Ataque("Chamado Divino", 10, 10, 80);
-        Ataque cabecada = new Ataque("Cabeçada", 15, 10, 75);
-        Ataque dilacerar = new Ataque("Dilacerar", 20, 10, 70);
-        Ataque engenhoso = new Ataque("Engenhoso", 20, 20, 80);
+        Ataque basico = new Ataque("Básico", 0, 0, 100);
+        Ataque corajoso = new Ataque("Corajoso", 5, 10, 100);
+        Ataque chamadoDivino = new Ataque("Chamado Divino", 10, 20, 100);
+        Ataque cabecada = new Ataque("Cabeçada", 5, 5, 100);
+        Ataque dilacerar = new Ataque("Dilacerar", 20, 30, 100);
+        Ataque engenhoso = new Ataque("Engenhoso", 10, 20, 100);
         return new Ataque[]{basico, corajoso, chamadoDivino, cabecada, dilacerar, engenhoso};
     }
 
