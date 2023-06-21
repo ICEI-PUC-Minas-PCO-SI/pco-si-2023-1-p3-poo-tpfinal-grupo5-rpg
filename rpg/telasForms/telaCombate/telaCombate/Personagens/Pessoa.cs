@@ -37,9 +37,9 @@ public class Pessoa : Combatente, IComercio, IDroparItem, IUsarItem{
         this.arma = arma;
         this.armadura = armadura;
         this.inventario = inventario;
-        this.vida = vida;
-        this.defesa = defesa;
-        this.ataque = ataque;
+        this.Vida = vida;
+        this.Defesa = defesa;
+        this.Ataque = ataque;
     }
 
     public Classe Classe { get => classe; set => classe = value; }
