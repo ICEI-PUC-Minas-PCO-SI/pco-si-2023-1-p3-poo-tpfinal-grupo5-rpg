@@ -231,6 +231,8 @@ namespace telaCombate
                 vidaPersonagem.Text = "0";
                 manaPersonagem.Text = Personagem.Mana.ToString();
                 vidaInimigo.Text = combate.Inimigo.vida.ToString();
+                MessageBox.Show("FIM DE JOGO");
+                this.Close();
             }
             else if (javali.vida <= 0)
             {
@@ -238,6 +240,13 @@ namespace telaCombate
                 int dinheiroDropado = javali.droparDinheiro();
                 Personagem.ReceberDinheiro(dinheiroDropado);
                 MessageBox.Show($"Você venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
+
+                //Leva pra outra tela
+                playerImg.Image = null;
+                Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+                telaNPCs02 formsNPC2 = new telaNPCs02(racaSelecionada, classeSelecionada, nome);
+                formsNPC2.Personagem = personagem;
+                this.Hide();
             }
         }
 
