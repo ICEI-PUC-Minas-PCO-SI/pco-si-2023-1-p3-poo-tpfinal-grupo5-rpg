@@ -206,27 +206,6 @@ namespace telaCombate
             }
 
 
-
-            //while (Personagem.Vida > 0 && javali.vida > 0)
-            //{
-            //    int danoPersonagem = combate.Personagem.atacar(ataqueEscolhido);
-            //    //Personagem.defender(danoPersonagem);
-            //    lblInformacoes.Text = $"Você causou {danoPersonagem} de dano.";
-
-            //    if (javali.vida <= 0)
-            //        break;
-
-            //    System.Threading.Thread.Sleep(100);
-
-            //    int danoInimigo = javali.atacar();
-            //    int vidaAtual = (Personagem.Vida - danoInimigo); 
-            //    vidaPersonagem.Text = vidaAtual.ToString();
-            //    Personagem.defender(danoInimigo);
-            //    lblInformacoes.Text += $" O inimigo causou {danoInimigo} de dano.";
-
-            //    System.Threading.Thread.Sleep(100000);
-            //}
-
             if (Personagem.Vida <= 0)
             {
                 MessageBox.Show("Você foi derrotado pelo inimigo!");

@@ -15,8 +15,14 @@ namespace telaCombate
         public Jogavel Personagem { get; set; }
         private Raca racaSelecionada;
         private Classe classeSelecionada;
-
+        private Ataque ataqueEscolhido;
+        private Arma armaPlayer;
         protected string nome;
+
+        public int ManaAtual
+        {
+            get => Personagem.Mana;
+        }
         public telaCaverna(Raca racaSelecionada, Classe classeSelecionada, string nome)
         {
             InitializeComponent();

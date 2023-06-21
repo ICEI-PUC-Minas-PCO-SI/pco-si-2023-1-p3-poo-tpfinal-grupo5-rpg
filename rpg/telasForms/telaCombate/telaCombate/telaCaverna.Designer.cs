@@ -37,7 +37,7 @@
             this.ClientSize = new System.Drawing.Size(926, 523);
             this.MaximizeBox = false;
             this.Name = "telaCaverna";
-            this.Text = "telaCaverna";
+            this.Text = "Caverna";
             this.Load += new System.EventHandler(this.telaCaverna_Load);
             this.ResumeLayout(false);
 
