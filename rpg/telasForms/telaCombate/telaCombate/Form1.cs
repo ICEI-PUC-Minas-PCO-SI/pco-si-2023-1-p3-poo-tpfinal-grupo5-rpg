@@ -121,7 +121,9 @@ namespace telaCombate
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.Personagem.Inventario.Add(ConsumiveisProntos.PocaoVidaP());
+            this.Personagem.Inventario.Add(ConsumiveisProntos.PocaoManaP());
+            
             Animal[] animais = AnimaisProntos.geraAnimais();
             javali = animais[0];
             lobo = animais[1];
