@@ -90,26 +90,26 @@ namespace telaCombate
                 return null;
             }
         }
-        private List<Consumivel> obterConsumiveis()
-        {
-            List<Consumivel> consumiveis = new List<Consumivel>();
+        //private List<Consumivel> obterConsumiveis()
+        //{
+        //    List<Consumivel> consumiveis = new List<Consumivel>();
 
-            foreach (var item in this.Personagem.Inventario)
-            {
-                if (item is Consumivel consumivel)
-                {
-                    consumiveis.Add(consumivel);
-                }
-            }
+        //    foreach (var item in this.Personagem.Inventario)
+        //    {
+        //        if (item is Consumivel consumivel)
+        //        {
+        //            consumiveis.Add(consumivel);
+        //        }
+        //    }
 
-            return consumiveis;
-        }
+        //    return consumiveis;
+        //}
 
         private void btnAtaqMedio_Click(object sender, EventArgs e)
         {
             if (classeSelecionada.Nome == "Guerreiro")
             {
-                ataqueEscolhido = AtaquesProntos.GolpeFurioso();
+                ataqueEscolhido = AtaquesProntos.Corajoso();
             }
             else if (classeSelecionada.Nome == "Clerigo")
             {
@@ -139,7 +139,7 @@ namespace telaCombate
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            List<Consumivel> consumiveis = obterConsumiveis();
+            
             this.Personagem.Inventario.Add(ConsumiveisProntos.PocaoVidaP());
             this.Personagem.Inventario.Add(ConsumiveisProntos.PocaoManaP());
             
@@ -170,12 +170,6 @@ namespace telaCombate
             ListViewItem itemArma = new ListViewItem(armaPlayer.Nome);
             itemArma.SubItems.Add("1");
             listInventario.Items.Add(itemArma);
-
-            foreach (var consumivel in consumiveis)
-            {
-                ListViewItem itemConsumivel = new ListViewItem(consumivel.Nome);
-                listInventario.Items.Add(itemConsumivel);
-            }
         }
 
         private void vidaPersonagem_Click(object sender, EventArgs e)
@@ -289,6 +283,32 @@ namespace telaCombate
             }
         }
 
-        
+        private void btnAtaqEspecial_Click(object sender, EventArgs e)
+        {
+            if (classeSelecionada.Nome == "Guerreiro")
+            {
+                ataqueEscolhido = AtaquesProntos.GolpeFurioso();
+            }
+            else if (classeSelecionada.Nome == "Clerigo")
+            {
+                ataqueEscolhido = AtaquesProntos.CuraDivina();
+            }
+            else if (classeSelecionada.Nome == "Ladino")
+            {
+                ataqueEscolhido = AtaquesProntos.AtaqueSorrateiro();
+            }
+            else if (classeSelecionada.Nome == "Tanque")
+            {
+                ataqueEscolhido = AtaquesProntos.EscudoDeProtecao();
+            }
+            else if (classeSelecionada.Nome == "Arqueiro")
+            {
+                ataqueEscolhido = AtaquesProntos.ChuvaDeFlechas();
+            }
+            else
+            {
+                ataqueEscolhido = new Ataque("Ataque Especial", 30, 20, 100);
+            }
+        }
     }
 }

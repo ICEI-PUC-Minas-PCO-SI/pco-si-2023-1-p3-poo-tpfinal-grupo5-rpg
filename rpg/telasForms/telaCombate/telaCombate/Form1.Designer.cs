@@ -54,6 +54,7 @@
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            this.btnAtaqEspecial = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -153,7 +154,7 @@
             this.btnAtaqBase.BackColor = System.Drawing.Color.Maroon;
             this.btnAtaqBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtaqBase.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAtaqBase.Location = new System.Drawing.Point(24, 188);
+            this.btnAtaqBase.Location = new System.Drawing.Point(24, 187);
             this.btnAtaqBase.Name = "btnAtaqBase";
             this.btnAtaqBase.Size = new System.Drawing.Size(161, 35);
             this.btnAtaqBase.TabIndex = 12;
@@ -166,11 +167,11 @@
             this.btnAtaqMedio.BackColor = System.Drawing.Color.Maroon;
             this.btnAtaqMedio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtaqMedio.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAtaqMedio.Location = new System.Drawing.Point(24, 229);
+            this.btnAtaqMedio.Location = new System.Drawing.Point(24, 230);
             this.btnAtaqMedio.Name = "btnAtaqMedio";
             this.btnAtaqMedio.Size = new System.Drawing.Size(161, 35);
             this.btnAtaqMedio.TabIndex = 13;
-            this.btnAtaqMedio.Text = "Ataque especial";
+            this.btnAtaqMedio.Text = "Ataque médio";
             this.btnAtaqMedio.UseVisualStyleBackColor = false;
             this.btnAtaqMedio.Click += new System.EventHandler(this.btnAtaqMedio_Click);
             // 
@@ -179,7 +180,7 @@
             this.btnUsarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnUsarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsarItem.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUsarItem.Location = new System.Drawing.Point(24, 306);
+            this.btnUsarItem.Location = new System.Drawing.Point(26, 340);
             this.btnUsarItem.Name = "btnUsarItem";
             this.btnUsarItem.Size = new System.Drawing.Size(161, 35);
             this.btnUsarItem.TabIndex = 16;
@@ -305,6 +306,19 @@
             // 
             this.columnHeader7.Width = 500;
             // 
+            // btnAtaqEspecial
+            // 
+            this.btnAtaqEspecial.BackColor = System.Drawing.Color.Maroon;
+            this.btnAtaqEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtaqEspecial.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqEspecial.Location = new System.Drawing.Point(24, 274);
+            this.btnAtaqEspecial.Name = "btnAtaqEspecial";
+            this.btnAtaqEspecial.Size = new System.Drawing.Size(161, 35);
+            this.btnAtaqEspecial.TabIndex = 26;
+            this.btnAtaqEspecial.Text = "Ataque especial";
+            this.btnAtaqEspecial.UseVisualStyleBackColor = false;
+            this.btnAtaqEspecial.Click += new System.EventHandler(this.btnAtaqEspecial_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -312,6 +326,7 @@
             this.BackgroundImage = global::telaCombate.Properties.Resources.floresta1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.btnAtaqEspecial);
             this.Controls.Add(this.listInventario);
             this.Controls.Add(this.nomeInventario);
             this.Controls.Add(this.vidaInimigo);
@@ -371,5 +386,6 @@
         private ColumnHeader columnHeader5;
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
+        private Button btnAtaqEspecial;
     }
 }
