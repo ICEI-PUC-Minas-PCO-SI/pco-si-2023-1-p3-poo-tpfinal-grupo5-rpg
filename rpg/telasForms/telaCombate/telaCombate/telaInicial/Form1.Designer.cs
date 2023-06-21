@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pictureBox1 = new PictureBox();
-            btnIniciarJogo = new Button();
-            btnJogo = new Button();
+            button1 = new Button();
+            button2 = new Button();
             pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -46,33 +46,33 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // btnIniciarJogo
+            // button1
             // 
-            btnIniciarJogo.BackColor = Color.FromArgb(23, 26, 33);
-            btnIniciarJogo.Cursor = Cursors.Hand;
-            btnIniciarJogo.FlatStyle = FlatStyle.Flat;
-            btnIniciarJogo.Font = new Font("Trebuchet MS", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            btnIniciarJogo.ForeColor = Color.White;
-            btnIniciarJogo.Location = new Point(335, 291);
-            btnIniciarJogo.Name = "btnIniciarJogo";
-            btnIniciarJogo.Size = new Size(198, 41);
-            btnIniciarJogo.TabIndex = 3;
-            btnIniciarJogo.Text = "INICIAR JOGO";
-            btnIniciarJogo.UseVisualStyleBackColor = false;
+            button1.BackColor = Color.FromArgb(23, 26, 33);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Trebuchet MS", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(335, 291);
+            button1.Name = "button1";
+            button1.Size = new Size(198, 41);
+            button1.TabIndex = 3;
+            button1.Text = "INICIAR JOGO";
+            button1.UseVisualStyleBackColor = false;
             // 
-            // btnJogo
+            // button2
             // 
-            btnJogo.BackColor = Color.FromArgb(23, 26, 33);
-            btnJogo.Cursor = Cursors.Hand;
-            btnJogo.FlatStyle = FlatStyle.Flat;
-            btnJogo.Font = new Font("Trebuchet MS", 11F, FontStyle.Bold, GraphicsUnit.Point);
-            btnJogo.ForeColor = Color.White;
-            btnJogo.Location = new Point(335, 348);
-            btnJogo.Name = "btnJogo";
-            btnJogo.Size = new Size(198, 41);
-            btnJogo.TabIndex = 4;
-            btnJogo.Text = "SAIR";
-            btnJogo.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.FromArgb(23, 26, 33);
+            button2.Cursor = Cursors.Hand;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Trebuchet MS", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(335, 348);
+            button2.Name = "button2";
+            button2.Size = new Size(198, 41);
+            button2.TabIndex = 4;
+            button2.Text = "SAIR";
+            button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -91,8 +91,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
-            Controls.Add(btnJogo);
-            Controls.Add(btnIniciarJogo);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Name = "Form1";
@@ -105,8 +105,8 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button btnIniciarJogo;
-        private Button btnJogo;
+        private Button button1;
+        private Button button2;
         private PictureBox pictureBox2;
     }
 }
