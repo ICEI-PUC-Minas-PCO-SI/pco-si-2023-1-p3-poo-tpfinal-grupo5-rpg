@@ -7,6 +7,9 @@
     <Compile Update="telaClasse.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TelaInicial\FormTelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="telaJogo.cs">
       <SubType>Form</SubType>
     </Compile>
