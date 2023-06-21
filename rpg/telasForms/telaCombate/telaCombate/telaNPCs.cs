@@ -18,7 +18,6 @@ namespace telaCombate
         private Classe classeSelecionada;
         private List<string> historiaCeleste;
         private List<string> historiaRagnar;
-        private List<string> historiaLucius;
         private int indiceAtual;
         protected string nome;
         public Jogavel Personagem { get; set; }

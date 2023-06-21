@@ -136,6 +136,9 @@
   <data name="npc04" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\npc04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="casa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="inferno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inferno.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,8 +166,8 @@
   <data name="elfo_arqueiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elfo_arqueiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gnomo_arqueiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gnomo_arqueiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="floresta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\floresta1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vila" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -183,9 +186,6 @@
   </data>
   <data name="orc_guerreiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\orc_guerreiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vilaDestruida" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vilaDestruida.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="manaPocao" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\manaPocao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,17 +250,17 @@
   <data name="npc03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\npc03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="elfo_ladino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\elfo_ladino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vilaDestruida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vilaDestruida.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cultistaHomem" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cultistaHomem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="gnomo_ladino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gnomo_ladino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gnomo_arqueiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gnomo_arqueiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="anciao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anciao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="elfo_ladino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elfo_ladino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="orc_clerigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\orc_clerigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,20 +274,23 @@
   <data name="anao_guerreiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anao_guerreiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="moeda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\moeda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="humano" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\humano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="anciao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anciao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moeda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\moeda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gnomo_ladino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gnomo_ladino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gnomo_tanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gnomo_tanque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anao_tanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anao_tanque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="anao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\anao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="orc_ladino" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\orc_ladino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,7 +301,10 @@
   <data name="calabouco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calabouco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="floresta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\floresta1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="anao_tanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\anao_tanque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="casaVelho" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\casaVelho.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
