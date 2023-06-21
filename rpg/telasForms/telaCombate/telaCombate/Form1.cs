@@ -21,6 +21,7 @@ namespace telaCombate
         protected List<string> inventario = new List<string>();
         private Ataque ataqueEscolhido;
         private Arma armaPlayer;
+        
 
 
         public int ManaAtual
@@ -89,11 +90,26 @@ namespace telaCombate
                 return null;
             }
         }
+        private List<Consumivel> obterConsumiveis()
+        {
+            List<Consumivel> consumiveis = new List<Consumivel>();
+
+            foreach (var item in this.Personagem.Inventario)
+            {
+                if (item is Consumivel consumivel)
+                {
+                    consumiveis.Add(consumivel);
+                }
+            }
+
+            return consumiveis;
+        }
+
         private void btnAtaqMedio_Click(object sender, EventArgs e)
         {
             if (classeSelecionada.Nome == "Guerreiro")
             {
-                ataqueEscolhido = AtaquesProntos.Corajoso();
+                ataqueEscolhido = AtaquesProntos.GolpeFurioso();
             }
             else if (classeSelecionada.Nome == "Clerigo")
             {
@@ -119,10 +135,14 @@ namespace telaCombate
             //lblInformacoes.Text = $"Ataque: {ataqueEscolhido.Nome} Dano: {ataqueEscolhido.Dano}, Gasto de Mana: {ataqueEscolhido.GastoDeMana}, �ndice de Acerto: {ataqueEscolhido.ChanceDeAcerto}%";
         }
 
+        
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            List<Consumivel> consumiveis = obterConsumiveis();
             this.Personagem.Inventario.Add(ConsumiveisProntos.PocaoVidaP());
             this.Personagem.Inventario.Add(ConsumiveisProntos.PocaoManaP());
+            
             
             Animal[] animais = AnimaisProntos.geraAnimais();
             javali = animais[0];
@@ -147,22 +167,14 @@ namespace telaCombate
 
             //Arma personagem
             armaPlayer = SelecionarArma();
-            if (armaPlayer != null)
-            {
-                
-                ListViewItem itemArma = new ListViewItem(armaPlayer.Nome);
+            ListViewItem itemArma = new ListViewItem(armaPlayer.Nome);
+            itemArma.SubItems.Add("1");
+            listInventario.Items.Add(itemArma);
 
-                
-                itemArma.SubItems.Add("1"); 
-                
-
-               
-                listInventario.Items.Add(itemArma);
-            }
-            else
+            foreach (var consumivel in consumiveis)
             {
-                listInventario.Items.Clear(); 
-                listInventario.Items.Add("Nenhuma arma selecionada");
+                ListViewItem itemConsumivel = new ListViewItem(consumivel.Nome);
+                listInventario.Items.Add(itemConsumivel);
             }
         }
 
@@ -276,5 +288,7 @@ namespace telaCombate
                 MessageBox.Show("Nenhum item selecionado.");
             }
         }
+
+        
     }
 }

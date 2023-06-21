@@ -39,7 +39,6 @@
             this.nomeInimigo = new System.Windows.Forms.Label();
             this.btnAtaqBase = new System.Windows.Forms.Button();
             this.btnAtaqMedio = new System.Windows.Forms.Button();
-            this.btnAtqEsp = new System.Windows.Forms.Button();
             this.btnUsarItem = new System.Windows.Forms.Button();
             this.lblInformacoes = new System.Windows.Forms.Label();
             this.vidaPersonagem = new System.Windows.Forms.Label();
@@ -171,28 +170,16 @@
             this.btnAtaqMedio.Name = "btnAtaqMedio";
             this.btnAtaqMedio.Size = new System.Drawing.Size(161, 35);
             this.btnAtaqMedio.TabIndex = 13;
-            this.btnAtaqMedio.Text = "Ataque médio";
+            this.btnAtaqMedio.Text = "Ataque especial";
             this.btnAtaqMedio.UseVisualStyleBackColor = false;
             this.btnAtaqMedio.Click += new System.EventHandler(this.btnAtaqMedio_Click);
-            // 
-            // btnAtqEsp
-            // 
-            this.btnAtqEsp.BackColor = System.Drawing.Color.Maroon;
-            this.btnAtqEsp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtqEsp.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAtqEsp.Location = new System.Drawing.Point(24, 270);
-            this.btnAtqEsp.Name = "btnAtqEsp";
-            this.btnAtqEsp.Size = new System.Drawing.Size(161, 35);
-            this.btnAtqEsp.TabIndex = 14;
-            this.btnAtqEsp.Text = "Ataque especial";
-            this.btnAtqEsp.UseVisualStyleBackColor = false;
             // 
             // btnUsarItem
             // 
             this.btnUsarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnUsarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsarItem.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUsarItem.Location = new System.Drawing.Point(24, 338);
+            this.btnUsarItem.Location = new System.Drawing.Point(24, 306);
             this.btnUsarItem.Name = "btnUsarItem";
             this.btnUsarItem.Size = new System.Drawing.Size(161, 35);
             this.btnUsarItem.TabIndex = 16;
@@ -296,27 +283,27 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Width = 200;
+            this.columnHeader2.Width = 500;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Width = 200;
+            this.columnHeader3.Width = 500;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Width = 200;
+            this.columnHeader4.Width = 500;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Width = 200;
+            this.columnHeader5.Width = 500;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Width = 200;
+            this.columnHeader6.Width = 500;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Width = 200;
+            this.columnHeader7.Width = 500;
             // 
             // Form1
             // 
@@ -333,7 +320,6 @@
             this.Controls.Add(this.vidaPersonagem);
             this.Controls.Add(this.lblInformacoes);
             this.Controls.Add(this.btnUsarItem);
-            this.Controls.Add(this.btnAtqEsp);
             this.Controls.Add(this.btnAtaqMedio);
             this.Controls.Add(this.btnAtaqBase);
             this.Controls.Add(this.nomeInimigo);
@@ -370,7 +356,6 @@
         private Label nomeInimigo;
         private Button btnAtaqBase;
         private Button btnAtaqMedio;
-        private Button btnAtqEsp;
         private Button btnUsarItem;
         private Label lblInformacoes;
         private Label vidaPersonagem;
