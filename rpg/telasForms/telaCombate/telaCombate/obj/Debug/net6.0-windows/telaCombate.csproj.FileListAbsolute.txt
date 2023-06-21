@@ -76,3 +76,7 @@ C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo
 C:\Users\pedro\OneDrive\Área de Trabalho\TrabalhoPOO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaInicial.resources
 C:\Users\pedro\OneDrive\Área de Trabalho\TrabalhoPOO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaNPCs02.resources
 >>>>>>> e000da8a13499beb4a9689731234a29bb3beada6
+C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.casaPersonagem.resources
+C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaCaverna.resources
+C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaInicial.resources
+C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaNPCs02.resources

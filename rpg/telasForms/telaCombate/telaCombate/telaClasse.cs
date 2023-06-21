@@ -12,7 +12,7 @@ namespace telaCombate
 {
     public partial class telaClasse : Form
     {
-        private Raca racaSelecionada;
+        private Raca racaSelecionada = new Raca();
         public telaClasse(Raca racaSelecionada)
         {
             InitializeComponent();
