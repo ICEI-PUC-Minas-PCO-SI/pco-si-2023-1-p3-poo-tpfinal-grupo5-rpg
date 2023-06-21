@@ -41,10 +41,11 @@ namespace telaCombate
             historiaRagnar = new List<string>
             {
                 "VOCÊ: Ragnar. Quanto tempo! Como estão as coisas por aqui?",
-                "RAGNAR: Saudações, meu caro. Para ser sincero, não vão muito bem... As pessoass estão aterrorizadas com os acontecidos.",
+                "RAGNAR: Saudações, meu caro. Para ser sincero, não vão muito bem... As pessoas estão aterrorizadas com os acontecidos.",
                 "VOCÊ: Com esses desparecimentos não tem como não temer. Estou tentando organizar os pensamentos pra entender tudo isso, você reparou em algo diferente?",
                 "RAGNAR: Eu andei ouvindo sons bem estranhos na floresta. Não tive coragem de investigar.",
-                "VOCÊ: Certo, obrigado por falar! Se souber de mais alguma coisa me procure por favor"
+                "VOCÊ: Certo, obrigado por falar! Se souber de mais alguma coisa me procure por favor",
+
             };
         }
         private string RemoverAcentos(string texto)
@@ -85,17 +86,24 @@ namespace telaCombate
             }
             else
             {
-                btnProsseguir.Text = "Ir para a floresta";
-                Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
-                Form1 formsBatalha = new Form1(racaSelecionada, classeSelecionada, nome);
-                formsBatalha.Personagem = personagem;
-                formsBatalha.Show();
-                this.Hide();
-                imgPersonagem.Image = null;
+                btnProsseguir.Visible = false; 
+                btnIrParaFloresta.Visible = true; 
+                
 
             }
 
 
+        }
+
+        private void btnIrParaFloresta_Click(object sender, EventArgs e)
+        {
+            imgPersonagem.Image = null;
+            imgNpc.Image = null;    
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+            Form1 formsBatalha = new Form1(racaSelecionada, classeSelecionada, nome);
+            formsBatalha.Personagem = personagem;
+            formsBatalha.Show();
+            this.Hide();
         }
     }
 }

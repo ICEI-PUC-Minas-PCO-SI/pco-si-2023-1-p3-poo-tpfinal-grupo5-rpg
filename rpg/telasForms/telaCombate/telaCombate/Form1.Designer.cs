@@ -40,13 +40,21 @@
             this.btnAtaqBase = new System.Windows.Forms.Button();
             this.btnAtaqMedio = new System.Windows.Forms.Button();
             this.btnAtqEsp = new System.Windows.Forms.Button();
-            this.btnDefesa = new System.Windows.Forms.Button();
             this.btnUsarItem = new System.Windows.Forms.Button();
             this.lblInformacoes = new System.Windows.Forms.Label();
             this.vidaPersonagem = new System.Windows.Forms.Label();
             this.btnBatalhar = new System.Windows.Forms.Button();
             this.manaPersonagem = new System.Windows.Forms.Label();
             this.vidaInimigo = new System.Windows.Forms.Label();
+            this.nomeInventario = new System.Windows.Forms.Label();
+            this.listInventario = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -100,7 +108,7 @@
             // playerImg
             // 
             this.playerImg.BackColor = System.Drawing.Color.Transparent;
-            this.playerImg.Location = new System.Drawing.Point(204, 188);
+            this.playerImg.Location = new System.Drawing.Point(193, 167);
             this.playerImg.Name = "playerImg";
             this.playerImg.Size = new System.Drawing.Size(149, 244);
             this.playerImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +120,7 @@
             // 
             this.imgInimigo.BackColor = System.Drawing.Color.Transparent;
             this.imgInimigo.Image = global::telaCombate.Properties.Resources.javali;
-            this.imgInimigo.Location = new System.Drawing.Point(583, 188);
+            this.imgInimigo.Location = new System.Drawing.Point(569, 167);
             this.imgInimigo.Name = "imgInimigo";
             this.imgInimigo.Size = new System.Drawing.Size(169, 244);
             this.imgInimigo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,29 +187,18 @@
             this.btnAtqEsp.Text = "Ataque especial";
             this.btnAtqEsp.UseVisualStyleBackColor = false;
             // 
-            // btnDefesa
-            // 
-            this.btnDefesa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDefesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDefesa.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnDefesa.Location = new System.Drawing.Point(24, 321);
-            this.btnDefesa.Name = "btnDefesa";
-            this.btnDefesa.Size = new System.Drawing.Size(161, 35);
-            this.btnDefesa.TabIndex = 15;
-            this.btnDefesa.Text = "Defesa";
-            this.btnDefesa.UseVisualStyleBackColor = false;
-            // 
             // btnUsarItem
             // 
-            this.btnUsarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btnUsarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnUsarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsarItem.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnUsarItem.Location = new System.Drawing.Point(24, 373);
+            this.btnUsarItem.Location = new System.Drawing.Point(24, 338);
             this.btnUsarItem.Name = "btnUsarItem";
             this.btnUsarItem.Size = new System.Drawing.Size(161, 35);
             this.btnUsarItem.TabIndex = 16;
             this.btnUsarItem.Text = "Usar item";
             this.btnUsarItem.UseVisualStyleBackColor = false;
+            this.btnUsarItem.Click += new System.EventHandler(this.btnUsarItem_Click);
             // 
             // lblInformacoes
             // 
@@ -230,7 +227,7 @@
             this.btnBatalhar.BackColor = System.Drawing.Color.Yellow;
             this.btnBatalhar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBatalhar.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnBatalhar.Location = new System.Drawing.Point(399, 282);
+            this.btnBatalhar.Location = new System.Drawing.Point(376, 270);
             this.btnBatalhar.Name = "btnBatalhar";
             this.btnBatalhar.Size = new System.Drawing.Size(161, 35);
             this.btnBatalhar.TabIndex = 21;
@@ -262,20 +259,80 @@
             this.vidaInimigo.TabIndex = 23;
             this.vidaInimigo.Text = "label1";
             // 
+            // nomeInventario
+            // 
+            this.nomeInventario.AutoSize = true;
+            this.nomeInventario.BackColor = System.Drawing.Color.Black;
+            this.nomeInventario.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nomeInventario.ForeColor = System.Drawing.Color.White;
+            this.nomeInventario.Location = new System.Drawing.Point(26, 429);
+            this.nomeInventario.Name = "nomeInventario";
+            this.nomeInventario.Size = new System.Drawing.Size(100, 21);
+            this.nomeInventario.TabIndex = 24;
+            this.nomeInventario.Text = "Inventário";
+            // 
+            // listInventario
+            // 
+            this.listInventario.BackColor = System.Drawing.Color.Black;
+            this.listInventario.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
+            this.listInventario.Font = new System.Drawing.Font("Cascadia Code", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listInventario.ForeColor = System.Drawing.Color.White;
+            this.listInventario.Location = new System.Drawing.Point(24, 455);
+            this.listInventario.Name = "listInventario";
+            this.listInventario.Size = new System.Drawing.Size(878, 63);
+            this.listInventario.TabIndex = 25;
+            this.listInventario.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 500;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Width = 200;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Width = 200;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Width = 200;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Width = 200;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Width = 200;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Width = 200;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::telaCombate.Properties.Resources.floresta;
+            this.BackgroundImage = global::telaCombate.Properties.Resources.floresta1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.listInventario);
+            this.Controls.Add(this.nomeInventario);
             this.Controls.Add(this.vidaInimigo);
             this.Controls.Add(this.manaPersonagem);
             this.Controls.Add(this.btnBatalhar);
             this.Controls.Add(this.vidaPersonagem);
             this.Controls.Add(this.lblInformacoes);
             this.Controls.Add(this.btnUsarItem);
-            this.Controls.Add(this.btnDefesa);
             this.Controls.Add(this.btnAtqEsp);
             this.Controls.Add(this.btnAtaqMedio);
             this.Controls.Add(this.btnAtaqBase);
@@ -314,12 +371,20 @@
         private Button btnAtaqBase;
         private Button btnAtaqMedio;
         private Button btnAtqEsp;
-        private Button btnDefesa;
         private Button btnUsarItem;
         private Label lblInformacoes;
         private Label vidaPersonagem;
         private Button btnBatalhar;
         private Label manaPersonagem;
         private Label vidaInimigo;
+        private Label nomeInventario;
+        private ListView listInventario;
+        private ColumnHeader columnHeader1;
+        private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
+        private ColumnHeader columnHeader4;
+        private ColumnHeader columnHeader5;
+        private ColumnHeader columnHeader6;
+        private ColumnHeader columnHeader7;
     }
 }
