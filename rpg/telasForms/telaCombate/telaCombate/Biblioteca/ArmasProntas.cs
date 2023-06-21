@@ -8,6 +8,8 @@ public static class ArmasProntas{
 
         Arma cajado = new Arma("Cajado", 10, 1, 1, "ataque", 3);
 
+        Arma marteloDeGuerra = new Arma("Martelo de Guerra", 10, 1, 1, "ataque", 3);
+
         return new Arma[]{espadaLonga, arcoCurto, adaga, cajado};
     }
 
@@ -22,5 +24,9 @@ public static class ArmasProntas{
     }
     public static Arma Cajado(){
         return geradArma()[3];
+    }
+    public static Arma MarteloDeGuerra()
+    {
+        return geradArma()[4];
     }
 }

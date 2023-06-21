@@ -32,6 +32,7 @@
             this.imgNpc = new System.Windows.Forms.PictureBox();
             this.textoConversa = new System.Windows.Forms.Label();
             this.btnProsseguir = new System.Windows.Forms.Button();
+            this.btnIrParaFloresta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgPersonagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNpc)).BeginInit();
             this.SuspendLayout();
@@ -82,12 +83,29 @@
             this.btnProsseguir.UseVisualStyleBackColor = false;
             this.btnProsseguir.Click += new System.EventHandler(this.btnProsseguir_Click);
             // 
+            // btnIrParaFloresta
+            // 
+            this.btnIrParaFloresta.BackColor = System.Drawing.Color.Black;
+            this.btnIrParaFloresta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIrParaFloresta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIrParaFloresta.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnIrParaFloresta.ForeColor = System.Drawing.Color.White;
+            this.btnIrParaFloresta.Location = new System.Drawing.Point(728, 478);
+            this.btnIrParaFloresta.Name = "btnIrParaFloresta";
+            this.btnIrParaFloresta.Size = new System.Drawing.Size(181, 38);
+            this.btnIrParaFloresta.TabIndex = 21;
+            this.btnIrParaFloresta.Text = "Ir para a floresta";
+            this.btnIrParaFloresta.UseVisualStyleBackColor = false;
+            this.btnIrParaFloresta.Visible = false;
+            this.btnIrParaFloresta.Click += new System.EventHandler(this.btnIrParaFloresta_Click);
+            // 
             // telaNPCs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::telaCombate.Properties.Resources.vila;
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.btnIrParaFloresta);
             this.Controls.Add(this.btnProsseguir);
             this.Controls.Add(this.textoConversa);
             this.Controls.Add(this.imgNpc);
@@ -107,5 +125,6 @@
         private PictureBox imgNpc;
         private Label textoConversa;
         private Button btnProsseguir;
+        private Button btnIrParaFloresta;
     }
 }
