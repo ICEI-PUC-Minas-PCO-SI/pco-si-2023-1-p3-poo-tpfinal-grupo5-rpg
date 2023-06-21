@@ -246,6 +246,7 @@ namespace telaCombate
                 Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
                 telaNPCs02 formsNPC2 = new telaNPCs02(racaSelecionada, classeSelecionada, nome);
                 formsNPC2.Personagem = personagem;
+                formsNPC2.Show();   
                 this.Hide();
             }
         }
