@@ -2,7 +2,7 @@ public static class ArmadurasProntas{
     public static Armadura[] geraArmadura(){
         Armadura escudo = new Armadura("Escudo", 10, 1, 1, "defesa", 3);
 
-        Armadura couraca = new Armadura("Coucaça", 15, 1, 1, "defesa", 5);
+        Armadura couraca = new Armadura("Couraça", 15, 1, 1, "defesa", 5);
 
         Armadura cotaDeMalha = new Armadura("Cota de Malha", 20, 1, 1, "defesa", 8);
 

@@ -1,9 +1,9 @@
 public static class AnimaisProntos{
     public static Animal[] geraAnimais(){
 
-        Animal javali = new Animal("Javali", 50, 5, 5, 6);
+        Animal javali = new Animal("Javali", 500, Dado.RandomNumber(10, 15), Dado.RandomNumber(1, 3), 12);
 
-        Animal lobo = new Animal("Lobo", 75, 7, 10, 8);
+        Animal lobo = new Animal("Lobo", 750, Dado.RandomNumber(15, 20), Dado.RandomNumber(2, 4), 17);
 
         return new Animal[]{javali, lobo};
     }

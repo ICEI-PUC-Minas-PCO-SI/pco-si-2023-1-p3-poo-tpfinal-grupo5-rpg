@@ -80,3 +80,30 @@ C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfina
 C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaCaverna.resources
 C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaInicial.resources
 C:\Users\caiov\OneDrive\Caio_e_Amanda\Caio\SI\3P\POO\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaNPCs02.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\bin\Debug\net6.0-windows\telaCombate.exe
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\bin\Debug\net6.0-windows\telaCombate.deps.json
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\bin\Debug\net6.0-windows\telaCombate.runtimeconfig.json
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\bin\Debug\net6.0-windows\telaCombate.dll
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\bin\Debug\net6.0-windows\telaCombate.pdb
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.csproj.AssemblyReference.cache
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.casaPersonagem.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.Form1.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.Properties.Resources.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaCaverna.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaClasse.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaInicial.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaJogo.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaNPCs.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaNPCs02.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaPerPronto.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaRaça.resources
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.csproj.GenerateResource.cache
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.AssemblyInfoInputs.cache
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.AssemblyInfo.cs
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.csproj.CoreCompileInputs.cache
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.dll
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\refint\telaCombate.dll
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.pdb
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.genruntimeconfig.cache
+D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\ref\telaCombate.dll

@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\caiov\\.nuget\\packages\\": {}
+    "C:\\Users\\joaog\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caiov\\OneDrive\\Caio_e_Amanda\\Caio\\SI\\3P\\POO\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\telasForms\\telaCombate\\telaCombate\\telaCombate.csproj",
+      "projectUniqueName": "D:\\GitHub Desktop\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\telasForms\\telaCombate\\telaCombate\\telaCombate.csproj",
       "projectName": "telaCombate",
-      "projectPath": "C:\\Users\\caiov\\OneDrive\\Caio_e_Amanda\\Caio\\SI\\3P\\POO\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\telasForms\\telaCombate\\telaCombate\\telaCombate.csproj",
-      "packagesPath": "C:\\Users\\caiov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caiov\\OneDrive\\Caio_e_Amanda\\Caio\\SI\\3P\\POO\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\telasForms\\telaCombate\\telaCombate\\obj\\",
+      "projectPath": "D:\\GitHub Desktop\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\telasForms\\telaCombate\\telaCombate\\telaCombate.csproj",
+      "packagesPath": "C:\\Users\\joaog\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub Desktop\\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\\rpg\\telasForms\\telaCombate\\telaCombate\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\caiov\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joaog\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
