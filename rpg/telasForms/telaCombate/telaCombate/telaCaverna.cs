@@ -38,6 +38,11 @@ namespace telaCombate
             cultista = PessoasProntas.CultistaTanque();
             //Infos personagem
             //nivelPersonagem.Text = Personagem.Nivel.ToString();
+
+            //Infos Inimigo
+            nomeInimigo.Text = "";
+            vidaInimigo.Text = cultista.Vida.ToString();
+
             moedasPersonagem.Text = Personagem.Dinheiro.ToString();
             vidaPersonagem.Text = Personagem.Vida.ToString();
             manaPersonagem.Text = Personagem.Mana.ToString();
@@ -90,14 +95,130 @@ namespace telaCombate
                 return null;
             }
         }
-
-        private void btnBatalhar_Click(object sender, EventArgs e)
+        private void btnAtaqBase_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Vamos batalhar! Selecione um ataque.");
-            lblInformacoes.Text = "";
-            CombateCultista combate = new CombateCultista(Personagem, cultista);
-           //Resto do código da batalha...
+            ataqueEscolhido = AtaquesProntos.Basico();
         }
 
+        private void btnAtaqMedio_Click(object sender, EventArgs e)
+        {
+            if (classeSelecionada.Nome == "Guerreiro")
+            {
+                ataqueEscolhido = AtaquesProntos.Corajoso();
+            }
+            else if (classeSelecionada.Nome == "Clerigo")
+            {
+                ataqueEscolhido = AtaquesProntos.ChamadoDivino();
+            }
+            else if (classeSelecionada.Nome == "Ladino")
+            {
+                ataqueEscolhido = AtaquesProntos.Dilacerar();
+            }
+            else if (classeSelecionada.Nome == "Tanque")
+            {
+                ataqueEscolhido = AtaquesProntos.Cabecada();
+            }
+            else if (classeSelecionada.Nome == "Arqueiro")
+            {
+                ataqueEscolhido = AtaquesProntos.Engenhoso();
+            }
+            else
+            {
+                ataqueEscolhido = new Ataque("Ataque Médio", 10, 10, 75);
+            }
+        }
+        private void btnBatalhar_Click(object sender, EventArgs e)
+        {
+            lblInformacoes.Text = "";
+            CombateCultista combate = new CombateCultista(Personagem, cultista);
+
+            nomeInimigo.Text = "Cultista";
+
+            btnBatalhar.Text = "Executar ação";
+
+            if (ataqueEscolhido == null)
+            {
+                MessageBox.Show("Vamos batalhar! Selecione um ataque.");
+                return;
+            }
+
+            if (combate.Personagem.Mana < ataqueEscolhido.GastoDeMana)
+            {
+
+                MessageBox.Show("Mana insuficiente para usar esse ataque!");
+                return;
+            }
+            else
+            {
+
+                int dano = combate.Personagem.atacar(ataqueEscolhido);
+                combate.Cultista.defender(dano);
+                int danoInimigo = combate.Cultista.atacar(AtaquesProntos.Basico());
+                combate.Personagem.defender(danoInimigo);
+                lblInformacoes.Text += $"Você causou {dano} de dano. O inimigo causou {danoInimigo} de dano.";
+                vidaPersonagem.Text = Personagem.Vida.ToString();
+                manaPersonagem.Text = Personagem.Mana.ToString();
+                vidaInimigo.Text = combate.Cultista.Vida.ToString();
+            }
+
+
+            if (Personagem.Vida <= 0)
+            {
+                MessageBox.Show("Você foi derrotado pelo inimigo!");
+                vidaPersonagem.Text = "0";
+                manaPersonagem.Text = Personagem.Mana.ToString();
+                vidaInimigo.Text = combate.Cultista.Vida.ToString();
+                MessageBox.Show("FIM DE JOGO");
+                this.Close();
+            }
+            else if (cultista.Vida <= 0)
+            {
+                vidaInimigo.Text = "0";
+                int dinheiroDropado = cultista.droparDinheiro();
+                Personagem.ReceberDinheiro(dinheiroDropado);
+                MessageBox.Show($"Você venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
+
+                //Leva pra outra tela
+                //playerImg.Image = null;
+                //Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+                //telaNPCs02 formsNPC2 = new telaNPCs02(racaSelecionada, classeSelecionada, nome);
+                //formsNPC2.Personagem = personagem;
+                //formsNPC2.Show();
+                //this.Hide();
+            }
+        }
+
+        //private void btnAtaqEspecial_Click(object sender, EventArgs e)
+        //{
+        //    //MessageBox.Show("dsfsidofoidf");
+        //}
+
+        private void btnAtaqEspecial_Click_1(object sender, EventArgs e)
+        {
+            if (classeSelecionada.Nome == "Guerreiro")
+            {
+                ataqueEscolhido = AtaquesProntos.GolpeFurioso();
+            }
+            else if (classeSelecionada.Nome == "Clerigo")
+            {
+                ataqueEscolhido = AtaquesProntos.CuraDivina();
+            }
+            else if (classeSelecionada.Nome == "Ladino")
+            {
+                ataqueEscolhido = AtaquesProntos.AtaqueSorrateiro();
+            }
+            else if (classeSelecionada.Nome == "Tanque")
+            {
+                ataqueEscolhido = AtaquesProntos.EscudoDeProtecao();
+            }
+            else if (classeSelecionada.Nome == "Arqueiro")
+            {
+                ataqueEscolhido = AtaquesProntos.ChuvaDeFlechas();
+            }
+            else
+            {
+                ataqueEscolhido = new Ataque("Ataque Especial", 30, 20, 100);
+            }
+        }
     }
 }

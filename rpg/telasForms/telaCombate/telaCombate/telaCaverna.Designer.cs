@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCaverna));
-            this.btnAtaqEspecial = new System.Windows.Forms.Button();
             this.vidaInimigo = new System.Windows.Forms.Label();
             this.manaPersonagem = new System.Windows.Forms.Label();
             this.btnBatalhar = new System.Windows.Forms.Button();
@@ -55,6 +54,7 @@
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.nomeInventario = new System.Windows.Forms.Label();
+            this.btnAtaqEspecial = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgInimigo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerImg)).BeginInit();
@@ -62,18 +62,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnAtaqEspecial
-            // 
-            this.btnAtaqEspecial.BackColor = System.Drawing.Color.Maroon;
-            this.btnAtaqEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtaqEspecial.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnAtaqEspecial.Location = new System.Drawing.Point(32, 285);
-            this.btnAtaqEspecial.Name = "btnAtaqEspecial";
-            this.btnAtaqEspecial.Size = new System.Drawing.Size(161, 35);
-            this.btnAtaqEspecial.TabIndex = 43;
-            this.btnAtaqEspecial.Text = "Ataque especial";
-            this.btnAtaqEspecial.UseVisualStyleBackColor = false;
             // 
             // vidaInimigo
             // 
@@ -157,6 +145,7 @@
             this.btnAtaqMedio.TabIndex = 36;
             this.btnAtaqMedio.Text = "Ataque médio";
             this.btnAtaqMedio.UseVisualStyleBackColor = false;
+            this.btnAtaqMedio.Click += new System.EventHandler(this.btnAtaqMedio_Click);
             // 
             // btnAtaqBase
             // 
@@ -169,13 +158,14 @@
             this.btnAtaqBase.TabIndex = 35;
             this.btnAtaqBase.Text = "Ataque base";
             this.btnAtaqBase.UseVisualStyleBackColor = false;
+            this.btnAtaqBase.Click += new System.EventHandler(this.btnAtaqBase_Click);
             // 
             // nomeInimigo
             // 
             this.nomeInimigo.AutoSize = true;
             this.nomeInimigo.BackColor = System.Drawing.Color.Transparent;
             this.nomeInimigo.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.nomeInimigo.ForeColor = System.Drawing.Color.Black;
+            this.nomeInimigo.ForeColor = System.Drawing.Color.White;
             this.nomeInimigo.Location = new System.Drawing.Point(686, 129);
             this.nomeInimigo.Name = "nomeInimigo";
             this.nomeInimigo.Size = new System.Drawing.Size(96, 17);
@@ -314,6 +304,19 @@
             this.nomeInventario.TabIndex = 44;
             this.nomeInventario.Text = "Inventário";
             // 
+            // btnAtaqEspecial
+            // 
+            this.btnAtaqEspecial.BackColor = System.Drawing.Color.Maroon;
+            this.btnAtaqEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtaqEspecial.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqEspecial.Location = new System.Drawing.Point(32, 285);
+            this.btnAtaqEspecial.Name = "btnAtaqEspecial";
+            this.btnAtaqEspecial.Size = new System.Drawing.Size(161, 35);
+            this.btnAtaqEspecial.TabIndex = 46;
+            this.btnAtaqEspecial.Text = "Ataque especial";
+            this.btnAtaqEspecial.UseVisualStyleBackColor = false;
+            this.btnAtaqEspecial.Click += new System.EventHandler(this.btnAtaqEspecial_Click_1);
+            // 
             // telaCaverna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -321,9 +324,9 @@
             this.BackgroundImage = global::telaCombate.Properties.Resources.caverna1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.btnAtaqEspecial);
             this.Controls.Add(this.listInventario);
             this.Controls.Add(this.nomeInventario);
-            this.Controls.Add(this.btnAtaqEspecial);
             this.Controls.Add(this.vidaInimigo);
             this.Controls.Add(this.manaPersonagem);
             this.Controls.Add(this.btnBatalhar);
@@ -356,8 +359,6 @@
         }
 
         #endregion
-
-        private Button btnAtaqEspecial;
         private Label vidaInimigo;
         private Label manaPersonagem;
         private Button btnBatalhar;
@@ -383,5 +384,6 @@
         private ColumnHeader columnHeader6;
         private ColumnHeader columnHeader7;
         private Label nomeInventario;
+        private Button btnAtaqEspecial;
     }
 }
