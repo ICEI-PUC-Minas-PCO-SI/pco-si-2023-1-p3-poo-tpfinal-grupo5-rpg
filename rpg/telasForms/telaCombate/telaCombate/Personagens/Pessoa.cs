@@ -30,6 +30,18 @@ public class Pessoa : Combatente, IComercio, IDroparItem, IUsarItem{
         this.inventario = inventario;
     }
 
+    public Pessoa(Classe classe, Raca raca, Arma arma, Armadura armadura, List<Item> inventario, int vida, int defesa, int ataque)
+    {
+        this.classe = classe;
+        this.raca = raca;
+        this.arma = arma;
+        this.armadura = armadura;
+        this.inventario = inventario;
+        this.vida = vida;
+        this.defesa = defesa;
+        this.ataque = ataque;
+    }
+
     public Classe Classe { get => classe; set => classe = value; }
     public Raca Raca { get => raca; set => raca = value; }
     public Arma Arma { get => arma; set => arma = value; }
