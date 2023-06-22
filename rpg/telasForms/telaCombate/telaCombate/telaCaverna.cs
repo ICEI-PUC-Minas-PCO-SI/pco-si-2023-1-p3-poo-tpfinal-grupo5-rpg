@@ -35,6 +35,7 @@ namespace telaCombate
 
         private void telaCaverna_Load(object sender, EventArgs e)
         {
+            //int cultistaIndex = Dado.RandomNumber(0, 4);
             cultista = PessoasProntas.CultistaTanque();
             //Infos personagem
             //nivelPersonagem.Text = Personagem.Nivel.ToString();
@@ -179,12 +180,12 @@ namespace telaCombate
                 MessageBox.Show($"Você venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
 
                 //Leva pra outra tela
-                //playerImg.Image = null;
-                //Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
-                //telaNPCs02 formsNPC2 = new telaNPCs02(racaSelecionada, classeSelecionada, nome);
-                //formsNPC2.Personagem = personagem;
-                //formsNPC2.Show();
-                //this.Hide();
+                 playerImg.Image = null;
+                Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+                maisHistoria formsHistoria = new maisHistoria(racaSelecionada, classeSelecionada, nome);
+                formsHistoria.Personagem = personagem;
+                formsHistoria.Show();
+                this.Hide();
             }
         }
 
