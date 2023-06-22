@@ -110,6 +110,7 @@
             this.Controls.Add(this.textoConversa);
             this.Controls.Add(this.imgNpc);
             this.Controls.Add(this.imgPersonagem);
+            this.MaximizeBox = false;
             this.Name = "telaNPCs";
             this.Text = "Procurar pistas";
             this.Load += new System.EventHandler(this.telaNPCs_Load);

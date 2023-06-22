@@ -7,6 +7,9 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="maisHistoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="telaCaverna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -29,6 +32,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="telaRaça.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="telaVila.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
