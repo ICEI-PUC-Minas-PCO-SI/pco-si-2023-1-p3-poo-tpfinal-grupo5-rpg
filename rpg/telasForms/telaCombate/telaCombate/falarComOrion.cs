@@ -93,6 +93,13 @@ namespace telaCombate
         {
             imgPersonagem.Image = null;
             imgNpc.Image = null;
+
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+            batalhaOibaf formOibaf = new batalhaOibaf(racaSelecionada, classeSelecionada, nome);
+            formOibaf.Personagem = personagem;
+            formOibaf.Show();
+            this.Hide();
+
         }
     }
 }

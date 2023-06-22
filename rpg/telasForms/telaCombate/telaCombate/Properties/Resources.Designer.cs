@@ -493,6 +493,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inferno1 {
+            get {
+                object obj = ResourceManager.GetObject("inferno1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap irma {
             get {
                 object obj = ResourceManager.GetObject("irma", resourceCulture);
@@ -626,6 +636,16 @@ namespace telaCombate.Properties {
         internal static System.Drawing.Bitmap O_Culto_do_abismo {
             get {
                 object obj = ResourceManager.GetObject("O Culto do abismo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oibaf {
+            get {
+                object obj = ResourceManager.GetObject("oibaf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
