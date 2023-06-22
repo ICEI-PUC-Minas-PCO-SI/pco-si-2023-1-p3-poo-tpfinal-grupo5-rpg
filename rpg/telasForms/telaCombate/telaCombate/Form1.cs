@@ -22,7 +22,31 @@ namespace telaCombate
         private Ataque ataqueEscolhido;
         private Arma armaPlayer;
         
-
+        public void botoes(){
+            btnAtaqBase.Text = "Básico";
+            switch(classeSelecionada.Nome){
+                case "Guerreiro":
+                    btnAtaqMedio.Text = "Corajoso";
+                    btnAtaqEspecial.Text = "Golpe Furioso";
+                    break;
+                case "Ladino":
+                    btnAtaqMedio.Text = "Dilacerar";
+                    btnAtaqEspecial.Text = "Ataque Sorrateiro";
+                    break;
+                case "Arqueiro":
+                    btnAtaqMedio.Text = "Engenhoso";
+                    btnAtaqEspecial.Text = "Chuva de Flechas";
+                    break;
+                case "Clerigo":
+                    btnAtaqMedio.Text = "Chamado Divino";
+                    btnAtaqEspecial.Text = "Cura Divina";
+                    break;
+                case "Tanque":
+                    btnAtaqMedio.Text = "Cabeçada";
+                    btnAtaqEspecial.Text = "Escudo de Proteção";
+                    break;
+            }
+        }
 
         public int ManaAtual
         {
@@ -35,7 +59,6 @@ namespace telaCombate
             this.racaSelecionada = racaSelecionada;
             this.classeSelecionada = classeSelecionada;
             this.nome = nome;
-            
         }
 
         private string RemoverAcentos(string texto)
@@ -180,6 +203,9 @@ namespace telaCombate
         private void btnBatalhar_Click(object sender, EventArgs e)
         {
             lblInformacoes.Text = "";
+
+            botoes();
+
             Combate combate = new Combate(Personagem, javali);
 
             nomeInimigo.Text = combate.Inimigo.Nome.ToString();

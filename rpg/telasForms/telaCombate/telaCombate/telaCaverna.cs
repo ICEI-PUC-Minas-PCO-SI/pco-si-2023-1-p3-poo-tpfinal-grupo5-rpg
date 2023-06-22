@@ -33,6 +33,32 @@ namespace telaCombate
             this.nome = nome;
         }
 
+        public void botoes(){
+            btnAtaqBase.Text = "Básico";
+            switch(classeSelecionada.Nome){
+                case "Guerreiro":
+                    btnAtaqMedio.Text = "Corajoso";
+                    btnAtaqEspecial.Text = "Golpe Furioso";
+                    break;
+                case "Ladino":
+                    btnAtaqMedio.Text = "Dilacerar";
+                    btnAtaqEspecial.Text = "Ataque Sorrateiro";
+                    break;
+                case "Arqueiro":
+                    btnAtaqMedio.Text = "Engenhoso";
+                    btnAtaqEspecial.Text = "Chuva de Flechas";
+                    break;
+                case "Clerigo":
+                    btnAtaqMedio.Text = "Chamado Divino";
+                    btnAtaqEspecial.Text = "Cura Divina";
+                    break;
+                case "Tanque":
+                    btnAtaqMedio.Text = "Cabeçada";
+                    btnAtaqEspecial.Text = "Escudo de Proteção";
+                    break;
+            }
+        }
+
         private void telaCaverna_Load(object sender, EventArgs e)
         {
             //int cultistaIndex = Dado.RandomNumber(0, 4);
@@ -131,6 +157,7 @@ namespace telaCombate
         private void btnBatalhar_Click(object sender, EventArgs e)
         {
             lblInformacoes.Text = "";
+            botoes();
             CombateCultista combate = new CombateCultista(Personagem, cultista);
 
             nomeInimigo.Text = "Cultista";

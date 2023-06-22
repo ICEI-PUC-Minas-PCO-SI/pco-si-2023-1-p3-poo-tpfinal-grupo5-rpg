@@ -35,6 +35,32 @@ namespace telaCombate
             this.nome = nome;
         }
 
+        public void botoes(){
+            btnAtaqBase.Text = "Básico";
+            switch(classeSelecionada.Nome){
+                case "Guerreiro":
+                    btnAtaqMedio.Text = "Corajoso";
+                    btnAtaqEspecial.Text = "Golpe Furioso";
+                    break;
+                case "Ladino":
+                    btnAtaqMedio.Text = "Dilacerar";
+                    btnAtaqEspecial.Text = "Ataque Sorrateiro";
+                    break;
+                case "Arqueiro":
+                    btnAtaqMedio.Text = "Engenhoso";
+                    btnAtaqEspecial.Text = "Chuva de Flechas";
+                    break;
+                case "Clerigo":
+                    btnAtaqMedio.Text = "Chamado Divino";
+                    btnAtaqEspecial.Text = "Cura Divina";
+                    break;
+                case "Tanque":
+                    btnAtaqMedio.Text = "Cabeçada";
+                    btnAtaqEspecial.Text = "Escudo de Proteção";
+                    break;
+            }
+        }
+
         private void telaFloresta_Load(object sender, EventArgs e)
         {
             Animal[] animais = AnimaisProntos.geraAnimais();
@@ -130,6 +156,7 @@ namespace telaCombate
 
         private void btnBatalhar_Click(object sender, EventArgs e)
         {
+            botoes();
             lblInformacoes.Text = "";
             Combate combate = new Combate(Personagem, lobo);
 
