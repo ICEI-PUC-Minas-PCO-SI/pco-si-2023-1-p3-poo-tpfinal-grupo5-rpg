@@ -63,6 +63,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap abismo {
+            get {
+                object obj = ResourceManager.GetObject("abismo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anao {
             get {
                 object obj = ResourceManager.GetObject("anao", resourceCulture);
@@ -333,6 +343,16 @@ namespace telaCombate.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap florestaNoite1 {
+            get {
+                object obj = ResourceManager.GetObject("florestaNoite1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gnomo {
             get {
                 object obj = ResourceManager.GetObject("gnomo", resourceCulture);
@@ -476,6 +496,26 @@ namespace telaCombate.Properties {
         internal static System.Drawing.Bitmap ladino {
             get {
                 object obj = ResourceManager.GetObject("ladino", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lobo {
+            get {
+                object obj = ResourceManager.GetObject("lobo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lobo1 {
+            get {
+                object obj = ResourceManager.GetObject("lobo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

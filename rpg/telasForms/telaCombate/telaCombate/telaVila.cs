@@ -107,27 +107,23 @@ namespace telaCombate
 
         private void btnComprarItem_Click(object sender, EventArgs e)
         {
-            // Verificar se um item foi selecionado no DataGridView
+            
             if (itensVenda.SelectedRows.Count > 0)
             {
-                // Obter o item selecionado
+                
                 Consumivel itemSelecionado = itensVenda.SelectedRows[0].DataBoundItem as Consumivel;
 
                 // Verificar se o personagem tem dinheiro suficiente para comprar o item
                 if (Personagem.Dinheiro >= itemSelecionado.Preco)
                 {
-                    // Realizar a compra
+                    
                     Personagem.comprar(itemSelecionado);
 
-                    // Atualizar a exibição do dinheiro do personagem
-                    // (supondo que você tenha um controle chamado "dinheiroPersonagem" para exibir o valor)
                     moedasPersonagem.Text = Personagem.Dinheiro.ToString();
 
                     //// Remover o item da lista de itens disponíveis
                     //itensVenda.Rows.Remove(itensVenda.SelectedRows[0]);
 
-                    // Adicionar o item ao inventário do personagem
-                    // (supondo que você tenha um controle chamado "inventarioPersonagem" para exibir o inventário)
                     inventarioPersonagem.DataSource = null;
                     inventarioPersonagem.DataSource = Personagem.Inventario;
                 }
@@ -136,10 +132,57 @@ namespace telaCombate
                     MessageBox.Show("Você não tem dinheiro suficiente para comprar este item!");
                 }
             }
+
             else
             {
                 MessageBox.Show("Selecione um item para comprar!");
             }
+        }
+
+        private void btnFloresta_Click(object sender, EventArgs e)
+        {
+            imgPersonagem.Image = null;
+            imgNpc.Image = null;
+
+            btnComprarItem.Visible = false;
+            pictureBox3.Visible = false;
+            moedasPersonagem.Visible = false;
+            nomeNPC.Text = "";
+            label1.Visible = false;
+            inventarioPersonagem.Visible = false;
+
+            imgPersonagem.Image = null;
+            imgNpc.Image = null;
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+            telaFloresta formsFloresta = new telaFloresta(racaSelecionada, classeSelecionada, nome);
+            formsFloresta.Personagem= personagem;   
+            formsFloresta.Show();
+            this.Hide();
+
+        }
+
+        private void btnCaverna_Click(object sender, EventArgs e)
+        {
+            imgPersonagem.Image = null;
+            imgNpc.Image = null;
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+            telaCaverna formcaverna = new telaCaverna(racaSelecionada, classeSelecionada, nome);
+            formcaverna.Personagem= personagem;
+            formcaverna.Show();
+            this.Hide();
+
+
+        }
+
+        private void btnHistoria_Click(object sender, EventArgs e)
+        {
+            imgPersonagem.Image = null;
+            imgNpc.Image = null;
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+            telaMissao formmissao = new telaMissao(racaSelecionada, classeSelecionada, nome);
+            formmissao.Personagem=personagem;
+            formmissao.Show();
+            this.Hide();
         }
     }
 }

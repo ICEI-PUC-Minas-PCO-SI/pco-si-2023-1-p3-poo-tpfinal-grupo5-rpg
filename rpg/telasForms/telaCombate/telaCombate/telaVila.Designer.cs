@@ -76,6 +76,7 @@
             this.btnFloresta.TabIndex = 30;
             this.btnFloresta.Text = "Ir para a floresta";
             this.btnFloresta.UseVisualStyleBackColor = false;
+            this.btnFloresta.Click += new System.EventHandler(this.btnFloresta_Click);
             // 
             // btnCaverna
             // 
@@ -90,6 +91,7 @@
             this.btnCaverna.TabIndex = 31;
             this.btnCaverna.Text = "Ir para a caverna";
             this.btnCaverna.UseVisualStyleBackColor = false;
+            this.btnCaverna.Click += new System.EventHandler(this.btnCaverna_Click);
             // 
             // btnHistoria
             // 
@@ -104,6 +106,7 @@
             this.btnHistoria.TabIndex = 32;
             this.btnHistoria.Text = "Prosseguir história";
             this.btnHistoria.UseVisualStyleBackColor = false;
+            this.btnHistoria.Click += new System.EventHandler(this.btnHistoria_Click);
             // 
             // imgPersonagem
             // 

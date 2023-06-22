@@ -36,6 +36,7 @@
             this.btnTanque = new System.Windows.Forms.Button();
             this.btnProsseguir = new System.Windows.Forms.Button();
             this.racaTexto = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgClassePersonagem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             // 
             this.imgClassePersonagem.BackColor = System.Drawing.Color.Black;
             this.imgClassePersonagem.Image = global::telaCombate.Properties.Resources.O_Culto_do_abismo;
-            this.imgClassePersonagem.Location = new System.Drawing.Point(12, 0);
+            this.imgClassePersonagem.Location = new System.Drawing.Point(1, 1);
             this.imgClassePersonagem.Name = "imgClassePersonagem";
             this.imgClassePersonagem.Size = new System.Drawing.Size(362, 523);
             this.imgClassePersonagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,12 +140,24 @@
             // 
             this.racaTexto.AutoSize = true;
             this.racaTexto.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.racaTexto.Location = new System.Drawing.Point(497, 141);
+            this.racaTexto.Location = new System.Drawing.Point(633, 152);
             this.racaTexto.Name = "racaTexto";
             this.racaTexto.Size = new System.Drawing.Size(38, 15);
             this.racaTexto.TabIndex = 27;
             this.racaTexto.Text = "label1";
+            this.racaTexto.Visible = false;
             this.racaTexto.Click += new System.EventHandler(this.racaTexto_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(418, 95);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(418, 43);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Selecione sua classe:";
             // 
             // telaClasse
             // 
@@ -152,6 +165,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(43)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.racaTexto);
             this.Controls.Add(this.btnProsseguir);
             this.Controls.Add(this.btnTanque);
@@ -180,5 +194,6 @@
         private Button btnTanque;
         private Button btnProsseguir;
         private Label racaTexto;
+        private Label label1;
     }
 }
