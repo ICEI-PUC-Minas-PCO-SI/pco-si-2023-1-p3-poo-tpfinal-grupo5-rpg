@@ -172,9 +172,8 @@
             this.nomeInimigo.ForeColor = System.Drawing.Color.White;
             this.nomeInimigo.Location = new System.Drawing.Point(760, 44);
             this.nomeInimigo.Name = "nomeInimigo";
-            this.nomeInimigo.Size = new System.Drawing.Size(96, 17);
+            this.nomeInimigo.Size = new System.Drawing.Size(0, 17);
             this.nomeInimigo.TabIndex = 71;
-            this.nomeInimigo.Text = "nomeInimigo";
             // 
             // pictureBox4
             // 
