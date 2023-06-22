@@ -4,7 +4,7 @@ public static class Dado
 {
     public static int RandomNumber(int minValue, int maxValue)
     {
-        if(minValue < maxValue){
+        if(minValue > maxValue){
             int temp = minValue;
             minValue = maxValue;
             maxValue = temp;
