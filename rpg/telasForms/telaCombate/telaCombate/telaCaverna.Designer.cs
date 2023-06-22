@@ -138,7 +138,7 @@
             // 
             this.btnAtaqMedio.BackColor = System.Drawing.Color.Maroon;
             this.btnAtaqMedio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtaqMedio.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqMedio.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAtaqMedio.Location = new System.Drawing.Point(32, 241);
             this.btnAtaqMedio.Name = "btnAtaqMedio";
             this.btnAtaqMedio.Size = new System.Drawing.Size(161, 35);
@@ -151,7 +151,7 @@
             // 
             this.btnAtaqBase.BackColor = System.Drawing.Color.Maroon;
             this.btnAtaqBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtaqBase.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqBase.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAtaqBase.Location = new System.Drawing.Point(32, 198);
             this.btnAtaqBase.Name = "btnAtaqBase";
             this.btnAtaqBase.Size = new System.Drawing.Size(161, 35);
@@ -308,7 +308,7 @@
             // 
             this.btnAtaqEspecial.BackColor = System.Drawing.Color.Maroon;
             this.btnAtaqEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtaqEspecial.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqEspecial.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAtaqEspecial.Location = new System.Drawing.Point(32, 285);
             this.btnAtaqEspecial.Name = "btnAtaqEspecial";
             this.btnAtaqEspecial.Size = new System.Drawing.Size(161, 35);
