@@ -36,9 +36,16 @@
             this.imgNpc = new System.Windows.Forms.PictureBox();
             this.nomeNPC = new System.Windows.Forms.Label();
             this.itensVenda = new System.Windows.Forms.DataGridView();
+            this.btnComprarItem = new System.Windows.Forms.Button();
+            this.moedasPersonagem = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.inventarioPersonagem = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgPersonagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNpc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itensVenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioPersonagem)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCompras
@@ -141,12 +148,85 @@
             this.itensVenda.TabIndex = 36;
             this.itensVenda.Visible = false;
             // 
+            // btnComprarItem
+            // 
+            this.btnComprarItem.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnComprarItem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnComprarItem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnComprarItem.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnComprarItem.ForeColor = System.Drawing.Color.White;
+            this.btnComprarItem.Location = new System.Drawing.Point(366, 289);
+            this.btnComprarItem.Name = "btnComprarItem";
+            this.btnComprarItem.Size = new System.Drawing.Size(181, 38);
+            this.btnComprarItem.TabIndex = 37;
+            this.btnComprarItem.Text = "Comprar item";
+            this.btnComprarItem.UseVisualStyleBackColor = false;
+            this.btnComprarItem.Visible = false;
+            this.btnComprarItem.Click += new System.EventHandler(this.btnComprarItem_Click);
+            // 
+            // moedasPersonagem
+            // 
+            this.moedasPersonagem.AutoSize = true;
+            this.moedasPersonagem.BackColor = System.Drawing.Color.SeaGreen;
+            this.moedasPersonagem.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.moedasPersonagem.ForeColor = System.Drawing.Color.Gold;
+            this.moedasPersonagem.Location = new System.Drawing.Point(446, 27);
+            this.moedasPersonagem.Name = "moedasPersonagem";
+            this.moedasPersonagem.Size = new System.Drawing.Size(42, 32);
+            this.moedasPersonagem.TabIndex = 39;
+            this.moedasPersonagem.Tag = "";
+            this.moedasPersonagem.Text = "15";
+            this.moedasPersonagem.Visible = false;
+            this.moedasPersonagem.Click += new System.EventHandler(this.moedasPersonagem_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox3.Image = global::telaCombate.Properties.Resources.moeda;
+            this.pictureBox3.Location = new System.Drawing.Point(387, 15);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Tag = "";
+            this.pictureBox3.Visible = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // inventarioPersonagem
+            // 
+            this.inventarioPersonagem.BackgroundColor = System.Drawing.Color.Black;
+            this.inventarioPersonagem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.inventarioPersonagem.Location = new System.Drawing.Point(46, 359);
+            this.inventarioPersonagem.Name = "inventarioPersonagem";
+            this.inventarioPersonagem.RowTemplate.Height = 25;
+            this.inventarioPersonagem.Size = new System.Drawing.Size(451, 79);
+            this.inventarioPersonagem.TabIndex = 40;
+            this.inventarioPersonagem.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(51, 339);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 17);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "Inventário";
+            this.label1.Visible = false;
+            // 
             // telaVila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::telaCombate.Properties.Resources.vila;
             this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.inventarioPersonagem);
+            this.Controls.Add(this.moedasPersonagem);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.btnComprarItem);
             this.Controls.Add(this.itensVenda);
             this.Controls.Add(this.nomeNPC);
             this.Controls.Add(this.imgNpc);
@@ -162,6 +242,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgPersonagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgNpc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itensVenda)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventarioPersonagem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +259,10 @@
         private PictureBox imgNpc;
         private Label nomeNPC;
         private DataGridView itensVenda;
+        private Button btnComprarItem;
+        private Label moedasPersonagem;
+        private PictureBox pictureBox3;
+        private DataGridView inventarioPersonagem;
+        private Label label1;
     }
 }

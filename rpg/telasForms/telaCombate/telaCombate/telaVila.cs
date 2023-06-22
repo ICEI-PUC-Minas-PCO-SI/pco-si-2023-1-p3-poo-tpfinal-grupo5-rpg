@@ -77,7 +77,12 @@ namespace telaCombate
 
         private void btnCompras_Click(object sender, EventArgs e)
         {
+            btnComprarItem.Visible = true;
+            pictureBox3.Visible = true;
+            moedasPersonagem.Visible = true;
             nomeNPC.Text = "Mercador";
+            label1.Visible=true;
+            inventarioPersonagem.Visible=true;
 
             string imgMercador = "npcVendedor";
             if (Properties.Resources.ResourceManager.GetObject(imgMercador) is Image imagemNovoNPC)
@@ -88,6 +93,53 @@ namespace telaCombate
             itensVenda.Visible = true;
             List<Consumivel> itensDisponiveis = ConsumiveisProntos.geraItens().ToList();
             itensVenda.DataSource = itensDisponiveis;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void moedasPersonagem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnComprarItem_Click(object sender, EventArgs e)
+        {
+            // Verificar se um item foi selecionado no DataGridView
+            if (itensVenda.SelectedRows.Count > 0)
+            {
+                // Obter o item selecionado
+                Consumivel itemSelecionado = itensVenda.SelectedRows[0].DataBoundItem as Consumivel;
+
+                // Verificar se o personagem tem dinheiro suficiente para comprar o item
+                if (Personagem.Dinheiro >= itemSelecionado.Preco)
+                {
+                    // Realizar a compra
+                    Personagem.comprar(itemSelecionado);
+
+                    // Atualizar a exibição do dinheiro do personagem
+                    // (supondo que você tenha um controle chamado "dinheiroPersonagem" para exibir o valor)
+                    moedasPersonagem.Text = Personagem.Dinheiro.ToString();
+
+                    //// Remover o item da lista de itens disponíveis
+                    //itensVenda.Rows.Remove(itensVenda.SelectedRows[0]);
+
+                    // Adicionar o item ao inventário do personagem
+                    // (supondo que você tenha um controle chamado "inventarioPersonagem" para exibir o inventário)
+                    inventarioPersonagem.DataSource = null;
+                    inventarioPersonagem.DataSource = Personagem.Inventario;
+                }
+                else
+                {
+                    MessageBox.Show("Você não tem dinheiro suficiente para comprar este item!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione um item para comprar!");
+            }
         }
     }
 }
