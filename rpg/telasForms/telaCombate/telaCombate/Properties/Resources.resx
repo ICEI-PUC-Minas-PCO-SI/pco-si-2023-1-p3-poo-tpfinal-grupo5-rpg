@@ -190,9 +190,6 @@
   <data name="gnomo_arqueiro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gnomo_arqueiro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="pocoDia" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pocoDia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="gnomo_tanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gnomo_tanque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,6 +235,9 @@
   <data name="vida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vida.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vidaPocao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vidaPocao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="anao_tanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anao_tanque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,6 +280,9 @@
   <data name="caverna" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caverna.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cultistaMulher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cultistaMulher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="calabouco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calabouco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -313,8 +316,8 @@
   <data name="humano_clerigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\humano_clerigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="vidaPocao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vidaPocao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="pocoDia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pocoDia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="elfo_tanque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\elfo_tanque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,7 +331,7 @@
   <data name="anao_clerigo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anao_clerigo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cultistaMulher" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cultistaMulher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="irma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\irma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -157,6 +157,8 @@ namespace telaCombate
 
             if (Personagem.Vida <= 0)
             {
+                playerImg.Image = null;
+                imgInimigo.Image = null;
                 MessageBox.Show("Você foi derrotado por Luna!");
                 vidaPersonagem.Text = "0";
                 manaPersonagem.Text = Personagem.Mana.ToString();
@@ -173,11 +175,12 @@ namespace telaCombate
 
                 //Leva pra outra tela
                 playerImg.Image = null;
-                //Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
-                //maisHistoria formsHistoria = new maisHistoria(racaSelecionada, classeSelecionada, nome);
-                //formsHistoria.Personagem = personagem;
-                //formsHistoria.Show();
-                //this.Hide();
+                imgInimigo.Image = null;    
+                Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+                falarComOrion formOrion = new falarComOrion(racaSelecionada, classeSelecionada, nome);
+                formOrion.Personagem = personagem;
+                formOrion.Show();
+                this.Hide();
             }
         }
     }
