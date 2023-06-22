@@ -25,6 +25,9 @@
     <Compile Update="telaJogo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="telaLuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="telaMissao.cs">
       <SubType>Form</SubType>
     </Compile>

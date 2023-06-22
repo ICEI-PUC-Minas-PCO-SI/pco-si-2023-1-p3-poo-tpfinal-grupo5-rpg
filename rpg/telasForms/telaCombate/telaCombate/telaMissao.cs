@@ -91,6 +91,14 @@ namespace telaCombate
 
         private void btnSeguirHist_Click(object sender, EventArgs e)
         {
+            imgPersonagem.Image = null;
+            imgNpc.Image = null;
+            Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
+            telaLuna formLuna = new telaLuna(racaSelecionada, classeSelecionada, nome);
+            formLuna.Personagem=personagem;
+            formLuna.Show();
+            this.Hide();
+
 
         }
     }
