@@ -29,274 +29,263 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(batalhaOibaf));
-            btnAtaqEspecial = new Button();
-            vidaInimigo = new Label();
-            manaPersonagem = new Label();
-            btnBatalhar = new Button();
-            vidaPersonagem = new Label();
-            lblInformacoes = new Label();
-            btnUsarItem = new Button();
-            btnAtaqMedio = new Button();
-            btnAtaqBase = new Button();
-            nomeInimigo = new Label();
-            pictureBox4 = new PictureBox();
-            imgInimigo = new PictureBox();
-            playerImg = new PictureBox();
-            moedasPersonagem = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imgInimigo).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)playerImg).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.btnAtaqEspecial = new System.Windows.Forms.Button();
+            this.vidaInimigo = new System.Windows.Forms.Label();
+            this.manaPersonagem = new System.Windows.Forms.Label();
+            this.btnBatalhar = new System.Windows.Forms.Button();
+            this.vidaPersonagem = new System.Windows.Forms.Label();
+            this.lblInformacoes = new System.Windows.Forms.Label();
+            this.btnUsarItem = new System.Windows.Forms.Button();
+            this.btnAtaqMedio = new System.Windows.Forms.Button();
+            this.btnAtaqBase = new System.Windows.Forms.Button();
+            this.nomeInimigo = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.imgInimigo = new System.Windows.Forms.PictureBox();
+            this.playerImg = new System.Windows.Forms.PictureBox();
+            this.moedasPersonagem = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgInimigo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerImg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnAtaqEspecial
             // 
-            btnAtaqEspecial.BackColor = Color.Maroon;
-            btnAtaqEspecial.FlatStyle = FlatStyle.Flat;
-            btnAtaqEspecial.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAtaqEspecial.Location = new Point(96, 407);
-            btnAtaqEspecial.Margin = new Padding(3, 4, 3, 4);
-            btnAtaqEspecial.Name = "btnAtaqEspecial";
-            btnAtaqEspecial.Size = new Size(184, 47);
-            btnAtaqEspecial.TabIndex = 80;
-            btnAtaqEspecial.Text = "Ataque especial";
-            btnAtaqEspecial.UseVisualStyleBackColor = false;
-            btnAtaqEspecial.Click += btnAtaqEspecial_Click;
+            this.btnAtaqEspecial.BackColor = System.Drawing.Color.Maroon;
+            this.btnAtaqEspecial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtaqEspecial.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqEspecial.Location = new System.Drawing.Point(84, 305);
+            this.btnAtaqEspecial.Name = "btnAtaqEspecial";
+            this.btnAtaqEspecial.Size = new System.Drawing.Size(161, 35);
+            this.btnAtaqEspecial.TabIndex = 80;
+            this.btnAtaqEspecial.Text = "Ataque especial";
+            this.btnAtaqEspecial.UseVisualStyleBackColor = false;
+            this.btnAtaqEspecial.Click += new System.EventHandler(this.btnAtaqEspecial_Click_1);
             // 
             // vidaInimigo
             // 
-            vidaInimigo.AutoSize = true;
-            vidaInimigo.BackColor = Color.FromArgb(64, 0, 0);
-            vidaInimigo.Font = new Font("Cascadia Code", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            vidaInimigo.ForeColor = Color.White;
-            vidaInimigo.Location = new Point(851, 91);
-            vidaInimigo.Name = "vidaInimigo";
-            vidaInimigo.Size = new Size(111, 35);
-            vidaInimigo.TabIndex = 79;
-            vidaInimigo.Text = "label1";
+            this.vidaInimigo.AutoSize = true;
+            this.vidaInimigo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.vidaInimigo.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.vidaInimigo.ForeColor = System.Drawing.Color.White;
+            this.vidaInimigo.Location = new System.Drawing.Point(745, 68);
+            this.vidaInimigo.Name = "vidaInimigo";
+            this.vidaInimigo.Size = new System.Drawing.Size(84, 28);
+            this.vidaInimigo.TabIndex = 79;
+            this.vidaInimigo.Text = "label1";
             // 
             // manaPersonagem
             // 
-            manaPersonagem.AutoSize = true;
-            manaPersonagem.BackColor = Color.MidnightBlue;
-            manaPersonagem.Font = new Font("Cascadia Code", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            manaPersonagem.ForeColor = Color.White;
-            manaPersonagem.Location = new Point(162, 180);
-            manaPersonagem.Name = "manaPersonagem";
-            manaPersonagem.Size = new Size(111, 35);
-            manaPersonagem.TabIndex = 78;
-            manaPersonagem.Text = "label1";
+            this.manaPersonagem.AutoSize = true;
+            this.manaPersonagem.BackColor = System.Drawing.Color.MidnightBlue;
+            this.manaPersonagem.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.manaPersonagem.ForeColor = System.Drawing.Color.White;
+            this.manaPersonagem.Location = new System.Drawing.Point(142, 135);
+            this.manaPersonagem.Name = "manaPersonagem";
+            this.manaPersonagem.Size = new System.Drawing.Size(84, 28);
+            this.manaPersonagem.TabIndex = 78;
+            this.manaPersonagem.Text = "label1";
             // 
             // btnBatalhar
             // 
-            btnBatalhar.BackColor = Color.Yellow;
-            btnBatalhar.FlatStyle = FlatStyle.Flat;
-            btnBatalhar.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnBatalhar.Location = new Point(510, 407);
-            btnBatalhar.Margin = new Padding(3, 4, 3, 4);
-            btnBatalhar.Name = "btnBatalhar";
-            btnBatalhar.Size = new Size(184, 47);
-            btnBatalhar.TabIndex = 77;
-            btnBatalhar.Text = "Iniciar Combate";
-            btnBatalhar.UseVisualStyleBackColor = false;
-            btnBatalhar.Click += btnBatalhar_Click_1;
+            this.btnBatalhar.BackColor = System.Drawing.Color.Yellow;
+            this.btnBatalhar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBatalhar.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnBatalhar.Location = new System.Drawing.Point(446, 305);
+            this.btnBatalhar.Name = "btnBatalhar";
+            this.btnBatalhar.Size = new System.Drawing.Size(161, 35);
+            this.btnBatalhar.TabIndex = 77;
+            this.btnBatalhar.Text = "Iniciar Combate";
+            this.btnBatalhar.UseVisualStyleBackColor = false;
+            this.btnBatalhar.Click += new System.EventHandler(this.btnBatalhar_Click);
             // 
             // vidaPersonagem
             // 
-            vidaPersonagem.AutoSize = true;
-            vidaPersonagem.BackColor = Color.FromArgb(64, 0, 0);
-            vidaPersonagem.Font = new Font("Cascadia Code", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            vidaPersonagem.ForeColor = Color.White;
-            vidaPersonagem.Location = new Point(162, 97);
-            vidaPersonagem.Name = "vidaPersonagem";
-            vidaPersonagem.Size = new Size(111, 35);
-            vidaPersonagem.TabIndex = 76;
-            vidaPersonagem.Text = "label1";
+            this.vidaPersonagem.AutoSize = true;
+            this.vidaPersonagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.vidaPersonagem.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.vidaPersonagem.ForeColor = System.Drawing.Color.White;
+            this.vidaPersonagem.Location = new System.Drawing.Point(142, 73);
+            this.vidaPersonagem.Name = "vidaPersonagem";
+            this.vidaPersonagem.Size = new System.Drawing.Size(84, 28);
+            this.vidaPersonagem.TabIndex = 76;
+            this.vidaPersonagem.Text = "label1";
             // 
             // lblInformacoes
             // 
-            lblInformacoes.AutoSize = true;
-            lblInformacoes.BackColor = Color.Transparent;
-            lblInformacoes.Font = new Font("Cascadia Code", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblInformacoes.Location = new Point(430, 308);
-            lblInformacoes.Name = "lblInformacoes";
-            lblInformacoes.Size = new Size(0, 22);
-            lblInformacoes.TabIndex = 75;
+            this.lblInformacoes.AutoSize = true;
+            this.lblInformacoes.BackColor = System.Drawing.Color.Transparent;
+            this.lblInformacoes.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblInformacoes.Location = new System.Drawing.Point(376, 231);
+            this.lblInformacoes.Name = "lblInformacoes";
+            this.lblInformacoes.Size = new System.Drawing.Size(0, 17);
+            this.lblInformacoes.TabIndex = 75;
             // 
             // btnUsarItem
             // 
-            btnUsarItem.BackColor = Color.FromArgb(255, 128, 128);
-            btnUsarItem.FlatStyle = FlatStyle.Flat;
-            btnUsarItem.Font = new Font("Cascadia Code", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnUsarItem.Location = new Point(98, 495);
-            btnUsarItem.Margin = new Padding(3, 4, 3, 4);
-            btnUsarItem.Name = "btnUsarItem";
-            btnUsarItem.Size = new Size(184, 47);
-            btnUsarItem.TabIndex = 74;
-            btnUsarItem.Text = "Usar item";
-            btnUsarItem.UseVisualStyleBackColor = false;
+            this.btnUsarItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnUsarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsarItem.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUsarItem.Location = new System.Drawing.Point(86, 371);
+            this.btnUsarItem.Name = "btnUsarItem";
+            this.btnUsarItem.Size = new System.Drawing.Size(161, 35);
+            this.btnUsarItem.TabIndex = 74;
+            this.btnUsarItem.Text = "Usar item";
+            this.btnUsarItem.UseVisualStyleBackColor = false;
             // 
             // btnAtaqMedio
             // 
-            btnAtaqMedio.BackColor = Color.Maroon;
-            btnAtaqMedio.FlatStyle = FlatStyle.Flat;
-            btnAtaqMedio.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAtaqMedio.Location = new Point(96, 348);
-            btnAtaqMedio.Margin = new Padding(3, 4, 3, 4);
-            btnAtaqMedio.Name = "btnAtaqMedio";
-            btnAtaqMedio.Size = new Size(184, 47);
-            btnAtaqMedio.TabIndex = 73;
-            btnAtaqMedio.Text = "Ataque médio";
-            btnAtaqMedio.UseVisualStyleBackColor = false;
-            btnAtaqMedio.Click += btnAtaqMedio_Click;
+            this.btnAtaqMedio.BackColor = System.Drawing.Color.Maroon;
+            this.btnAtaqMedio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtaqMedio.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqMedio.Location = new System.Drawing.Point(84, 261);
+            this.btnAtaqMedio.Name = "btnAtaqMedio";
+            this.btnAtaqMedio.Size = new System.Drawing.Size(161, 35);
+            this.btnAtaqMedio.TabIndex = 73;
+            this.btnAtaqMedio.Text = "Ataque médio";
+            this.btnAtaqMedio.UseVisualStyleBackColor = false;
+            this.btnAtaqMedio.Click += new System.EventHandler(this.btnAtaqMedio_Click_1);
             // 
             // btnAtaqBase
             // 
-            btnAtaqBase.BackColor = Color.Maroon;
-            btnAtaqBase.FlatStyle = FlatStyle.Flat;
-            btnAtaqBase.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAtaqBase.Location = new Point(96, 291);
-            btnAtaqBase.Margin = new Padding(3, 4, 3, 4);
-            btnAtaqBase.Name = "btnAtaqBase";
-            btnAtaqBase.Size = new Size(184, 47);
-            btnAtaqBase.TabIndex = 72;
-            btnAtaqBase.Text = "Ataque base";
-            btnAtaqBase.UseVisualStyleBackColor = false;
-            btnAtaqBase.Click += btnAtaqBase_Click;
+            this.btnAtaqBase.BackColor = System.Drawing.Color.Maroon;
+            this.btnAtaqBase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtaqBase.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAtaqBase.Location = new System.Drawing.Point(84, 218);
+            this.btnAtaqBase.Name = "btnAtaqBase";
+            this.btnAtaqBase.Size = new System.Drawing.Size(161, 35);
+            this.btnAtaqBase.TabIndex = 72;
+            this.btnAtaqBase.Text = "Ataque base";
+            this.btnAtaqBase.UseVisualStyleBackColor = false;
+            this.btnAtaqBase.Click += new System.EventHandler(this.btnAtaqBase_Click_1);
             // 
             // nomeInimigo
             // 
-            nomeInimigo.AutoSize = true;
-            nomeInimigo.BackColor = Color.Transparent;
-            nomeInimigo.Font = new Font("Cascadia Code", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            nomeInimigo.ForeColor = Color.White;
-            nomeInimigo.Location = new Point(869, 59);
-            nomeInimigo.Name = "nomeInimigo";
-            nomeInimigo.Size = new Size(120, 22);
-            nomeInimigo.TabIndex = 71;
-            nomeInimigo.Text = "nomeInimigo";
+            this.nomeInimigo.AutoSize = true;
+            this.nomeInimigo.BackColor = System.Drawing.Color.Transparent;
+            this.nomeInimigo.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.nomeInimigo.ForeColor = System.Drawing.Color.White;
+            this.nomeInimigo.Location = new System.Drawing.Point(760, 44);
+            this.nomeInimigo.Name = "nomeInimigo";
+            this.nomeInimigo.Size = new System.Drawing.Size(96, 17);
+            this.nomeInimigo.TabIndex = 71;
+            this.nomeInimigo.Text = "nomeInimigo";
             // 
             // pictureBox4
             // 
-            pictureBox4.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox4.Image = Properties.Resources.vida;
-            pictureBox4.Location = new Point(770, 68);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(57, 67);
-            pictureBox4.TabIndex = 70;
-            pictureBox4.TabStop = false;
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox4.Image = global::telaCombate.Properties.Resources.vida;
+            this.pictureBox4.Location = new System.Drawing.Point(674, 51);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox4.TabIndex = 70;
+            this.pictureBox4.TabStop = false;
             // 
             // imgInimigo
             // 
-            imgInimigo.BackColor = Color.Transparent;
-            imgInimigo.Image = Properties.Resources.oibaf;
-            imgInimigo.Location = new Point(701, 132);
-            imgInimigo.Margin = new Padding(3, 4, 3, 4);
-            imgInimigo.Name = "imgInimigo";
-            imgInimigo.Size = new Size(311, 484);
-            imgInimigo.SizeMode = PictureBoxSizeMode.StretchImage;
-            imgInimigo.TabIndex = 69;
-            imgInimigo.TabStop = false;
+            this.imgInimigo.BackColor = System.Drawing.Color.Transparent;
+            this.imgInimigo.Image = global::telaCombate.Properties.Resources.oibaf;
+            this.imgInimigo.Location = new System.Drawing.Point(613, 99);
+            this.imgInimigo.Name = "imgInimigo";
+            this.imgInimigo.Size = new System.Drawing.Size(272, 363);
+            this.imgInimigo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgInimigo.TabIndex = 69;
+            this.imgInimigo.TabStop = false;
             // 
             // playerImg
             // 
-            playerImg.BackColor = Color.Transparent;
-            playerImg.Location = new Point(307, 269);
-            playerImg.Margin = new Padding(3, 4, 3, 4);
-            playerImg.Name = "playerImg";
-            playerImg.Size = new Size(170, 325);
-            playerImg.SizeMode = PictureBoxSizeMode.StretchImage;
-            playerImg.TabIndex = 68;
-            playerImg.TabStop = false;
+            this.playerImg.BackColor = System.Drawing.Color.Transparent;
+            this.playerImg.Location = new System.Drawing.Point(269, 202);
+            this.playerImg.Name = "playerImg";
+            this.playerImg.Size = new System.Drawing.Size(149, 244);
+            this.playerImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.playerImg.TabIndex = 68;
+            this.playerImg.TabStop = false;
             // 
             // moedasPersonagem
             // 
-            moedasPersonagem.AutoSize = true;
-            moedasPersonagem.BackColor = Color.SeaGreen;
-            moedasPersonagem.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            moedasPersonagem.ForeColor = Color.Gold;
-            moedasPersonagem.Location = new Point(382, 105);
-            moedasPersonagem.Name = "moedasPersonagem";
-            moedasPersonagem.Size = new Size(53, 40);
-            moedasPersonagem.TabIndex = 67;
-            moedasPersonagem.Text = "15";
+            this.moedasPersonagem.AutoSize = true;
+            this.moedasPersonagem.BackColor = System.Drawing.Color.SeaGreen;
+            this.moedasPersonagem.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.moedasPersonagem.ForeColor = System.Drawing.Color.Gold;
+            this.moedasPersonagem.Location = new System.Drawing.Point(334, 79);
+            this.moedasPersonagem.Name = "moedasPersonagem";
+            this.moedasPersonagem.Size = new System.Drawing.Size(42, 32);
+            this.moedasPersonagem.TabIndex = 67;
+            this.moedasPersonagem.Text = "15";
             // 
             // pictureBox3
             // 
-            pictureBox3.BackColor = Color.SeaGreen;
-            pictureBox3.Image = Properties.Resources.moeda;
-            pictureBox3.Location = new Point(318, 89);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(57, 67);
-            pictureBox3.TabIndex = 66;
-            pictureBox3.TabStop = false;
+            this.pictureBox3.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox3.Image = global::telaCombate.Properties.Resources.moeda;
+            this.pictureBox3.Location = new System.Drawing.Point(278, 67);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox3.TabIndex = 66;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.MidnightBlue;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(96, 168);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(57, 67);
-            pictureBox2.TabIndex = 65;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(84, 126);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox2.TabIndex = 65;
+            this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.FromArgb(64, 0, 0);
-            pictureBox1.Image = Properties.Resources.vida;
-            pictureBox1.Location = new Point(96, 81);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(57, 67);
-            pictureBox1.TabIndex = 64;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pictureBox1.Image = global::telaCombate.Properties.Resources.vida;
+            this.pictureBox1.Location = new System.Drawing.Point(84, 61);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.TabIndex = 64;
+            this.pictureBox1.TabStop = false;
             // 
             // batalhaOibaf
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.inferno1;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1058, 697);
-            Controls.Add(btnAtaqEspecial);
-            Controls.Add(vidaInimigo);
-            Controls.Add(manaPersonagem);
-            Controls.Add(btnBatalhar);
-            Controls.Add(vidaPersonagem);
-            Controls.Add(lblInformacoes);
-            Controls.Add(btnUsarItem);
-            Controls.Add(btnAtaqMedio);
-            Controls.Add(btnAtaqBase);
-            Controls.Add(nomeInimigo);
-            Controls.Add(pictureBox4);
-            Controls.Add(imgInimigo);
-            Controls.Add(playerImg);
-            Controls.Add(moedasPersonagem);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Margin = new Padding(3, 4, 3, 4);
-            MaximizeBox = false;
-            Name = "batalhaOibaf";
-            Text = "batalhaOibaf";
-            Load += batalhaOibaf_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imgInimigo).EndInit();
-            ((System.ComponentModel.ISupportInitialize)playerImg).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::telaCombate.Properties.Resources.inferno1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(926, 523);
+            this.Controls.Add(this.btnAtaqEspecial);
+            this.Controls.Add(this.vidaInimigo);
+            this.Controls.Add(this.manaPersonagem);
+            this.Controls.Add(this.btnBatalhar);
+            this.Controls.Add(this.vidaPersonagem);
+            this.Controls.Add(this.lblInformacoes);
+            this.Controls.Add(this.btnUsarItem);
+            this.Controls.Add(this.btnAtaqMedio);
+            this.Controls.Add(this.btnAtaqBase);
+            this.Controls.Add(this.nomeInimigo);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.imgInimigo);
+            this.Controls.Add(this.playerImg);
+            this.Controls.Add(this.moedasPersonagem);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
+            this.Name = "batalhaOibaf";
+            this.Text = "batalhaOibaf";
+            this.Load += new System.EventHandler(this.batalhaOibaf_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgInimigo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerImg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

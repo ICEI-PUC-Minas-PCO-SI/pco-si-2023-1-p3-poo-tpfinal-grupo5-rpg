@@ -127,3 +127,4 @@ D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCom
 D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaLuna.resources
 D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaMissao.resources
 D:\GitHub Desktop\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaVila.resources
+C:\Users\gabri\OneDrive\Área de Trabalho\tela-combateSolid\pco-si-2023-1-p3-poo-tpfinal-grupo5-rpg\rpg\telasForms\telaCombate\telaCombate\obj\Debug\net6.0-windows\telaCombate.telaCreditos.resources
