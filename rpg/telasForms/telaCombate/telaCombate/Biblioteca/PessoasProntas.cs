@@ -14,7 +14,9 @@ public static class PessoasProntas
 
         Pessoa cultistaT = new Pessoa(ClassesProntas.Tanque(), RacasProntas.Humano(), ArmasProntas.EspadaLonga(), ArmadurasProntas.Couraca(), new List<Item>(), 800, 20, 15);
 
-        return new Pessoa[] {cultistaG, cultistaA, cultistaC, cultistaL, cultistaT};
+        Pessoa oibaf = new Pessoa(ClassesProntas.Guerreiro(), RacasProntas.Humano(), ArmasProntas.EspadaLonga(), ArmadurasProntas.CotaDeMalha(), new List<Item>(), 1000, 35, 40);
+
+        return new Pessoa[] {cultistaG, cultistaA, cultistaC, cultistaL, cultistaT, oibaf};
     }
 
     public static Pessoa CultistaGuerreiro()
@@ -36,5 +38,9 @@ public static class PessoasProntas
     public static Pessoa CultistaTanque()
     {
         return geraPessoas()[4];
+    }
+    public static Pessoa Oibaf()
+    {
+        return geraPessoas()[5];
     }
 }

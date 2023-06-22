@@ -33,9 +33,11 @@ namespace telaCombate
             this.nome = nome;
         }
 
-        public void botoes(){
+        public void botoes()
+        {
             btnAtaqBase.Text = "Básico";
-            switch(classeSelecionada.Nome){
+            switch (classeSelecionada.Nome)
+            {
                 case "Guerreiro":
                     btnAtaqMedio.Text = "Corajoso";
                     btnAtaqEspecial.Text = "Golpe Furioso";
@@ -207,7 +209,7 @@ namespace telaCombate
                 MessageBox.Show($"Você venceu a batalha contra o inimigo e recebeu {dinheiroDropado} moedas!");
 
                 //Leva pra outra tela
-                 playerImg.Image = null;
+                playerImg.Image = null;
                 Jogavel personagem = new Jogavel(nome, classeSelecionada, racaSelecionada);
                 maisHistoria formsHistoria = new maisHistoria(racaSelecionada, classeSelecionada, nome);
                 formsHistoria.Personagem = personagem;

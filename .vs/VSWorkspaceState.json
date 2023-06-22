@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\rpg",
-    "\\rpg\\telasForms",
-    "\\rpg\\telasForms\\telaCombate",
-    "\\rpg\\telasForms\\telaCombate\\telaCombate",
-    "\\rpg\\telasForms\\telaCombate\\telaCombate\\TelaInicial"
+    ""
   ],
-  "SelectedNode": "\\rpg\\telasForms\\telaCombate\\telaCombate\\Program.cs",
+  "SelectedNode": "\\telaCombate.sln",
   "PreviewInSolutionExplorer": false
 }
